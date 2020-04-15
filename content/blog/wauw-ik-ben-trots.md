@@ -10,6 +10,6 @@ description: Dikke test artikel
 
 ```js
 function sayHello() {
-  console.log("Hello!)
+  console.log("Hello!")
 }
 ```
