@@ -1,5 +1,6 @@
 backend:
-  name: test-repo
+  name: github
+  repo: twanmulder/thats-an-egg-blog
 
 media_folder: static/assets
 public_folder: assets

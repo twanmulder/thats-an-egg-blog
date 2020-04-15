@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-personal-starter-blog",
+  "name": "thats-an-egg-blog",
   "private": true,
-  "description": "A personal blog starter for a blog powered by Netlify CMS, based on the default blog starter",
+  "description": "\"That's an Egg\" Blog, Articles making your developer life easier.",
   "version": "1.0.0",
-  "author": "Thomas Wang <thomas@wang.sh>",
+  "author": "Twan Mulder",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
