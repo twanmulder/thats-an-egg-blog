@@ -45,7 +45,7 @@
   "devDependencies": {
     "prettier": "^1.17.0"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/twanmulder/thats-an-egg-blog#readme",
   "keywords": [
     "gatsby"
   ],
@@ -53,7 +53,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/twanmulder/thats-an-egg-blog.git"
   },
   "scripts": {
     "build": "gatsby build",
