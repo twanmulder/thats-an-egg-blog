@@ -6,9 +6,13 @@ description: Dikke test artikel
 ---
 **WAUW**
 
-*Ik ben een schrijven*
+*Ik ben een schrijver*
 
-```js
+
+
+![ginger showing peace sign](assets/profile-pic.jpg "Dit ben ik!")
+
+```javascript
 function sayHello() {
   console.log("Hello!")
 }
