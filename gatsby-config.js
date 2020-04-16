@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
     // edit below
-    title: `That's an Egg Blog`,
+    title: `That's an Egg`,
     author: `Twan Mulder`,
-    description: `That's an Egg Blog, Articles making your developer life easier.`,
-    siteUrl: `https://thats-an-egg-blog.netlify.app//`,
+    description: `That's an Egg blog, articles making your developer life easier.`,
+    siteUrl: `https://thatsanegg.com//`,
     social: {
       twitter: `toktoktwan`,
     },
@@ -77,7 +77,7 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         // edit below
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/yellow-icon.png`,
       },
     },
     {
