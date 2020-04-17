@@ -67,10 +67,18 @@ class Layout extends React.Component {
           <header>{header}</header>
           <main>{children}</main>
           <Footer style={{ marginTop: `${rhythm(3 / 4)}` }}>
-            <a href="https://twitter.com/toktoktwan" target="_blank">
+            <a
+              href="https://twitter.com/toktoktwan"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Twitter
             </a>
-            <a href="https://github.com/twanmulder" target="_blank">
+            <a
+              href="https://github.com/twanmulder"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               GitHub
             </a>
           </Footer>
