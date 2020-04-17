@@ -8,7 +8,7 @@ description: Dit is de description
 
 *Ik ben een schrijver*
 
-![cookies on a plate](assets/cookies.jpg "koekjes")
+![cookies on a plate](../../assets/cookies.jpg "koekjes")
 
 
 
