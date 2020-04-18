@@ -9,6 +9,7 @@ import { rhythm } from "../utils/typography"
 class Layout extends React.Component {
   render() {
     const { children } = this.props
+    const hideFooter = this.props.hideFooter || false
 
     return (
       <Wrapper>
@@ -22,7 +23,7 @@ class Layout extends React.Component {
         >
           <Navigation />
           <main>{children}</main>
-          <Footer />
+          {!hideFooter && <Footer />}
         </div>
       </Wrapper>
     )

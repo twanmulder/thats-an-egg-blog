@@ -16,7 +16,7 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <Fragment>
-        <Layout>
+        <Layout hideFooter={true}>
           <SEO
             title={post.frontmatter.title}
             description={post.frontmatter.description || post.excerpt}
