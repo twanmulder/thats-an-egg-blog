@@ -34,11 +34,15 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who lives and works in 
-              the Netherlands building meaningful stuff!
+              Written by me, <strong>{author}</strong>, who lives and works in
+              the Netherlands building cool stuff!
               {` `}
-              <a href={`https://twitter.com/${social.twitter}`}>
-                You should follow him on Twitter
+              <a
+                href={`https://twitter.com/${social.twitter}`}
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                Try following me on Twitter
               </a>
             </p>
           </Container>

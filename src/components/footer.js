@@ -20,7 +20,7 @@ export default class Footer extends React.Component {
           >
             Twitter
           </a>
-          &nbsp;and on&nbsp;
+          &nbsp;and&nbsp;
           <a
             href="https://github.com/twanmulder"
             target="_blank"
