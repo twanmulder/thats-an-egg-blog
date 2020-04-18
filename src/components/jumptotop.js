@@ -23,7 +23,7 @@ const StyledButton = styled.button`
   will-change: transform;
 
   &:hover {
-    background: rgba(254, 193, 80, 0.9);
+    background: #ffc761;
   }
 
   &.in-view {
