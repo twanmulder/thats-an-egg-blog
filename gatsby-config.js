@@ -71,11 +71,11 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `That's an Egg Blog`,
-        short_name: `GatsbyJS`,
+        short_name: `That's an Egg`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
+        theme_color: `#fec150`,
+        display: `standalone`,
         // edit below
         icon: `content/assets/yellow-icon.png`,
       },
