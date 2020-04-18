@@ -18,7 +18,7 @@ description: Read all about creating beautiful and smooth web-animations using j
 
 <hr/>
 
-### Introduction
+## Introduction
 
 CSS Animations sure are something pretty. Using just a few lines of code we can make elements bounce, move, rotate, or even disappear.
 
@@ -28,7 +28,7 @@ The **first** step is creating the animation using so called “keyframes”.
 
 The **second** one is adding this animation to an element and setting its animations “properties”.
 
-#### Follow along
+### Follow along
 
 So to follow along with this article you can open up your own text editor, but I also created a couple of Sandboxes for you to follow along without having to touch any code yourself.
 
@@ -39,7 +39,7 @@ These are the steps we will be following:
 
 That’s all you’ll need 😄
 
-### Creating an animation using keyframes
+## Creating an animation using keyframes
 
 So what is a keyframe exactly? Wikipedia defines it as:
 
@@ -91,7 +91,7 @@ And that’s all for the first step! We now have created our first animation (ca
 
 The only thing we need to do now, is add this animation to an already existing element.
 
-### **Adding the animation to an element**
+## **Adding the animation to an element**
 
 So now that we’ve created our first animation, let’s add it to an element! This can be anything you want. Think of text, a background-image, or even your entire webpage.
 
@@ -102,7 +102,7 @@ Here it is:
 <iframe
      src="https://codesandbox.io/embed/step-1-rotating-stars-9gwdb?autoresize=1&fontsize=14&hidenavigation=1&theme=dark&view=preview"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
-     title="\\[STEP 1] Rotating Stars"
+     title="\\\[STEP 1] Rotating Stars"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
@@ -156,14 +156,14 @@ So after adding our “fadeIn” animation to the text and stars, this is the re
 <iframe
      src="https://codesandbox.io/embed/step-2-rotating-stars-du7v1?autoresize=1&fontsize=14&hidenavigation=1&theme=dark&view=preview"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
-     title="\\[STEP 2] Rotating Stars"
+     title="\\\[STEP 2] Rotating Stars"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
 
 Quite pretty, but most importantly, very simple!
 
-### Wrapping up
+## Wrapping up
 
 To add just a little more flair to our little page, I added an animation to the background which rotates it. Here are the keyframes I used:
 
@@ -208,12 +208,12 @@ Putting it all together, this is the end-result 😄
 <iframe
      src="https://codesandbox.io/embed/result-rotating-stars-nhndw?autoresize=1&fontsize=14&hidenavigation=1&theme=dark&view=preview"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
-     title="\[RESULT] Rotating Stars"
+     title="\\[RESULT] Rotating Stars"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
 
-### In conclusion
+## In conclusion
 
 Looking back, we’ve created an animation using keyframes, after which it can be added to an element of our webpage using the CSS “animation” property. This property takes at least the name of the animation and its duration, but many more can be added. A delay, iteration count, and easing are the most common ones.
 
