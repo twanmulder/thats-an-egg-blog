@@ -7,15 +7,13 @@ import Button from "../components/button"
 
 class IndexPage extends React.Component {
   render() {
-    const siteTitle = "Twan Mulder Personal Website"
-
     const oneDay = 24 * 60 * 60 * 1000 // hours*minutes*seconds*milliseconds
     const firstDate = new Date(2019, 3, 1)
     const secondDate = new Date()
     const diffDays = Math.round(Math.abs((firstDate - secondDate) / oneDay))
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout>
         <SEO
           title="Home"
           keywords={[`developer`, `portfolio`, `javascript`, `react`, `blog`]}

@@ -8,11 +8,10 @@ import { rhythm } from "../utils/typography"
 class Blog extends React.Component {
   render() {
     const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
     const posts = data.allMdx.edges
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout>
         <SEO title="All posts" />
         <h1>That's an Egg</h1>
         <div style={{ margin: "20px 0 40px" }}>
