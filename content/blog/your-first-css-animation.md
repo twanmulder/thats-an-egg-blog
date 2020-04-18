@@ -4,7 +4,7 @@ date: 2020-04-18T20:10:09.181Z
 title: Your First CSS Animation
 description: Read all about creating beautiful and smooth web-animations using just CSS.
 ---
-![Computer screen showing a code editor. The code is written in CSS.](assets/code-screen.png "test")
+![Computer screen showing a code editor. The code is written in CSS.](../../assets/code-screen.png "CSS Animation in IDE")
 
 *Let’s say you’re building your very first website. You’ve created your basic elements using HTML, added some pretty styling using CSS. Maybe you have even added some media-queries.*
 
