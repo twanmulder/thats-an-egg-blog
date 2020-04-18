@@ -18,7 +18,7 @@ class IndexPage extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
           title="Home"
-          keywords={[`developer`, `portfolio`, `javascript`, `react`]}
+          keywords={[`developer`, `portfolio`, `javascript`, `react`, `blog`]}
         />
         <h1>
           Hey there, I'm Twan{" "}
@@ -38,14 +38,27 @@ class IndexPage extends React.Component {
           </a>{" "}
           for {diffDays} days.
         </p>
-        <p></p>
         <p>
-          This starter comes out of the box with styled components and Gatsby's
-          default starter blog running on Netlify CMS.
+          These days, web-development can be a very daunting task to learn for
+          the developer who's just starting out. With things like JavaScript
+          frameworks, server-side rendering, and REST/CRUD API's, it doesn't get
+          a lot simpler either.
         </p>
-        <p>Now go build something great!</p>
+        <p>
+          <strong>However, it doesn't have to be this way!</strong> I love
+          writing about making your (developer) life easier. From basic HTML &
+          CSS, to more complicated subjects regarding web-development, I write
+          about all of them.
+        </p>
+        <p>
+          You might know the expression "That's a piece of cake". In Dutch, we
+          have a saying that goes likewise. Roughly translated back to English,
+          it says <strong>"That's an Egg"</strong>. With my writing, I want to
+          make you feel confident in your ability as a developer and think;
+          "That's an Egg!".
+        </p>
         <Link to="/blog/">
-          <Button marginTop="35px">Go to Blog</Button>
+          <Button>That's an Egg Blog</Button>
         </Link>
       </Layout>
     )
