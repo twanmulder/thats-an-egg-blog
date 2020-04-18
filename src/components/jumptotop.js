@@ -6,7 +6,7 @@ import { rhythm } from "../utils/typography"
 const StyledButton = styled.button`
   position: fixed;
   right: ${rhythm(1.5)};
-  bottom: -${rhythm(3)};
+  bottom: ${rhythm(1.5)};
   width: ${rhythm(2)};
   height: ${rhythm(2)};
   background: #fec150;
@@ -18,14 +18,16 @@ const StyledButton = styled.button`
   font-weight: 900;
   line-height: ${rhythm(2)};
   border: 0;
-  transition: 0.3s bottom ease-in-out;
+  transform: translateY(${rhythm(5)});
+  transition: 0.3s transform ease-in-out;
+  will-change: transform;
 
   &:hover {
     background: rgba(254, 193, 80, 0.9);
   }
 
   &.in-view {
-    bottom: ${rhythm(1.5)};
+    transform: translateY(0);
   }
 
   &:focus {
