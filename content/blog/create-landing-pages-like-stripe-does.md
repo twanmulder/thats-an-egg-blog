@@ -132,7 +132,7 @@ And we did it! Using some simple styling on our text and image, we now have a pa
 
 <iframe
      src="https://codesandbox.io/embed/result-recreating-stripe-using-simple-css-zcr8l?autoresize=1&fontsize=14&hidenavigation=1&theme=dark&view=preview"
-     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     style="height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="\[Result] - Recreating Stripe using simple CSS"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
