@@ -18,6 +18,7 @@ const StyledButton = styled.button`
   font-weight: 900;
   line-height: ${rhythm(2)};
   border: 0;
+  cursor: pointer;
   transform: translateY(${rhythm(5)});
   transition: 0.3s transform ease-in-out;
   will-change: transform;
