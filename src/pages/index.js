@@ -1,11 +1,38 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, StaticQuery, graphql } from "gatsby"
+import Image from "gatsby-image"
+import styled from "styled-components"
+
+import { rhythm } from "../utils/typography"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Button from "../components/button"
 
-class IndexPage extends React.Component {
+const avatarQuery = graphql`
+  query AvatarQuery {
+    avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+      childImageSharp {
+        fixed(width: 75, height: 75) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+`
+
+const StyledHeader = styled.h1`
+  @media (min-width: 42rem) {
+    display: flex !important;
+    align-items: center;
+
+    .gatsby-image-wrapper {
+      margin: 0 ${rhythm(3 / 4)} 0 0 !important;
+    }
+  }
+`
+
+export default class IndexPage extends React.Component {
   render() {
     const oneDay = 24 * 60 * 60 * 1000 // hours*minutes*seconds*milliseconds
     const firstDate = new Date(2019, 3, 1)
@@ -18,12 +45,34 @@ class IndexPage extends React.Component {
           title="Home"
           keywords={[`developer`, `portfolio`, `javascript`, `react`, `blog`]}
         />
-        <h1>
-          Hey there, I'm Twan{" "}
+        <StyledHeader>
+          <StaticQuery
+            query={avatarQuery}
+            render={data => {
+              return (
+                <Image
+                  fixed={data.avatar.childImageSharp.fixed}
+                  alt="Twan Mulder"
+                  style={{
+                    marginRight: "auto",
+                    marginLeft: "auto",
+                    marginBottom: rhythm(3 / 4),
+                    minWidth: 75,
+                    borderRadius: `100%`,
+                    display: `block`,
+                  }}
+                  imgStyle={{
+                    borderRadius: `50%`,
+                  }}
+                />
+              )
+            }}
+          />
+          <span>Hey there, I'm Twan </span>
           <span role="img" aria-label="wave emoji">
-            👋
+            ✌️
           </span>
-        </h1>
+        </StyledHeader>
         <p>
           <strong>
             I'm a Creative Developer and Technical CRO Consultant from the
@@ -62,5 +111,3 @@ class IndexPage extends React.Component {
     )
   }
 }
-
-export default IndexPage
