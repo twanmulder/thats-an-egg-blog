@@ -50,9 +50,6 @@ module.exports = {
           },
           {
             resolve: `gatsby-remark-vscode`,
-            options: {
-              theme: "Red",
-            },
           },
           {
             resolve: `gatsby-remark-copy-linked-files`,
