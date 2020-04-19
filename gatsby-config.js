@@ -39,7 +39,9 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
+              maxWidth: 630,
+              withWebp: true,
+              showCaptions: true,
             },
           },
           {
@@ -50,6 +52,9 @@ module.exports = {
           },
           {
             resolve: `gatsby-remark-vscode`,
+            options: {
+              theme: "Solarized Light",
+            },
           },
           {
             resolve: `gatsby-remark-copy-linked-files`,
