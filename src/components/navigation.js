@@ -28,28 +28,26 @@ const StyledListItem = styled.li`
   }
 `
 
-export default class Navigation extends React.Component {
-  render() {
-    return (
-      <StyledNavigation>
-        <Link
-          to="/"
-          style={{
-            ...scale(1.25),
-            marginTop: 0,
-            boxShadow: "none",
-          }}
-        >
-          <span role="img" aria-label="egg cooking emoji">
-            🍳
-          </span>
-        </Link>
-        <StyledList>
-          <StyledListItem>
-            <Link to="/blog">Writing</Link>
-          </StyledListItem>
-        </StyledList>
-      </StyledNavigation>
-    )
-  }
+export default function Navigation() {
+  return (
+    <StyledNavigation>
+      <Link
+        to="/"
+        style={{
+          ...scale(1.25),
+          marginTop: 0,
+          boxShadow: "none",
+        }}
+      >
+        <span role="img" aria-label="egg cooking emoji">
+          🍳
+        </span>
+      </Link>
+      <StyledList>
+        <StyledListItem>
+          <Link to="/blog">Writing</Link>
+        </StyledListItem>
+      </StyledList>
+    </StyledNavigation>
+  )
 }
