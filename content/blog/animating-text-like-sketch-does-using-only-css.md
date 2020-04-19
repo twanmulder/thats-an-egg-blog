@@ -4,7 +4,7 @@ date: 2020-04-19T18:12:22.007Z
 title: Animating text like Sketch does using only CSS
 description: Using CSS to create a beautiful staggering text animation.
 ---
-![The homepage of "Sketch", animating their hero title](assets/sketch-homepage.gif "Sketch’s landing page, which we’ll be recreating (partly)")
+![The homepage of "Sketch", animating their hero title](../../assets/sketch-homepage.gif "Sketch’s landing page, which we’ll be recreating (partly)")
 
 As a front-end developer/designer, I mostly use Figma or Adobe XD at my place of work. Recently though, I found myself wanting to try out Sketch. Landing on [their homepage](https://www.sketch.com/), there was a *staggering* text animation happening. As a small challenge to myself, I tried recreating it and sharing this process with you.
 
