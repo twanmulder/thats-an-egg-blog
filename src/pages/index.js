@@ -69,7 +69,7 @@ export default class IndexPage extends React.Component {
             }}
           />
           <span>Hey there, I'm Twan </span>
-          <span role="img" aria-label="wave emoji">
+          <span role="img" aria-label="peace emoji">
             ✌️
           </span>
         </StyledHeader>

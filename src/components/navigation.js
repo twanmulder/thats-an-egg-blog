@@ -40,7 +40,7 @@ export default class Navigation extends React.Component {
             boxShadow: "none",
           }}
         >
-          <span role="img" aria-label="egg emoji">
+          <span role="img" aria-label="egg cooking emoji">
             🍳
           </span>
         </Link>
