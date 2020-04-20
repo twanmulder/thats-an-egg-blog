@@ -4,18 +4,18 @@ import styled from "styled-components"
 import { rhythm } from "../utils/typography"
 
 const StyledButton = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   right: ${rhythm(1.5)};
   bottom: ${rhythm(1.5)};
   width: ${rhythm(2)};
   height: ${rhythm(2)};
-  background: #fec150;
-  box-shadow: none;
-  border-radius: 100%;
   color: #fff;
-  font-size: ${rhythm(1)};
-  font-weight: 900;
-  line-height: ${rhythm(2)};
+  background: #fec150;
+  text-align: left;
+  border-radius: 100%;
   border: 0;
   cursor: pointer;
   transform: translateY(${rhythm(5)});
@@ -69,7 +69,7 @@ export default class JumpToTop extends React.Component {
       <StyledButton className={inView && "in-view"} onClick={this.handleClick}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="100%"
+          width="24"
           height="24"
           viewBox="0 0 24 24"
           fill="none"
