@@ -27,14 +27,14 @@ The way this animation is created, is using a “word” element inside a “wor
 
 So we’ll first create a “textWrapper”, which contains the entire sentence we want to display.
 
-```html
+``` html
 <div class="textWrapper">
 </div>
 ```
 
 Inside of this, we will place a “wordContainer” for every single word of the phrase. This is the container of which we want to hide the overflow.
 
-```html
+``` html
 <div class="textWrapper">
    <div class="wordContainer"></div>
    <div class="wordContainer"></div>
@@ -45,7 +45,7 @@ Inside of this, we will place a “wordContainer” for every single word of the
 
 Inside the “wordContainer”, we will place a “word” element, containing the correct word and a non-breakable space character, which allows us to use spaces using flex-box.
 
-```html
+``` html
 <div class="textWrapper">
    <div class="wordContainer">
       <div class="word">

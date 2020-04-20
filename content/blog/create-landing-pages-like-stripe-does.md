@@ -31,7 +31,7 @@ The main focus of this article will be on recreating the angled background. You 
 
 So to start off, we’ll create a “block” element. We give this a pretty gradient and let it fill the entire page.
 
-```html
+``` html
 <div class="block">
 </div>
 ```
@@ -40,7 +40,7 @@ Easy.
 
 Inside this “block”, we’ll be putting 4 elements(spans), which will be the solid coloured blocks you can find spread around the page.
 
-```html
+``` html
 <div class="block">
    <span></span>
    <span></span>
@@ -51,7 +51,7 @@ Inside this “block”, we’ll be putting 4 elements(spans), which will be the
 
 On top of this background block, a text element is created which contains our headline, and just below that a small sentence.
 
-```html
+``` html
 <div class="block">
    ...
 </div>
@@ -65,7 +65,7 @@ On top of this background block, a text element is created which contains our he
 
 Now that we’ve got out text, the only thing left will be the image. I’ve kindly ripped it off their own website, and added it inside our HTML.
 
-```html
+``` html
 <div class="block">
    ...
 </div>
