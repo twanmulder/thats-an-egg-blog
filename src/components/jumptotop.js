@@ -12,7 +12,6 @@ const StyledButton = styled.button`
   background: #fec150;
   box-shadow: none;
   border-radius: 100%;
-  text-align: center;
   color: #fff;
   font-size: ${rhythm(1)};
   font-weight: 900;
@@ -70,7 +69,7 @@ export default class JumpToTop extends React.Component {
       <StyledButton className={inView && "in-view"} onClick={this.handleClick}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="24"
+          width="100%"
           height="24"
           viewBox="0 0 24 24"
           fill="none"
