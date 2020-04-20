@@ -80,7 +80,11 @@ export default class IndexPage extends React.Component {
           </strong>
           <br />
           Currently, I've been employed at{" "}
-          <a href="https://stormdigital.nl" target="_blank">
+          <a
+            href="https://stormdigital.nl"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Storm Digital
           </a>{" "}
           for {diffDays} days.
