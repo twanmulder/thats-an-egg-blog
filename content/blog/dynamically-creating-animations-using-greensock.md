@@ -185,4 +185,4 @@ So far, we’ve created a very neat, dynamically generated text animation. We di
 
 Thank you for reading!
 
-![Blue banner image showing the logo of the company "Sketch"](../../assets/sketch-banner-blue.png "Blue banner image showing the logo of the company \"Sketch\"")
+![Blue banner image showing the logo of the company "Sketch"](../../assets/sketch-banner-blue.png "Blue banner image showing the logo of the company Sketch")
