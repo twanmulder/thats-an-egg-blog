@@ -87,7 +87,7 @@ for (let i = 0; i < sentence.length; i++) {
 }
 ```
 
-You can see we add a *non-breakable space character* (&nbsp) inside the <p> tag, this way we don’t have to add them to every single word inside our array.
+You can see we add a *non-breakable space character* (&nbsp) inside the "p" tag, this way we don’t have to add them to every single word inside our array.
 
 Finally, we add this “content” to our “textWrapperContent” variable and set the textWrappers innerHTML to be equal to that “textWrapperContent” variable.
 
