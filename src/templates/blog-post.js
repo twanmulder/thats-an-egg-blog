@@ -35,9 +35,14 @@ class BlogPostTemplate extends React.Component {
           <MDXRenderer>{post.body}</MDXRenderer>
           <hr
             style={{
-              marginBottom: rhythm(1),
+              marginBottom: rhythm(1.5),
             }}
           />
+          <h3 style={{ marginTop: rhythm(1.5) }}>
+            <Link to="/blog" style={{ boxShadow: `none` }}>
+              That's an Egg
+            </Link>
+          </h3>
           <Bio />
 
           <ul
@@ -46,6 +51,7 @@ class BlogPostTemplate extends React.Component {
               flexWrap: `wrap`,
               justifyContent: `space-between`,
               listStyle: `none`,
+              marginTop: rhythm(1.5),
               padding: 0,
             }}
           >
