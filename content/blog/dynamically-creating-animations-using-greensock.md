@@ -30,7 +30,7 @@ That’s all you’ll need 😄
 
 First off, we’ll be starting with creating a so-called “textWrapper”. Inside it is where we’ll place the entire sentence.
 
-``` html
+```html
 <div class="textWrapper">
 </div>
 ```
@@ -43,7 +43,8 @@ So far, nothing crazy. With some simple CSS styling, we get a page looking like 
      title="CSS Animation, appearing text through &quot;overflow: hidden&quot;"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-   ></iframe> 
+   >
+</iframe> 
 
 ## Setting up Javascript
 
@@ -55,27 +56,27 @@ So to fully understand how we will create this effect, I highly recommend readin
 
 To start off, we define a sentence that we want to display. In this case, we’ll use “The best products start with Sketch”. We’ll put it in an array like this:
 
-``` javascript
+```javascript
 let sentence = ["The", "best", "products", "start", "with", "Sketch"];
 ```
 
 Next, we’ll find and define our “textWrapper” and set up the soon to be textWrapperContent.
 
-``` javascript
+```javascript
 let textWrapper = document.querySelector(".textWrapper");
 let textWrapperContent = "";
 ```
 
 After this, we want to create a “wordContainer” element and a “word” element for every single word in the sentence array. We’ll use a FOR loop for this.
 
-``` javascript
+```javascript
 for (let i = 0; i < sentence.length; i++) {
 }
 ```
 
 Inside this FOR loop, we define our content and fill it with the “wordContainer” and “word” elements, plus the word it should contain.
 
-``` javascript
+```javascript
 for (let i = 0; i < sentence.length; i++) {
    let content = `
       <div class="wordContainer">
@@ -90,7 +91,7 @@ You can see we add a *non-breakable space character* (&nbsp) inside the <p> tag,
 
 Finally, we add this “content” to our “textWrapperContent” variable and set the textWrappers innerHTML to be equal to that “textWrapperContent” variable.
 
-``` javascript
+```javascript
 for (let i = 0; i < sentence.length; i++) {
    let content = `
       <div class="wordContainer">
@@ -111,7 +112,8 @@ So now, we have a page filled with our sentence, containing a “wordContainer�
      title="CSS Animation, appearing text through &quot;overflow: hidden&quot;"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-   ></iframe>
+   >
+</iframe>
 
 ## **Animating using GSAP**
 
@@ -127,8 +129,8 @@ Next to this, GSAP allows for a method called “Stagger”. This will take a nu
 
 First, we import GSAP. I did this [using NPM](https://greensock.com/docs/NPMUsage/), but you can also use [a CDN](https://greensock.com/get-started/#loading-gsap).
 
-``` javascript
-import { TimelineMax, Circ } from "gsap/all";
+```javascript
+import { timeline, Circ } from "gsap/all";
 import "gsap/CSSPlugin";
 ```
 
@@ -136,7 +138,7 @@ We import the TimelineMax so we can use a Timeline, the “Circ” because we wa
 
 Then, we create a new timeline and define our easing.
 
-``` javascript
+```javascript
 let tl = gsap.timeline(),
     easing = Circ.easeInOut;
 ```
@@ -151,7 +153,7 @@ let tl = gsap.timeline(),
 
 Now, using GSAPs “Stagger” method, we can animate all the “word” elements!
 
-``` javascript
+```javascript
 tl.to(
    words,
    {
@@ -175,7 +177,8 @@ And that’s all there is to it!
      title="Dynamically animating text using GSAP"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-   ></iframe>
+   >
+</iframe>
 
 Now, I highly recommend you to fork this Sandbox and started tinkering on your own! Start with adding/removing/changing words inside the sentence array and see what happens 😄
 
@@ -185,4 +188,4 @@ So far, we’ve created a very neat, dynamically generated text animation. We di
 
 Thank you for reading!
 
-![Banner containing the logo of "Sketch"](../../assets/sketch-banner-blue.png "blue Sketch banner")
+![Banner containing the logo of Sketch](../../assets/sketch-banner-blue.png "blue Sketch banner")
