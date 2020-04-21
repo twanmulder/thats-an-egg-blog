@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import styled from "styled-components"
 
 import { rhythm } from "../utils/typography"
@@ -11,7 +12,6 @@ export default function Footer() {
   return (
     <StyledFooter>
       <p>
-        You can find me on&nbsp;
         <a
           href="https://twitter.com/toktoktwan"
           target="_blank"
@@ -19,7 +19,7 @@ export default function Footer() {
         >
           Twitter
         </a>
-        &nbsp;and&nbsp;
+        &nbsp;•&nbsp;
         <a
           href="https://github.com/twanmulder"
           target="_blank"
@@ -27,7 +27,8 @@ export default function Footer() {
         >
           GitHub
         </a>
-        .
+        &nbsp;•&nbsp;
+        <Link to="/privacypolicy">Privacy Policy</Link>
       </p>
     </StyledFooter>
   )
