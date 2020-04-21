@@ -30,7 +30,7 @@ That’s all you’ll need 😄
 
 First off, we’ll be starting with creating a so-called “textWrapper”. Inside it is where we’ll place the entire sentence.
 
-```html
+``` html
 <div class="textWrapper">
 </div>
 ```
