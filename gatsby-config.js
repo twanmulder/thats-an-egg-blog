@@ -4,12 +4,13 @@ module.exports = {
     title: `That's an Egg`,
     author: `Twan Mulder`,
     description: `That's an Egg blog, articles making your developer life easier.`,
-    siteUrl: `https://thatsanegg.com//`,
+    siteUrl: `https://thatsanegg.com`,
     social: {
       twitter: `toktoktwan`,
     },
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
