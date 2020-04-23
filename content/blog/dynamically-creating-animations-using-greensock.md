@@ -57,13 +57,13 @@ So to fully understand how we will create this effect, I highly recommend readin
 To start off, we define a sentence that we want to display. In this case, we’ll use “The best products start with Sketch”. We’ll put it in an array like this:
 
 ```javascript
-let sentence = ["The", "best", "products", "start", "with", "Sketch"];
+const sentence = ["The", "best", "products", "start", "with", "Sketch"];
 ```
 
 Next, we’ll find and define our “textWrapper” and set up the soon to be textWrapperContent.
 
 ```javascript
-let textWrapper = document.querySelector(".textWrapper");
+const textWrapper = document.querySelector(".textWrapper");
 let textWrapperContent = "";
 ```
 
@@ -139,14 +139,14 @@ We import the TimelineMax so we can use a Timeline, the “Circ” because we wa
 Then, we create a new timeline and define our easing.
 
 ```javascript
-let tl = gsap.timeline(),
+const tl = gsap.timeline(),
     easing = Circ.easeInOut;
 ```
 
 After this, we set a “words” variable, which finds all the “word” elements and puts them inside an array.
 
 ```javascript
-let tl = gsap.timeline(),
+const tl = gsap.timeline(),
     easing = Circ.easeInOut,
     words = document.querySelectorAll(".word");
 ```
