@@ -25,7 +25,7 @@ export default function PrivacyPolicy() {
         This website tracks basic information about its visitors. This
         information includes, but is not limited to, IP addresses, browser
         details, timestamps and referring pages. None of this information can
-        personally identify specific the user to this website. The information
+        personally identify the specific user to this website. The information
         is tracked for routine administration and maintenance purposes.
       </p>
       <h3>Cookies</h3>
@@ -52,8 +52,7 @@ export default function PrivacyPolicy() {
         future, which will be in effect immediately after being posted on this
         page. I reserve the right to update or change my Privacy Policy at any
         time and you should check this Privacy Policy periodically. If I make
-        any material changes to this Privacy Policy, I will notify you either
-        through the email address you have provided me, or by placing a
+        any material changes to this Privacy Policy, I will notify you by placing a
         prominent notice on my website.
       </p>
       <h3>Contact Information</h3>
