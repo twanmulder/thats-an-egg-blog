@@ -83,7 +83,7 @@ That’s all for the HTML! We’ve created our background, a text element, and a
 
 ![Stripe's homepage recreated, without styling](../../assets/stripe-progress-1.png)
 
-## **CSS Styling**
+## CSS Styling
 
 *Making it pretty*
 
