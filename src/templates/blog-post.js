@@ -1,6 +1,7 @@
 import React, { Fragment } from "react"
 import { Link, graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
+import styled from "styled-components"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -9,72 +10,65 @@ import JumpToTop from "../components/jumptotop"
 
 import { rhythm, scale } from "../utils/typography"
 
-class BlogPostTemplate extends React.Component {
-  render() {
-    const post = this.props.data.mdx
-    const { previous, next } = this.props.pageContext
+const StyledPostNavigation = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  margin-top: ${rhythm(1.5)};
+  padding: 0;
+`
 
-    return (
-      <Fragment>
-        <Layout hideFooter={true}>
-          <SEO
-            title={post.frontmatter.title}
-            description={post.frontmatter.description || post.excerpt}
-          />
-          <h1>{post.frontmatter.title}</h1>
-          <p
-            style={{
-              ...scale(-1 / 5),
-              display: `block`,
-              marginBottom: rhythm(1),
-              marginTop: rhythm(-1),
-            }}
-          >
-            {post.frontmatter.date}
-          </p>
-          <MDXRenderer>{post.body}</MDXRenderer>
-          <hr
-            style={{
-              marginBottom: rhythm(1.5),
-            }}
-          />
-          <h3 style={{ marginTop: rhythm(1.5) }}>
-            <Link to="/blog" style={{ boxShadow: `none` }}>
-              That's an Egg
-            </Link>
-          </h3>
-          <Bio />
+function BlogPostTemplate(props) {
+  const post = props.data.mdx
+  const { previous, next } = props.pageContext
 
-          <ul
-            style={{
-              display: `flex`,
-              flexWrap: `wrap`,
-              justifyContent: `space-between`,
-              listStyle: `none`,
-              marginTop: rhythm(1.5),
-              padding: 0,
-            }}
-          >
-            <li>
-              {previous && (
-                <Link to={`blog${previous.fields.slug}`} rel="prev">
-                  ← {previous.frontmatter.title}
-                </Link>
-              )}
-            </li>
-            <li>
-              {next && (
-                <Link to={`blog${next.fields.slug}`} rel="next">
-                  {next.frontmatter.title} →
-                </Link>
-              )}
-            </li>
-          </ul>
-        </Layout>
-        <JumpToTop />
-      </Fragment>
-    )
-  }
+  return (
+    <Fragment>
+      <Layout hideFooter={true}>
+        <SEO
+          title={post.frontmatter.title}
+          description={post.frontmatter.description || post.excerpt}
+        />
+        <h1>{post.frontmatter.title}</h1>
+        <p
+          style={{
+            ...scale(-1 / 5),
+            display: `block`,
+            marginBottom: rhythm(1),
+            marginTop: rhythm(-1),
+          }}
+        >
+          {post.frontmatter.date}
+        </p>
+        <MDXRenderer>{post.body}</MDXRenderer>
+        <hr style={{ marginBottom: rhythm(1.5) }} />
+        <h3 style={{ marginTop: rhythm(1.5) }}>
+          <Link to="/blog" style={{ boxShadow: `none` }}>
+            That's an Egg
+          </Link>
+        </h3>
+        <Bio />
+        <StyledPostNavigation>
+          <li>
+            {previous && (
+              <Link to={`blog${previous.fields.slug}`} rel="prev">
+                ← {previous.frontmatter.title}
+              </Link>
+            )}
+          </li>
+          <li>
+            {next && (
+              <Link to={`blog${next.fields.slug}`} rel="next">
+                {next.frontmatter.title} →
+              </Link>
+            )}
+          </li>
+        </StyledPostNavigation>
+      </Layout>
+      <JumpToTop />
+    </Fragment>
+  )
 }
 
 export default BlogPostTemplate
