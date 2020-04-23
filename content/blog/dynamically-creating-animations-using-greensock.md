@@ -26,7 +26,7 @@ These are the steps we will be following:
 
 That’s all you’ll need 😄
 
-## **HTML Layout**
+## HTML Layout
 
 First off, we’ll be starting with creating a so-called “textWrapper”. Inside it is where we’ll place the entire sentence.
 
@@ -115,7 +115,7 @@ So now, we have a page filled with our sentence, containing a “wordContainer�
    >
 </iframe>
 
-## **Animating using GSAP**
+## Animating using GSAP
 
 So we’ve created our sentence dynamically, now let’s start animating it using GSAP!
 
