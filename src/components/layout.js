@@ -6,28 +6,26 @@ import Footer from "./footer"
 
 import { rhythm } from "../utils/typography"
 
-class Layout extends React.Component {
-  render() {
-    const { children } = this.props
-    const hideFooter = this.props.hideFooter || false
+function Layout(props) {
+  const { children } = props
+  const hideFooter = props.hideFooter || false
 
-    return (
-      <Wrapper>
-        <div
-          style={{
-            marginLeft: `auto`,
-            marginRight: `auto`,
-            maxWidth: rhythm(24),
-            padding: `${rhythm(4.5)} ${rhythm(3 / 4)}`,
-          }}
-        >
-          <Navigation />
-          <main>{children}</main>
-          {!hideFooter && <Footer />}
-        </div>
-      </Wrapper>
-    )
-  }
+  return (
+    <Wrapper>
+      <div
+        style={{
+          marginLeft: `auto`,
+          marginRight: `auto`,
+          maxWidth: rhythm(24),
+          padding: `${rhythm(4.5)} ${rhythm(3 / 4)}`,
+        }}
+      >
+        <Navigation />
+        <main>{children}</main>
+        {!hideFooter && <Footer />}
+      </div>
+    </Wrapper>
+  )
 }
 
 const Wrapper = styled.div`
