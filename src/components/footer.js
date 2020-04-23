@@ -8,6 +8,10 @@ const StyledFooter = styled.footer`
   margin-top: ${rhythm(1.5)};
 `
 
+const RSSLink = styled(Link)`
+  float: right;
+`
+
 export default function Footer() {
   return (
     <StyledFooter>
@@ -29,6 +33,7 @@ export default function Footer() {
         </a>
         &nbsp;•&nbsp;
         <Link to="/privacypolicy">Privacy Policy</Link>
+        <RSSLink to="/rss.xml">RSS</RSSLink>
       </p>
     </StyledFooter>
   )
