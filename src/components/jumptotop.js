@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 
 import { rhythm } from "../utils/typography"
@@ -35,54 +35,48 @@ const StyledButton = styled.button`
   }
 `
 
-export default class JumpToTop extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = { inView: false }
+function JumpToTop() {
+  const [inView, setInView] = useState(false)
 
-    this.handleScroll = this.handleScroll.bind(this)
-  }
-
-  componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll)
-  }
-  componentWillUnmount() {
-    window.removeEventListener("scroll", this.handleScroll)
-  }
-
-  handleScroll() {
-    if (!this.state.inView && document.documentElement.scrollTop > 500) {
-      this.setState({ inView: true })
+  const handleScroll = () => {
+    if (!inView && document.documentElement.scrollTop > 500) {
+      setInView(true)
     }
-    if (this.state.inView && document.documentElement.scrollTop <= 500) {
-      this.setState({ inView: false })
+    if (inView && document.documentElement.scrollTop <= 500) {
+      setInView(false)
     }
   }
 
-  handleClick() {
+  const handleClick = () => {
     window.scrollTo(0, 0)
   }
 
-  render() {
-    const inView = this.state.inView
-    return (
-      <StyledButton className={inView && "in-view"} onClick={this.handleClick}>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          className="feather feather-arrow-up"
-        >
-          <line x1="12" y1="19" x2="12" y2="5"></line>
-          <polyline points="5 12 12 5 19 12"></polyline>
-        </svg>
-      </StyledButton>
-    )
-  }
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll)
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+    }
+  })
+
+  return (
+    <StyledButton className={inView && "in-view"} onClick={handleClick}>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="feather feather-arrow-up"
+      >
+        <line x1="12" y1="19" x2="12" y2="5"></line>
+        <polyline points="5 12 12 5 19 12"></polyline>
+      </svg>
+    </StyledButton>
+  )
 }
+
+export default JumpToTop
