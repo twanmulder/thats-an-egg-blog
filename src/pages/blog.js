@@ -14,7 +14,7 @@ class Blog extends React.Component {
       <Layout>
         <SEO title="All posts" />
         <h1>That's an Egg</h1>
-        <div style={{ margin: "20px 0 40px" }}>
+        <div style={{ margin: `${rhythm(1.5)} 0 ${rhythm(3)}` }}>
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
             return (
