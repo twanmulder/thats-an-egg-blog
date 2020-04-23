@@ -91,7 +91,7 @@ And that’s all for the first step! We now have created our first animation (ca
 
 The only thing we need to do now, is add this animation to an already existing element.
 
-## **Adding the animation to an element**
+## Adding the animation to an element
 
 So now that we’ve created our first animation, let’s add it to an element! This can be anything you want. Think of text, a background-image, or even your entire webpage.
 
