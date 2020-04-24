@@ -8,6 +8,10 @@ const StyledNavigation = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  a {
+    color: ${bodyColor};
+  }
 `
 
 const StyledList = styled.ul`
@@ -21,10 +25,6 @@ const StyledListItem = styled.li`
 
   &:not(:last-child) {
     padding-right: ${rhythm(1.5)};
-  }
-
-  a {
-    color: ${bodyColor};
   }
 `
 
