@@ -59,7 +59,11 @@ function JumpToTop() {
   })
 
   return (
-    <StyledButton className={inView && "in-view"} onClick={handleClick}>
+    <StyledButton
+      name="Jump to top"
+      className={inView && "in-view"}
+      onClick={handleClick}
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
