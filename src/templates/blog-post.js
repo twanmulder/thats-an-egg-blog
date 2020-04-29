@@ -6,6 +6,7 @@ import styled from "styled-components"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import NewsletterForm from "../components/newsletterform"
 import JumpToTop from "../components/jumptotop"
 
 import { rhythm, scale } from "../utils/typography"
@@ -43,6 +44,7 @@ function BlogPostTemplate(props) {
         </p>
         <MDXRenderer>{post.body}</MDXRenderer>
         <hr style={{ marginBottom: rhythm(1.5) }} />
+        <NewsletterForm />
         <h3 style={{ marginTop: rhythm(1.5) }}>
           <Link to="/blog" style={{ boxShadow: `none` }}>
             That's an Egg

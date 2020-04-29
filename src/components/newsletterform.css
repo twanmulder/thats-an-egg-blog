@@ -1,0 +1,40 @@
+form {
+  background-color: rgb(255, 255, 255);
+  border-radius: 6px;
+}
+
+.formkit-background {
+  background-image: url("https://embed.filekitcdn.com/e/54WeEgYmZjQkQ8vrRWiMcs/9sEDyWNfACmaGYhHJtRmMo");
+}
+
+.formkit-header {
+  color: rgb(22, 22, 22);
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.formkit-input {
+  color: rgb(22, 22, 22);
+  border-color: rgb(254, 193, 80);
+  font-weight: 400;
+}
+
+.formkit-submit {
+  color: rgb(22, 22, 22);
+  background-color: rgb(254, 193, 80);
+  border-radius: 3px;
+  font-weight: 700;
+}
+
+.formkit-disclaimer {
+  color: rgb(64, 64, 64);
+  font-size: 12px;
+}
+
+.formkit-header h1 {
+  margin-top: 0;
+}
+
+.formkit-powered-by {
+  display: none;
+}
