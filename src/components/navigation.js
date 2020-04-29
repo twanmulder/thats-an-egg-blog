@@ -45,6 +45,9 @@ export default function Navigation() {
       </Link>
       <StyledList>
         <StyledListItem>
+          <Link to="/newsletter">Newsletter</Link>
+        </StyledListItem>
+        <StyledListItem>
           <Link to="/blog">Writing</Link>
         </StyledListItem>
       </StyledList>
