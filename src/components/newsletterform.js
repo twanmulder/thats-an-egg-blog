@@ -13,10 +13,10 @@ function NewsletterForm() {
       data-uid="812b8a9345"
       data-version="5"
       min-width="400 500 600 700 800"
-      autocomplete="off"
+      autoComplete="off"
     >
       <input
-        autocomplete="off"
+        autoComplete="off"
         name="hidden"
         type="text"
         style={{ display: `none` }}
