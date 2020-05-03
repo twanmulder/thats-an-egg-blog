@@ -2,6 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
+import DarkmodeToggle from "./darkmodetoggle"
+
 import { scale, rhythm, bodyColor } from "../utils/typography"
 
 const StyledNavigation = styled.nav`
@@ -44,6 +46,7 @@ export default function Navigation() {
         </span>
       </Link>
       <StyledList>
+        <DarkmodeToggle />
         <StyledListItem>
           <Link to="/newsletter">Newsletter</Link>
         </StyledListItem>
