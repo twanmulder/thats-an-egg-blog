@@ -46,13 +46,13 @@ export default function Navigation() {
         </span>
       </Link>
       <StyledList>
-        <DarkmodeToggle />
         <StyledListItem>
           <Link to="/newsletter">Newsletter</Link>
         </StyledListItem>
         <StyledListItem>
           <Link to="/blog">Writing</Link>
         </StyledListItem>
+        <DarkmodeToggle />
       </StyledList>
     </StyledNavigation>
   )
