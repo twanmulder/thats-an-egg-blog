@@ -22,34 +22,6 @@ const Input = styled.input`
   padding: 0;
   position: absolute;
   width: 1px;
-
-  :checked + .slider {
-    background: #fec150;
-
-    ::before,
-    ::after {
-      transform: translateX(29px);
-    }
-
-    ::before {
-      bottom: 4px;
-      box-shadow: inset 1px -1px 0px 0px #f5f5f5;
-    }
-
-    ::after {
-      box-shadow: inset -1px 1px 0px 0px #ef9220;
-    }
-
-    .moon-icon {
-      opacity: 1;
-      transform: translateX(0);
-    }
-
-    .sun-icon {
-      opacity: 0;
-      transform: translateX(-4px);
-    }
-  }
 `
 
 const Slider = styled.span`

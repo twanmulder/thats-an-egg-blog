@@ -12,3 +12,32 @@ body.dark {
   --buttonBackground: #fec150;
   --buttonColor: #000;
 }
+
+/* COMPLEX BUTTON STYLING */
+body.dark .slider {
+  background: #fec150;
+}
+
+body.dark .slider::before,
+body.dark .slider::after {
+  transform: translateX(29px);
+}
+
+body.dark .slider::before {
+  bottom: 4px;
+  box-shadow: inset 1px -1px 0px 0px #f5f5f5;
+}
+
+body.dark .slider::after {
+  box-shadow: inset -1px 1px 0px 0px #ef9220;
+}
+
+body.dark .slider .moon-icon {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+body.dark .slider .sun-icon {
+  opacity: 0;
+  transform: translateX(-4px);
+}
