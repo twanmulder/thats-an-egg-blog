@@ -1,0 +1,14 @@
+body {
+  --bg: hsl(0, 0%, 99%);
+  --textNormal: hsla(0, 0%, 0%, 0.9);
+  --buttonBackground: #000;
+  --buttonColor: hsl(0, 0%, 90%);
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+body.dark {
+  --bg: hsl(0, 0%, 9%);
+  --textNormal: hsl(0, 0%, 90%);
+  --buttonBackground: #fec150;
+  --buttonColor: #000;
+}

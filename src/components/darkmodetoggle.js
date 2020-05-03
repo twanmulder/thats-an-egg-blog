@@ -14,9 +14,14 @@ const Label = styled.label`
 `
 
 const Input = styled.input`
-  opacity: 0;
-  width: 0;
-  height: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 
   :checked + .slider {
     background: #fec150;

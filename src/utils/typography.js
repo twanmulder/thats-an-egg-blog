@@ -1,12 +1,16 @@
 import Typography from "typography"
 import Wordpress2016 from "typography-theme-wordpress-2016"
 
+import "./darkmodestyling.css"
+
 Wordpress2016.overrideThemeStyles = () => {
   return {
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,
     },
     body: {
+      backgroundColor: `var(--bg)`,
+      color: "var(--textNormal)",
       fontFamily: ["Open Sans", "sans-serif"].join(","),
     },
     "h1,h2,h3,h4,h5,h6": {

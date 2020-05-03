@@ -1,9 +1,10 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
+import { rhythm } from "../utils/typography"
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm, bodyColor } from "../utils/typography"
 
 function Blog(props) {
   const { data } = props
@@ -20,7 +21,7 @@ function Blog(props) {
             <Link to={`blog${node.fields.slug}`} key={node.fields.slug}>
               <h3 style={{ marginBottom: rhythm(1 / 4) }}>{title}</h3>
               <p
-                style={{ color: bodyColor }}
+                style={{ color: `var(--textNormal)` }}
                 dangerouslySetInnerHTML={{
                   __html: node.frontmatter.description || node.excerpt,
                 }}

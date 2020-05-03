@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 import DarkmodeToggle from "./darkmodetoggle"
 
-import { scale, rhythm, bodyColor } from "../utils/typography"
+import { scale, rhythm } from "../utils/typography"
 
 const StyledNavigation = styled.nav`
   display: flex;
@@ -12,7 +12,7 @@ const StyledNavigation = styled.nav`
   justify-content: space-between;
 
   a {
-    color: ${bodyColor};
+    color: var(--textNormal);
   }
 `
 
