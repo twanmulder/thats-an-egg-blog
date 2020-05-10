@@ -61,7 +61,7 @@ There’s this great resource called *[v-fonts.com](https://v-fonts.com/)* where
 
 I found a great font called “Roboto Delta” hosted *[here](https://googlefonts.github.io/fluid/)*. I’ll be using this from here on.
 
-IMAGE OF LETTERS
+![Screenshot of the website "v-fonts.com"](../../assets/v-fonts.png "Screenshot of the website \"v-fonts.com\"")
 
 Once we’ve found our variable font, we can start link to it in our CSS file.
 
