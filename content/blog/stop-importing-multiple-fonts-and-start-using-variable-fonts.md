@@ -180,7 +180,7 @@ Here’s a GIF of the effect if you’re on mobile:
 
 ## Conclusion
 
-Looking back, we’ve used a variable font to create dynamic styling on our webpage. We can do this by importing a variable font in our CSS and then changing its properties using the*“font-variation-settings”*CSS property*.*
+Looking back, we’ve used a variable font to create dynamic styling on our webpage. We can do this by importing a variable font in our CSS and then changing its properties using the *“font-variation-settings”* CSS property*.*
 
 For a more in-depth article, I highly recommend [this](https://developers.google.com/web/fundamentals/design-and-ux/typography/variable-fonts) one by Mustafa Kurtuldu. He’s a Design Advocate at Google.
 
