@@ -14,8 +14,7 @@ function NotFoundPage(props) {
       <h1>Not Found</h1>
       <p>
         Looks like something went wrong. Sorry! You can go&nbsp;
-        <Link to="/">back home</Link> or view&nbsp;
-        <Link to="/blog">all articles</Link>.
+        <Link to="/">back home</Link>.
       </p>
     </Layout>
   )
