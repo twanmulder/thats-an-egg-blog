@@ -26,7 +26,13 @@ const StyledListItem = styled.li`
   margin: 0;
 
   &:not(:last-child) {
-    padding-right: ${rhythm(1.5)};
+    padding-right: ${rhythm(0.75)};
+  }
+
+  @media (min-width: 768px) {
+    &:not(:last-child) {
+      padding-right: ${rhythm(1.5)};
+    }
   }
 `
 
@@ -47,10 +53,10 @@ export default function Navigation() {
       </Link>
       <StyledList>
         <StyledListItem>
-          <Link to="/newsletter">Newsletter</Link>
+          <Link to="/about">About</Link>
         </StyledListItem>
         <StyledListItem>
-          <Link to="/blog">Writing</Link>
+          <Link to="/newsletter">Newsletter</Link>
         </StyledListItem>
         <DarkmodeToggle />
       </StyledList>

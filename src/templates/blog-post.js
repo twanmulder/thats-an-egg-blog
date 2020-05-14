@@ -46,7 +46,7 @@ function BlogPostTemplate(props) {
         <hr style={{ marginBottom: rhythm(1.5) }} />
         <NewsletterForm />
         <h3 style={{ marginTop: rhythm(1.5) }}>
-          <Link to="/blog" style={{ boxShadow: `none` }}>
+          <Link to="/" style={{ boxShadow: `none` }}>
             That's an Egg
           </Link>
         </h3>

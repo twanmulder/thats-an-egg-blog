@@ -34,16 +34,17 @@ function Bio() {
               }}
             />
             <p>
-              Written by me, <strong>{author}</strong>, who lives and works in
-              the Netherlands building cool stuff!
-              {` `}
+              Personal blog by{" "}
               <a
                 href={`https://twitter.com/${social.twitter}`}
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                Try following me on Twitter
+                {author}
               </a>
+              .
+              <br />
+              Making your developer life easier, one article at a time.
             </p>
           </Container>
         )
