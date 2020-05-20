@@ -1,10 +1,23 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, StaticQuery, graphql } from "gatsby"
+import Image from "gatsby-image"
 import styled from "styled-components"
 
 import DarkmodeToggle from "./darkmodetoggle"
 
 import { scale, rhythm } from "../utils/typography"
+
+const logoQuery = graphql`
+  query LogoQuery {
+    avatar: file(absolutePath: { regex: "/egg.png/" }) {
+      childImageSharp {
+        fixed(width: 75, height: 75) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+`
 
 const StyledNavigation = styled.nav`
   display: flex;
@@ -47,8 +60,19 @@ export default function Navigation() {
           boxShadow: "none",
         }}
       >
-        <span role="img" aria-label="egg cooking emoji">
-          🍳
+        <span role="img">
+          <StaticQuery
+            query={logoQuery}
+            render={data => {
+              return (
+                <Image
+                  fixed={data.avatar.childImageSharp.fixed}
+                  alt="That's an Egg logo, a fried egg in a pan"
+                  style={{ display: `block` }}
+                />
+              )
+            }}
+          />
         </span>
       </Link>
       <StyledList>
