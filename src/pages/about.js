@@ -99,7 +99,7 @@ function About() {
       <p>
         <strong>
           {" "}
-          I love writing about making your (developer) life easier.{" "}
+          I love writing about making your developer life easier.{" "}
         </strong>
         From basic HTML & CSS, to more complicated subjects regarding
         web-development, I write about all of them.
