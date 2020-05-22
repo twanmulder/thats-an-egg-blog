@@ -19,6 +19,10 @@ Wordpress2016.overrideThemeStyles = () => {
     a: {
       color: "#fec150",
     },
+    blockquote: {
+      color: "var(--blockquoteColor)",
+      borderColor: "var(--blockquoteBorderColor)",
+    },
   }
 }
 

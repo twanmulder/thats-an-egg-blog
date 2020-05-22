@@ -3,6 +3,7 @@ body {
   --textNormal: hsla(0, 0%, 0%, 0.9);
   --buttonBackground: #000;
   --buttonColor: hsl(0, 0%, 90%);
+  --blockquoteColor: hsl(0, 0%, 40%);
   transition: color 0.2s ease, background-color 0.2s ease;
 }
 
@@ -11,6 +12,8 @@ body.dark {
   --textNormal: hsl(0, 0%, 90%);
   --buttonBackground: #fec150;
   --buttonColor: #000;
+  --blockquoteColor: hsl(0, 0%, 75%);
+  --blockquoteBorderColor: #fec150;
 }
 
 /* COMPLEX BUTTON STYLING */
