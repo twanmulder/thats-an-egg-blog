@@ -60,7 +60,7 @@ function JumpToTop() {
 
   return (
     <StyledButton
-      ariaLabel="Jump to top"
+      aria-label="Jump to top"
       className={inView && "in-view"}
       onClick={handleClick}
     >
