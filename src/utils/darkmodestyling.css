@@ -4,6 +4,7 @@ body {
   --buttonBackground: #000;
   --buttonColor: hsl(0, 0%, 90%);
   --blockquoteColor: hsl(0, 0%, 40%);
+  --blockquoteBorderColor: hsla(0, 0%, 0%, 0.9);
   transition: color 0.2s ease, background-color 0.2s ease;
 }
 
