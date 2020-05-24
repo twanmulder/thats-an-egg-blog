@@ -5,7 +5,7 @@ import styled from "styled-components"
 
 import DarkmodeToggle from "./darkmodetoggle"
 
-import { scale, rhythm } from "../utils/typography"
+import { rhythm } from "../utils/typography"
 
 const logoQuery = graphql`
   query LogoQuery {
