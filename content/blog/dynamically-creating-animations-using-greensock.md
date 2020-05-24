@@ -38,7 +38,7 @@ First off, we’ll be starting with creating a so-called “textWrapper”. Insi
 So far, nothing crazy. With some simple CSS styling, we get a page looking like this:
 
 <iframe
-     src="https://codesandbox.io/embed/css-animation-appearing-text-through-overflow-hidden-y2gyy?autoresize=1&fontsize=14&hidenavigation=1&theme=dark&view=preview&codemirror=1"
+     src="https://codesandbox.io/embed/css-animation-appearing-text-through-overflow-hidden-y2gyy?autoresize=1&fontsize=14&hidenavigation=1&theme=dark&view=preview&codemirror=1&runonclick=1"
      style="height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="CSS Animation, appearing text through &quot;overflow: hidden&quot;"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr"
@@ -107,7 +107,7 @@ textWrapper.innerHTML = textWrapperContent;
 So now, we have a page filled with our sentence, containing a “wordContainer” and “word” element for every single word inside the sentence array.
 
 <iframe
-     src="https://codesandbox.io/embed/css-animation-appearing-text-through-overflow-hidden-yosn8?autoresize=1&fontsize=14&hidenavigation=1&theme=dark&view=preview&codemirror=1"
+     src="https://codesandbox.io/embed/css-animation-appearing-text-through-overflow-hidden-yosn8?autoresize=1&fontsize=14&hidenavigation=1&theme=dark&view=preview&codemirror=1&runonclick=1"
      style="height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="CSS Animation, appearing text through &quot;overflow: hidden&quot;"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr"
@@ -172,7 +172,7 @@ The stagger animation takes an array of elements, which is our “words” varia
 And that’s all there is to it!
 
 <iframe
-     src="https://codesandbox.io/embed/dynamically-animating-text-using-gsap-l7hl4?autoresize=1&fontsize=14&hidenavigation=1&theme=dark&view=preview&codemirror=1"
+     src="https://codesandbox.io/embed/dynamically-animating-text-using-gsap-l7hl4?autoresize=1&fontsize=14&hidenavigation=1&theme=dark&view=preview&codemirror=1&runonclick=1"
      style="height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="Dynamically animating text using GSAP"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr"
