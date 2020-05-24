@@ -96,7 +96,7 @@ Now that we’re ready to use our variable font, let’s see how.
 I’ve created a text-element inside a sandbox to start off.
 
 <iframe
-     src="https://codesandbox.io/embed/step-1-variable-font-weight-using-cursor-position-g750q?autoresize=1&fontsize=14&hidenavigation=1&theme=dark&view=preview&codemirror=1"
+     src="https://codesandbox.io/embed/step-1-variable-font-weight-using-cursor-position-g750q?autoresize=1&fontsize=14&hidenavigation=1&theme=dark&view=preview&codemirror=1&runonclick=1"
      style="height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="Step 1: Variable Font Weight using Cursor Position"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr"
@@ -120,7 +120,7 @@ h1 span {
 In the sandbox below, I’ve set one of the texts font-weight to 100, and the other to 900.
 
 <iframe
-     src="https://codesandbox.io/embed/step-2-variable-font-weight-using-cursor-position-ks3gu?autoresize=1&fontsize=14&hidenavigation=1&theme=dark&view=preview&codemirror=1"
+     src="https://codesandbox.io/embed/step-2-variable-font-weight-using-cursor-position-ks3gu?autoresize=1&fontsize=14&hidenavigation=1&theme=dark&view=preview&codemirror=1&runonclick=1"
      style="height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="Step 2: Variable Font Weight using Cursor Position"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr"
@@ -165,7 +165,7 @@ document.body.addEventListener("mousemove", e => {
 And here we go:
 
 <iframe
-     src="https://codesandbox.io/embed/result-variable-font-weight-using-cursor-position-h6u70?autoresize=1&fontsize=14&hidenavigation=1&theme=dark&view=preview&codemirror=1"
+     src="https://codesandbox.io/embed/result-variable-font-weight-using-cursor-position-h6u70?autoresize=1&fontsize=14&hidenavigation=1&theme=dark&view=preview&codemirror=1&runonclick=1"
      style="height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="Result: Variable Font Weight using Cursor Position"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr"
