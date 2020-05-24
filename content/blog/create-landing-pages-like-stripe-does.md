@@ -131,7 +131,7 @@ Great! Finally, we *skew* the entire background on its Y-axis. This way, we’ll
 And we did it! Using some simple styling on our text and image, we now have a partly recreated replica of Stripes homepage.
 
 <iframe
-     src="https://codesandbox.io/embed/result-recreating-stripe-using-simple-css-zcr8l?autoresize=1&fontsize=14&hidenavigation=1&theme=dark&view=preview&codemirror=1"
+     src="https://codesandbox.io/embed/result-recreating-stripe-using-simple-css-zcr8l?autoresize=1&fontsize=14&hidenavigation=1&theme=dark&view=preview&codemirror=1&runonclick=1"
      style="height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="\[Result] - Recreating Stripe using simple CSS"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr"
