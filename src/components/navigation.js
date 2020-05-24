@@ -22,10 +22,17 @@ const logoQuery = graphql`
 const StyledNavigation = styled.nav`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
+  flex-wrap: wrap;
 
   a {
     color: var(--textNormal);
+    margin-top: 0px;
+    margin-right: auto;
+  }
+
+  > a {
+    box-shadow: none;
   }
 `
 
@@ -37,44 +44,32 @@ const StyledList = styled.ul`
 
 const StyledListItem = styled.li`
   margin: 0;
+  padding-right: ${rhythm(0.75)};
 
   &:not(:last-child) {
-    padding-right: ${rhythm(0.75)};
   }
 
   @media (min-width: 768px) {
-    &:not(:last-child) {
-      padding-right: ${rhythm(1.5)};
-    }
+    padding-right: ${rhythm(1.5)};
   }
 `
 
 export default function Navigation() {
   return (
     <StyledNavigation>
-      <Link
-        to="/"
-        aria-label="Go back to the homepage"
-        style={{
-          ...scale(1.25),
-          marginTop: 0,
-          boxShadow: "none",
-        }}
-      >
-        <span role="img">
-          <StaticQuery
-            query={logoQuery}
-            render={data => {
-              return (
-                <Image
-                  fixed={data.avatar.childImageSharp.fixed}
-                  alt="That's an Egg logo, a fried egg in a pan"
-                  style={{ display: `block` }}
-                />
-              )
-            }}
-          />
-        </span>
+      <Link to="/" aria-label="Go back to the homepage">
+        <StaticQuery
+          query={logoQuery}
+          render={data => {
+            return (
+              <Image
+                fixed={data.avatar.childImageSharp.fixed}
+                alt="That's an Egg logo, a fried egg in a pan"
+                style={{ display: `block` }}
+              />
+            )
+          }}
+        />
       </Link>
       <StyledList>
         <StyledListItem>
@@ -83,8 +78,8 @@ export default function Navigation() {
         <StyledListItem>
           <Link to="/newsletter">Newsletter</Link>
         </StyledListItem>
-        <DarkmodeToggle />
       </StyledList>
+      <DarkmodeToggle />
     </StyledNavigation>
   )
 }
