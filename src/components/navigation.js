@@ -54,6 +54,7 @@ export default function Navigation() {
     <StyledNavigation>
       <Link
         to="/"
+        aria-label="Go back to the homepage"
         style={{
           ...scale(1.25),
           marginTop: 0,
