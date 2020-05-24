@@ -100,7 +100,7 @@ I’ve already created a line of text and a starry background, which we’ll ani
 Here it is:
 
 <iframe
-     src="https://codesandbox.io/embed/step-1-rotating-stars-9gwdb?autoresize=1&fontsize=14&hidenavigation=1&theme=dark&view=preview&codemirror=1"
+     src="https://codesandbox.io/embed/step-1-rotating-stars-9gwdb?autoresize=1&fontsize=14&hidenavigation=1&theme=dark&view=preview&codemirror=1&runonclick=1"
      style="height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="\\\[STEP 1] Rotating Stars"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr"
@@ -154,7 +154,7 @@ For the full list of CSS Animation properties, I highly recommend the [MDN Web D
 So after adding our “fadeIn” animation to the text and stars, this is the result!
 
 <iframe
-     src="https://codesandbox.io/embed/step-2-rotating-stars-du7v1?autoresize=1&fontsize=14&hidenavigation=1&theme=dark&view=preview&codemirror=1"
+     src="https://codesandbox.io/embed/step-2-rotating-stars-du7v1?autoresize=1&fontsize=14&hidenavigation=1&theme=dark&view=preview&codemirror=1&runonclick=1"
      style="height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="\\\[STEP 2] Rotating Stars"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr"
@@ -206,7 +206,7 @@ This is because the background exists of different elements, which we want to an
 Putting it all together, this is the end-result 😄
 
 <iframe
-     src="https://codesandbox.io/embed/result-rotating-stars-nhndw?autoresize=1&fontsize=14&hidenavigation=1&theme=dark&view=preview&codemirror=1"
+     src="https://codesandbox.io/embed/result-rotating-stars-nhndw?autoresize=1&fontsize=14&hidenavigation=1&theme=dark&view=preview&codemirror=1&runonclick=1"
      style="height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="\\[RESULT] Rotating Stars"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr"
