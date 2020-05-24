@@ -64,7 +64,7 @@ Inside the “wordContainer”, we will place a “word” element, containing t
 Using some basic CSS styling, we now have a simple box showing our text.
 
 <iframe
-     src="https://codesandbox.io/embed/css-animation-appearing-text-through-overflow-hidden-65tqm?autoresize=1&fontsize=14&hidenavigation=1&theme=dark&view=preview"
+     src="https://codesandbox.io/embed/css-animation-appearing-text-through-overflow-hidden-65tqm?autoresize=1&fontsize=14&hidenavigation=1&theme=dark&view=preview&codemirror=1"
      style="height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="CSS Animation, appearing text through &quot;overflow: hidden&quot;"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr"
@@ -124,7 +124,7 @@ And finally, we call the animation on the “word”s and add some animation-del
 And that’s it! We did it 🎉
 
 <iframe
-     src="https://codesandbox.io/embed/css-animation-appearing-text-through-overflow-hidden-ojitu?autoresize=1&fontsize=14&hidenavigation=1&theme=dark&view=preview"
+     src="https://codesandbox.io/embed/css-animation-appearing-text-through-overflow-hidden-ojitu?autoresize=1&fontsize=14&hidenavigation=1&theme=dark&view=preview&codemirror=1"
      style="height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="CSS Animation, appearing text through &quot;overflow: hidden&quot;"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr"
