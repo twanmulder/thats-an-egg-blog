@@ -14,7 +14,7 @@ function IndexPage(props) {
   return (
     <Layout>
       <SEO
-        title="Home"
+        title="Articles making your developer life easier"
         keywords={[`developer`, `portfolio`, `javascript`, `react`, `blog`]}
       />
       <h1>That's an Egg</h1>

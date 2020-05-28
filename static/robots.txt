@@ -1,2 +1,3 @@
+Sitemap: https://www.thatsanegg.com/sitemap.xml
 User-agent: *
 Disallow:

@@ -3,7 +3,7 @@ module.exports = {
     // edit below
     title: `That's an Egg`,
     author: `Twan Mulder`,
-    description: `That's an Egg, articles making your developer life easier.`,
+    description: `That's an Egg focuses on making your developer life easier, and a lot more fun!`,
     siteUrl: `https://thatsanegg.com`,
     social: {
       twitter: `toktoktwan`,
