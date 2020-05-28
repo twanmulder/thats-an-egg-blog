@@ -15,9 +15,13 @@ Wordpress2016.overrideThemeStyles = () => {
     },
     "h1,h2,h3,h4,h5,h6": {
       fontFamily: ["Montserrat", "sans-serif"].join(","),
+      color: "var(--textNormal)",
+    },
+    "h2,h3,h4,h5,h6": {
+      fontWeight: typography.options.boldWeight,
     },
     a: {
-      color: "#fec150",
+      color: "var(--textNormal)",
     },
     blockquote: {
       color: "var(--blockquoteColor)",
@@ -43,3 +47,4 @@ export default typography
 export const rhythm = typography.rhythm
 export const scale = typography.scale
 export const bodyColor = typography.options.bodyColor
+export const boldWeight = typography.options.boldWeight

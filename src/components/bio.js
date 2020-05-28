@@ -33,7 +33,7 @@ function Bio() {
                 borderRadius: `50%`,
               }}
             />
-            <p>
+            <p style={{ marginBottom: "0" }}>
               Personal blog by{" "}
               <a
                 href={`https://twitter.com/${social.twitter}`}
