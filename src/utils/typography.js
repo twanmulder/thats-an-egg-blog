@@ -23,6 +23,10 @@ Wordpress2016.overrideThemeStyles = () => {
       color: "var(--blockquoteColor)",
       borderColor: "var(--blockquoteBorderColor)",
     },
+    "::selection": {
+      color: "var(--selectionColor)",
+      backgroundColor: "var(--selectionBackgroundColor)",
+    },
   }
 }
 
