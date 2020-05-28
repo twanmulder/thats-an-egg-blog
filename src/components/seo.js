@@ -91,11 +91,11 @@ function SEO({ description, lang, meta, keywords, title }) {
                 },
                 {
                   property: "og:image:width",
-                  content: image.width,
+                  content: "1200",
                 },
                 {
                   property: "og:image:height",
-                  content: image.height,
+                  content: "630",
                 },
                 {
                   name: "twitter:card",
