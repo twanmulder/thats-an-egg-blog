@@ -20,6 +20,9 @@ function SEO({ description, lang, meta, keywords, title }) {
             description
             author
             siteUrl
+            social {
+              twitter
+            }
           }
         }
       }
@@ -28,6 +31,7 @@ function SEO({ description, lang, meta, keywords, title }) {
 
   const metaDescription = description || site.siteMetadata.description
   const image = `${site.siteMetadata.siteUrl}/assets/social-card.png`
+  const twitterAccount = `@${site.siteMetadata.social.twitter}`
 
   return (
     <Helmet
@@ -54,8 +58,24 @@ function SEO({ description, lang, meta, keywords, title }) {
           content: `website`,
         },
         {
+          property: "og:image",
+          content: image,
+        },
+        {
+          property: "og:image:width",
+          content: "1200",
+        },
+        {
+          property: "og:image:height",
+          content: "630",
+        },
+        {
           name: `twitter:card`,
           content: `summary_large_image`,
+        },
+        {
+          name: `twitter:site`,
+          content: twitterAccount,
         },
         {
           name: `twitter:creator`,
@@ -70,6 +90,10 @@ function SEO({ description, lang, meta, keywords, title }) {
           content: metaDescription,
         },
         {
+          name: `twitter:image`,
+          content: image,
+        },
+        {
           name: `google-site-verification`,
           content: `Tdr5P_Ru4fzlhnLOPVKDEO3m3xtSVwrlxBFXiTBsfXk`,
         },
@@ -81,29 +105,6 @@ function SEO({ description, lang, meta, keywords, title }) {
                 content: keywords.join(`, `),
               }
             : []
-        )
-        .concat(
-          image
-            ? [
-                {
-                  property: "og:image",
-                  content: image,
-                },
-                {
-                  property: "og:image:width",
-                  content: "1200",
-                },
-                {
-                  property: "og:image:height",
-                  content: "630",
-                },
-              ]
-            : [
-                {
-                  name: "twitter:card",
-                  content: "summary",
-                },
-              ]
         )
         .concat(meta)}
     />
