@@ -11,19 +11,47 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const StyledBioWrapper = styled.article`
-  border: 1px solid;
   margin-top: ${rhythm(3)};
-  padding: 1rem;
-  box-shadow: 2px 2px;
-  border-radius: 0.25rem;
 
   h1 {
     margin-top: 0;
 
     span {
-      padding: 0 0.5rem;
       background: #fec150;
       color: hsla(0, 0%, 0%, 0.9);
+    }
+  }
+`
+
+const StyledLink = styled(Link)`
+  :hover {
+    h3 {
+      color: var(--linkTitleHover);
+    }
+  }
+
+  h3 {
+    margin-bottom: ${rhythm(1 / 4)};
+  }
+
+  .link-description {
+    color: var(--textNormal);
+    margin-bottom: ${rhythm(1 / 4)};
+  }
+
+  .link-read-more {
+    display: flex;
+    margin-bottom: ${rhythm(1.5)};
+    font-weight: ${boldWeight};
+
+    :hover img {
+      opacity: 1;
+    }
+
+    img {
+      margin-left: ${rhythm(1 / 4)};
+      opacity: 0;
+      transition: 0.2s opacity ease-in-out;
     }
   }
 `
@@ -48,28 +76,19 @@ function IndexPage(props) {
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
-            <Link to={`blog${node.fields.slug}`} key={node.fields.slug}>
-              <h3 style={{ marginBottom: rhythm(1 / 4) }}>{title}</h3>
+            <StyledLink to={`blog${node.fields.slug}`} key={node.fields.slug}>
+              <h3>{title}</h3>
               <p
-                style={{
-                  color: `var(--textNormal)`,
-                  marginBottom: rhythm(1 / 4),
-                }}
+                className="link-description"
                 dangerouslySetInnerHTML={{
                   __html: node.frontmatter.description || node.excerpt,
                 }}
               />
-              <p
-                style={{
-                  display: "flex",
-                  marginBottom: rhythm(1.5),
-                  fontWeight: boldWeight,
-                }}
-              >
+              <p className="link-read-more">
                 Read more
-                <img src={chevronRight} style={{ marginLeft: "0.125rem" }} />
+                <img src={chevronRight} alt="" />
               </p>
-            </Link>
+            </StyledLink>
           )
         })}
       </div>

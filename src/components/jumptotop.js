@@ -12,7 +12,7 @@ const StyledButton = styled.button`
   bottom: ${rhythm(1.5)};
   width: ${rhythm(2)};
   height: ${rhythm(2)};
-  color: #fff;
+  color: var(--jumpToTopIconColor);
   background: #fec150;
   text-align: left;
   border-radius: 100%;
