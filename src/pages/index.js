@@ -4,11 +4,10 @@ import styled from "styled-components"
 
 import { rhythm, boldWeight } from "../utils/typography"
 
-import chevronRight from "../../static/assets/icons/chevron-right.svg"
-
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import ChevronRight from "../components/chevronright"
 
 const StyledBioWrapper = styled.article`
   margin-top: ${rhythm(3)};
@@ -28,6 +27,9 @@ const StyledLink = styled(Link)`
     h3 {
       color: var(--linkTitleHover);
     }
+    svg polyline:nth-child(1) {
+      opacity: 1;
+    }
   }
 
   h3 {
@@ -41,17 +43,26 @@ const StyledLink = styled(Link)`
 
   .link-read-more {
     display: flex;
+    align-items: center;
     margin-bottom: ${rhythm(1.5)};
     font-weight: ${boldWeight};
 
-    :hover img {
+    :hover svg polyline:nth-child(2),
+    :hover svg polyline:nth-child(3) {
       opacity: 1;
     }
 
-    img {
-      margin-left: ${rhythm(1 / 4)};
-      opacity: 0;
-      transition: 0.2s opacity ease-in-out;
+    svg {
+      margin-left: ${rhythm(1 / 6)};
+
+      polyline {
+        opacity: 0;
+        transition: 0.2s opacity ease-in-out;
+      }
+
+      polyline:nth-child(3) {
+        transition-delay: 0.08s;
+      }
     }
   }
 `
@@ -86,7 +97,7 @@ function IndexPage(props) {
               />
               <p className="link-read-more">
                 Read more
-                <img src={chevronRight} alt="" />
+                <ChevronRight />
               </p>
             </StyledLink>
           )
