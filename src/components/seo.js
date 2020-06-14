@@ -30,7 +30,8 @@ function SEO({ description, lang, meta, keywords, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const image = `${site.siteMetadata.siteUrl}/assets/social-card.png`
+  const metaImage = `${site.siteMetadata.siteUrl}/assets/meta-image.png`
+  const socialImage = `${site.siteMetadata.siteUrl}/assets/social-card.png`
   const twitterAccount = `@${site.siteMetadata.social.twitter}`
 
   return (
@@ -59,7 +60,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           property: "og:image",
-          content: image,
+          content: metaImage,
         },
         {
           property: "og:image:width",
@@ -67,7 +68,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           property: "og:image:height",
-          content: "630",
+          content: "628",
         },
         {
           name: `twitter:card`,
@@ -91,7 +92,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           name: `twitter:image`,
-          content: image,
+          content: socialImage,
         },
         {
           name: `google-site-verification`,
