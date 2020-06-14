@@ -11,7 +11,7 @@ const logoQuery = graphql`
   query LogoQuery {
     avatar: file(absolutePath: { regex: "/egg.png/" }) {
       childImageSharp {
-        fixed(width: 75, height: 75) {
+        fixed(width: 70, height: 70) {
           ...GatsbyImageSharpFixed
         }
       }
