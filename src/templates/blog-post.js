@@ -11,6 +11,26 @@ import JumpToTop from "../components/jumptotop"
 
 import { rhythm, scale } from "../utils/typography"
 
+const BlogPostBody = styled.article`
+  position: relative;
+  background: var(--bg);
+  z-index: 1;
+  transition: var(--theme-transition);
+
+  .blog-date {
+    display: block;
+    margin-top: ${rhythm(-1)};
+    margin-bottom: ${rhythm(1)};
+  }
+`
+
+const BlogPostFooter = styled.footer`
+  @media (min-width: 768px) {
+    position: sticky;
+    bottom: 4.4rem;
+  }
+`
+
 const StyledPostNavigation = styled.ul`
   display: flex;
   flex-wrap: wrap;
@@ -31,42 +51,44 @@ function BlogPostTemplate(props) {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <h1>{post.frontmatter.title}</h1>
-        <p
-          style={{
-            ...scale(-1 / 5),
-            display: `block`,
-            marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
-          }}
-        >
-          {post.frontmatter.date}
-        </p>
-        <MDXRenderer>{post.body}</MDXRenderer>
-        <hr style={{ marginBottom: rhythm(1.5) }} />
-        <NewsletterForm />
-        <h3 style={{ marginTop: rhythm(1.5) }}>
-          <Link to="/" style={{ boxShadow: `none` }}>
-            That's an Egg
-          </Link>
-        </h3>
-        <Bio />
-        <StyledPostNavigation>
-          <li>
-            {previous && (
-              <Link to={`blog${previous.fields.slug}`} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={`blog${next.fields.slug}`} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
-        </StyledPostNavigation>
+        <BlogPostBody>
+          <h1>{post.frontmatter.title}</h1>
+          <p
+            className="blog-date"
+            style={{
+              ...scale(-1 / 5),
+            }}
+          >
+            {post.frontmatter.date}
+          </p>
+          <MDXRenderer>{post.body}</MDXRenderer>
+          <hr style={{ marginBottom: rhythm(1.5) }} />
+        </BlogPostBody>
+        <BlogPostFooter>
+          <NewsletterForm />
+          <h3 style={{ marginTop: rhythm(1.5) }}>
+            <Link to="/" style={{ boxShadow: `none` }}>
+              That's an Egg
+            </Link>
+          </h3>
+          <Bio />
+          <StyledPostNavigation>
+            <li>
+              {previous && (
+                <Link to={`blog${previous.fields.slug}`} rel="prev">
+                  ← {previous.frontmatter.title}
+                </Link>
+              )}
+            </li>
+            <li>
+              {next && (
+                <Link to={`blog${next.fields.slug}`} rel="next">
+                  {next.frontmatter.title} →
+                </Link>
+              )}
+            </li>
+          </StyledPostNavigation>
+        </BlogPostFooter>
       </Layout>
       <JumpToTop />
     </Fragment>

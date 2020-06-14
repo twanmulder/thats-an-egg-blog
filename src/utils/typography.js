@@ -12,6 +12,7 @@ Wordpress2016.overrideThemeStyles = () => {
       backgroundColor: `var(--bg)`,
       color: "var(--textNormal)",
       fontFamily: ["Open Sans", "sans-serif"].join(","),
+      transition: `var(--theme-transition)`,
     },
     "h1,h2,h3,h4,h5,h6": {
       fontFamily: ["Montserrat", "sans-serif"].join(","),
