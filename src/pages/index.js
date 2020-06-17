@@ -22,6 +22,38 @@ const StyledBioWrapper = styled.article`
   }
 `
 
+const StyledPostWrapper = styled.section`
+  margin: ${rhythm(3)} 0;
+
+  h4 {
+    margin: 0;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    color: var(--linkTitleHover);
+  }
+
+  h4 + a {
+    display: inline-block;
+    padding: 0 2rem;
+    border: 0.25rem solid var(--linkTitleHover);
+    border-radius: 1rem;
+
+    h3 {
+      color: var(--linkTitleHover);
+    }
+  }
+
+  h4 + a + a {
+    h3 {
+      margin-top: ${rhythm(3)};
+    }
+  }
+
+  a {
+    box-shadow: none;
+  }
+`
+
 const StyledLink = styled(Link)`
   :hover {
     h3 {
@@ -83,7 +115,8 @@ function IndexPage(props) {
         </h1>
         <Bio />
       </StyledBioWrapper>
-      <div style={{ margin: `${rhythm(3)} 0` }}>
+      <StyledPostWrapper>
+        <h4>Most recent article</h4>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
@@ -102,7 +135,7 @@ function IndexPage(props) {
             </StyledLink>
           )
         })}
-      </div>
+      </StyledPostWrapper>
     </Layout>
   )
 }
