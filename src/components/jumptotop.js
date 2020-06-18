@@ -18,6 +18,7 @@ const StyledButton = styled.button`
   border-radius: 100%;
   border: 0;
   cursor: pointer;
+  z-index: 1;
   transform: translateY(${rhythm(5)});
   transition: 0.3s transform ease-in-out;
   will-change: transform;
