@@ -33,6 +33,7 @@ const StyledPostWrapper = styled.section`
   }
 
   h4 + a {
+    min-width: 100%;
     display: inline-block;
     padding: 0 2rem;
     border: 0.25rem solid var(--linkTitleHover);
