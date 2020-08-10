@@ -12,22 +12,10 @@ import JumpToTop from "../components/jumptotop"
 import { rhythm, scale } from "../utils/typography"
 
 const BlogPostBody = styled.article`
-  position: relative;
-  background: var(--bg);
-  z-index: 1;
-  transition: var(--theme-transition);
-
   .blog-date {
     display: block;
     margin-top: ${rhythm(-1)};
     margin-bottom: ${rhythm(1)};
-  }
-`
-
-const BlogPostFooter = styled.footer`
-  @media (min-width: 768px) {
-    position: sticky;
-    bottom: 4.4rem;
   }
 `
 
@@ -64,7 +52,7 @@ function BlogPostTemplate(props) {
           <MDXRenderer>{post.body}</MDXRenderer>
           <hr style={{ marginBottom: rhythm(1.5) }} />
         </BlogPostBody>
-        <BlogPostFooter>
+        <footer>
           <NewsletterForm />
           <h3 style={{ marginTop: rhythm(1.5) }}>
             <Link to="/" style={{ boxShadow: `none` }}>
@@ -88,7 +76,7 @@ function BlogPostTemplate(props) {
               )}
             </li>
           </StyledPostNavigation>
-        </BlogPostFooter>
+        </footer>
       </Layout>
       <JumpToTop />
     </Fragment>
