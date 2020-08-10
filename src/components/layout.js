@@ -12,6 +12,7 @@ function Layout(props) {
 
   return (
     <Wrapper>
+      <Navigation />
       <div
         style={{
           marginLeft: `auto`,
@@ -20,7 +21,6 @@ function Layout(props) {
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)} `,
         }}
       >
-        <Navigation />
         <main>{children}</main>
         {!hideFooter && <Footer />}
       </div>

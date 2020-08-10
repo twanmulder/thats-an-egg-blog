@@ -9,7 +9,12 @@ body {
   --selectionColor: hsla(0, 0%, 0%, 0.9);
   --selectionBackgroundColor: #fec150;
   --jumpToTopIconColor: hsl(0, 0%, 99%);
-  --theme-transition: color 0.2s ease, background-color 0.2s ease;
+  --navBackground: hsl(0, 0%, 99%);
+  --navBoxShadow: 0 1.9px 1.9px rgba(0, 0, 0, 0.03),
+    0 4.7px 4.7px rgba(0, 0, 0, 0.021), 0 9.6px 9.6px rgba(0, 0, 0, 0.017),
+    0 19.7px 19.7px rgba(0, 0, 0, 0.013), 0 54px 54px rgba(0, 0, 0, 0.009);
+  --theme-transition: color 0.2s ease, background-color 0.2s ease,
+    fill 0.2s ease, box-shadow 0.2s ease;
 }
 
 body.dark {
@@ -21,6 +26,10 @@ body.dark {
   --blockquoteColor: hsl(0, 0%, 75%);
   --blockquoteBorderColor: #fec150;
   --jumpToTopIconColor: hsl(0, 0%, 9%);
+  --navBackground: hsl(0, 0%, 15%);
+  --navBoxShadow: 0 1.9px 1.9px rgba(0, 0, 0, 0.03),
+    0 4.7px 4.7px rgba(0, 0, 0, 0.021), 0 9.6px 9.6px rgba(0, 0, 0, 0.017),
+    0 19.7px 19.7px rgba(0, 0, 0, 0.013), 0 54px 54px rgba(0, 0, 0, 0.009);
 }
 
 /* COMPLEX BUTTON STYLING */

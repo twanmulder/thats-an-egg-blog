@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Fragment } from "react"
 import { Link, StaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 import styled from "styled-components"
@@ -11,7 +11,7 @@ const logoQuery = graphql`
   query LogoQuery {
     avatar: file(absolutePath: { regex: "/egg.png/" }) {
       childImageSharp {
-        fixed(width: 70, height: 70, quality: 100) {
+        fixed(width: 50, height: 50, quality: 100) {
           ...GatsbyImageSharpFixed
         }
       }
@@ -20,6 +20,18 @@ const logoQuery = graphql`
 `
 
 const StyledNavigation = styled.nav`
+  position: sticky;
+  top: 0;
+  height: 70px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.3125rem;
+  background: var(--navBackground);
+  z-index: 2;
+  transition: var(--theme-transition);
+  border-radius: 0 0 1rem 1rem;
+  box-shadow: var(--navBoxShadow);
+
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -56,30 +68,32 @@ const StyledListItem = styled.li`
 
 export default function Navigation() {
   return (
-    <StyledNavigation>
-      <Link to="/" aria-label="Go back to the homepage">
-        <StaticQuery
-          query={logoQuery}
-          render={data => {
-            return (
-              <Image
-                fixed={data.avatar.childImageSharp.fixed}
-                alt="That's an Egg logo, a fried egg in a pan"
-                style={{ display: `block` }}
-              />
-            )
-          }}
-        />
-      </Link>
-      <StyledList>
-        <StyledListItem>
-          <Link to="/about">About</Link>
-        </StyledListItem>
-        <StyledListItem>
-          <Link to="/newsletter">Newsletter</Link>
-        </StyledListItem>
-      </StyledList>
-      <DarkmodeToggle />
-    </StyledNavigation>
+    <Fragment>
+      <StyledNavigation>
+        <Link to="/" aria-label="Go back to the homepage">
+          <StaticQuery
+            query={logoQuery}
+            render={data => {
+              return (
+                <Image
+                  fixed={data.avatar.childImageSharp.fixed}
+                  alt="That's an Egg logo, a fried egg in a pan"
+                  style={{ display: `block` }}
+                />
+              )
+            }}
+          />
+        </Link>
+        <StyledList>
+          <StyledListItem>
+            <Link to="/about">About</Link>
+          </StyledListItem>
+          <StyledListItem>
+            <Link to="/newsletter">Newsletter</Link>
+          </StyledListItem>
+        </StyledList>
+        <DarkmodeToggle />
+      </StyledNavigation>
+    </Fragment>
   )
 }
