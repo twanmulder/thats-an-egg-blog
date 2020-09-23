@@ -4,15 +4,13 @@ date: 2020-07-13T12:34:16.666Z
 title: 5 Must-know Javascript Tips & Tricks
 description: Must know JavaScript tips & tricks for the JS developer of 2020
 ---
-
-
-![](https://cdn-images-1.medium.com/max/2400/1*9NpIEqA7unwxJo7t_u1YUA.png)
+![Screenshot of That's an Egg logo, blog about 5 must know javascript tips and tricks 2020 developer](assets/screenshot.png "Screenshot of That's an Egg logo, blog about 5 must know javascript tips and tricks 2020 developer")
 
 JavaScript keeps adding new and neat features. Sometimes, it’s hard to keep up. In this article, I’ll share a couple of cool tips & tricks to keep you up to speed and deepen your JS knowledge.
 
 ### 1. Create an array with unique values using the “Set” object
 
-![](https://cdn-images-1.medium.com/max/2400/1*YumzRMDm5AVUMNhejYp9Jg.png)
+![Create an array with unique items using "Set" by That's an Egg blog javascript 2020](assets/setarray.png "Create an array with unique items using \"Set\" by That's an Egg blog  javascript 2020")
 
 Imagine having an array with some duplicate items and wanting to filter out only the unique ones.
 
@@ -29,7 +27,7 @@ For a little more in-depth knowledge about the Set object, check out this [artic
 
 ### 2. Shorten your “if” statements
 
-![](https://cdn-images-1.medium.com/max/2400/1*8p7lcXKKW3eCmIoLql8vmQ.png)
+![Shorten if statement using ternary, by That's an Egg 2020 javascript blog](assets/ifstatement.png "Shorten if statement using ternary, by That's an Egg 2020 javascript blog")
 
 Now this is a tricky one.
 
@@ -48,14 +46,13 @@ if (iAmHungry) bakeAnEgg()
 
 // Or this
 iAmHungry? bakeAnEgg() : 0
-
 ```
 
 Remember, readability & ease-of-use are more important than a couple less lines of code.
 
 ### 3. Shorten an array using its length property
 
-![](https://cdn-images-1.medium.com/max/2400/1*JLm5quDrO7b5rIm7idsrdw.png)
+![Shorten an aray using it's length property, by That's an Egg blog 2020 javascript](assets/arraylength.png "Shorten an aray using it's length property, by That's an Egg blog 2020 javascript")
 
 A great way of shortening an array is by redefining its length property.
 
@@ -70,7 +67,7 @@ Important to know though is that this is a destructive way of changing the array
 
 ### 4. Using the spread operator to combine objects
 
-![](https://cdn-images-1.medium.com/max/2400/1*QQDQHw4aEPHucfRvk6W0vg.png)
+![Use the spread operator to combine objects, by That's an Egg 2020 javascript blog](assets/spreadobject.png "Use the spread operator to combine objects, by That's an Egg 2020 javascript blog")
 
 Let’s say you want to combine multiple objects into one object containing them all.
 
@@ -91,7 +88,7 @@ Something to keep in mind while using this is that whenever you update one of th
 
 ### 5. Using the window.location object
 
-![](https://cdn-images-1.medium.com/max/2400/1*Z0iAQx6K5GMl2DiECkMwNQ.png)
+![Access the window object using javascript, by That's an Egg blog 2020](assets/windowobject.png "Access the window object using javascript, by That's an Egg blog 2020")
 
 JavaScript can access the current URL using the window.location object. Pretty neat, but even cooler is that this object contains certain parts of the URL as well.
 
@@ -106,6 +103,7 @@ window.location.host == `thatsanegg.com`
 window.location.pathname == `/example/index.html`
 window.location.search == `?s=article`
 ```
+
 - - -
 
 #### That’s all!
