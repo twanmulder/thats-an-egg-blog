@@ -1,4 +1,4 @@
-import React, { Fragment } from "react"
+import React from "react"
 import { Link, StaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 import styled from "styled-components"
@@ -19,6 +19,12 @@ const logoQuery = graphql`
   }
 `
 
+const StyledNavWrapper = styled.div`
+  background: var(--navBackground);
+  transition: var(--theme-transition);
+  box-shadow: var(--navBoxShadow);
+`
+
 const StyledNavigation = styled.nav`
   position: sticky;
   top: 0;
@@ -26,11 +32,7 @@ const StyledNavigation = styled.nav`
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 1.3125rem;
-  background: var(--navBackground);
   z-index: 2;
-  transition: var(--theme-transition);
-  border-radius: 0 0 1rem 1rem;
-  box-shadow: var(--navBoxShadow);
 
   display: flex;
   align-items: center;
@@ -68,7 +70,7 @@ const StyledListItem = styled.li`
 
 export default function Navigation() {
   return (
-    <Fragment>
+    <StyledNavWrapper>
       <StyledNavigation>
         <Link to="/" aria-label="Go back to the homepage">
           <StaticQuery
@@ -94,6 +96,6 @@ export default function Navigation() {
         </StyledList>
         <DarkmodeToggle />
       </StyledNavigation>
-    </Fragment>
+    </StyledNavWrapper>
   )
 }
