@@ -3,7 +3,7 @@ body {
   --textNormal: hsla(0, 0%, 0%, 0.9);
   --linkTitleHover: #036ec5;
   --buttonBackground: #000;
-  --buttonColor: hsl(0, 0%, 90%);
+  --buttonColor: hsl(0, 0%, 95%);
   --blockquoteColor: hsl(0, 0%, 40%);
   --blockquoteBorderColor: hsla(0, 0%, 0%, 0.9);
   --selectionColor: hsla(0, 0%, 0%, 0.9);
@@ -17,7 +17,7 @@ body {
 
 body.dark {
   --bg: hsl(0, 0%, 9%);
-  --textNormal: hsl(0, 0%, 90%);
+  --textNormal: hsl(0, 0%, 95%);
   --linkTitleHover: #fec150;
   --buttonBackground: #fec150;
   --buttonColor: #000;

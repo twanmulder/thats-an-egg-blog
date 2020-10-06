@@ -46,7 +46,22 @@ const StyledNavigation = styled.nav`
   }
 
   > a {
+    display: flex;
+    align-items: center;
     box-shadow: none;
+
+    p {
+      display: none;
+      font-family: Montserrat, sans-serif;
+      margin: 0 0 0 1rem;
+      font-weight: 900;
+      font-size: 1.5rem;
+      line-height: 1.1;
+
+      @media (min-width: 768px) {
+        display: inline-block;
+      }
+    }
   }
 `
 
@@ -85,6 +100,7 @@ export default function Navigation() {
               )
             }}
           />
+          <p>That's an Egg</p>
         </Link>
         <StyledList>
           <StyledListItem>
