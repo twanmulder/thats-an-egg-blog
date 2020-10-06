@@ -19,7 +19,7 @@ const BlogPostBody = styled.article`
   }
 `
 
-const StyledPostNavigation = styled.ul`
+const StyledPostNavigation = styled.nav`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -52,7 +52,7 @@ function BlogPostTemplate(props) {
           <MDXRenderer>{post.body}</MDXRenderer>
           <hr style={{ marginBottom: rhythm(1.5) }} />
         </BlogPostBody>
-        <footer>
+        <article>
           <NewsletterForm />
           <h3 style={{ marginTop: rhythm(1.5) }}>
             <Link to="/" style={{ boxShadow: `none` }}>
@@ -76,7 +76,7 @@ function BlogPostTemplate(props) {
               )}
             </li>
           </StyledPostNavigation>
-        </footer>
+        </article>
       </Layout>
       <JumpToTop />
     </Fragment>

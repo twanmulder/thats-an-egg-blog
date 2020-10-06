@@ -14,7 +14,6 @@ const StyledButton = styled.button`
   height: ${rhythm(2)};
   color: var(--jumpToTopIconColor);
   background: #fec150;
-  text-align: left;
   border-radius: 100%;
   border: 0;
   cursor: pointer;
@@ -44,6 +43,12 @@ function JumpToTop() {
       setInView(true)
     }
     if (inView && document.documentElement.scrollTop <= 500) {
+      setInView(false)
+    }
+    if (
+      document.documentElement.scrollTop >=
+      document.body.offsetHeight - 1000
+    ) {
       setInView(false)
     }
   }
