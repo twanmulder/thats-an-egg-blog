@@ -34,7 +34,7 @@ function BlogPostTemplate(props) {
 
   return (
     <Fragment>
-      <Layout hideFooter={true}>
+      <Layout>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}

@@ -10,9 +10,10 @@ body {
   --selectionBackgroundColor: #fec150;
   --jumpToTopIconColor: hsl(0, 0%, 99%);
   --navBackground: #fff;
-  --navBoxShadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
-  --theme-transition: color 0.2s ease, background-color 0.2s ease,
-    fill 0.2s ease, box-shadow 0.2s ease;
+  --navBoxShadow: 0 2px 6px 0 rgba(0, 0, 0, 0.025);
+  --footerBackground: #fff;
+  --footerBoxShadow: 0 -2px 6px 0 rgba(0, 0, 0, 0.025);
+  --theme-transition: all 0.2s ease;
 }
 
 body.dark {
@@ -23,9 +24,9 @@ body.dark {
   --buttonColor: #000;
   --blockquoteColor: hsl(0, 0%, 75%);
   --blockquoteBorderColor: #fec150;
-  --jumpToTopIconColor: hsl(0, 0%, 9%);
+  --jumpToTopIconColor: hsl(0, 0%, 10%);
   --navBackground: hsl(0, 0%, 15%);
-  --navBoxShadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+  --footerBackground: hsl(0, 0%, 15%);
 }
 
 /* COMPLEX BUTTON STYLING */

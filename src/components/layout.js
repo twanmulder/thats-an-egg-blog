@@ -6,28 +6,6 @@ import Footer from "./footer"
 
 import { rhythm } from "../utils/typography"
 
-function Layout(props) {
-  const { children } = props
-  const hideFooter = props.hideFooter || false
-
-  return (
-    <Wrapper>
-      <Navigation />
-      <div
-        style={{
-          marginLeft: `auto`,
-          marginRight: `auto`,
-          maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)} `,
-        }}
-      >
-        <main>{children}</main>
-        {!hideFooter && <Footer />}
-      </div>
-    </Wrapper>
-  )
-}
-
 const Wrapper = styled.div`
   min-height: 100vh;
 
@@ -43,4 +21,27 @@ const Wrapper = styled.div`
   }
 `
 
-export default Layout
+const ContentWrapper = styled.div`
+  margin: 0 auto;
+  max-width: ${rhythm(24)};
+  padding: ${rhythm(1.5)} ${rhythm(3 / 4)};
+
+  @media (min-width: 768px) {
+    min-height: calc(100vh - 140px);
+  }
+`
+
+export default function Layout(props) {
+  const { children } = props
+  const hideFooter = props.hideFooter || false
+
+  return (
+    <Wrapper>
+      <Navigation />
+      <ContentWrapper>
+        <main>{children}</main>
+      </ContentWrapper>
+      {!hideFooter && <Footer />}
+    </Wrapper>
+  )
+}

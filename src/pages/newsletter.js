@@ -5,7 +5,7 @@ import NewsletterForm from "../components/newsletterform"
 
 function Newsletter() {
   return (
-    <Layout hideFooter="true">
+    <Layout>
       <h1>Newsletter</h1>
       <NewsletterForm />
     </Layout>
