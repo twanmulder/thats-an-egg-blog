@@ -12,7 +12,7 @@ Here are 5 ways you’re probably not doing it right and how to fix them:
 
 ### 1. Not using aria-current for your highlighted navigation item
 
-![HTML code block showing how you can use the aria-current attribute to indicate the current page](assets/menu-html.png "HTML code block showing how you can use the aria-current attribute to indicate the current page")
+![HTML code block showing how you can use the aria-current attribute to indicate the current page](../../assets/menu-html.png "HTML code block showing how you can use the aria-current attribute to indicate the current page")
 
 I see a lot of websites highlighting the current page the user is on inside the navigation. A great way of showing the user where they are.
 
