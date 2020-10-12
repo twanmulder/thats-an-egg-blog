@@ -23,6 +23,10 @@ Wordpress2016.overrideThemeStyles = () => {
     },
     a: {
       color: "var(--textNormal)",
+      "box-shadow": "none",
+    },
+    "a:hover": {
+      "box-shadow": "0 1px 0 0 currentColor",
     },
     blockquote: {
       color: "var(--blockquoteColor)",
