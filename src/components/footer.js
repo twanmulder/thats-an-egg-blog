@@ -13,16 +13,17 @@ const StyledFooter = styled.div`
 
   footer {
     display: flex;
+    flex-direction: column;
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 1.3125rem;
+    padding: 1rem;
   }
 
   .home-anchor {
+    margin: 0 0 1rem;
+    font-size: 1.25rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 900;
-    font-size: 1.5rem;
-    line-height: 1.1;
 
     :hover {
       box-shadow: none;
@@ -33,18 +34,28 @@ const StyledFooter = styled.div`
     text-align: left;
 
     footer {
+      flex-direction: row;
       justify-content: space-between;
       align-items: center;
       height: 70px;
+      padding: 0 1.3125rem;
+
+      .home-anchor {
+        margin: 0;
+        font-size: 1.5rem;
+        line-height: 1.1;
+      }
     }
   }
 `
 const FooterLinks = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
 
   a {
     margin: 0 ${rhythm(0.5)};
+    font-size: 14px;
   }
 `
 
