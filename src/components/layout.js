@@ -26,6 +26,11 @@ const ContentWrapper = styled.div`
   max-width: ${rhythm(24)};
   padding: ${rhythm(1.5)} ${rhythm(3 / 4)};
 
+  &.wide {
+    max-width: 1100px;
+    padding: ${rhythm(1.5)} 1.3125rem;
+  }
+
   @media (min-width: 768px) {
     min-height: calc(100vh - 140px);
   }
@@ -34,11 +39,17 @@ const ContentWrapper = styled.div`
 export default function Layout(props) {
   const { children } = props
   const hideFooter = props.hideFooter || false
+  const wrapperFormat = props.wrapperFormat
+
+  let contentWrapperClassName = ""
+  if (wrapperFormat === "wide") {
+    contentWrapperClassName = "wide"
+  }
 
   return (
     <Wrapper>
       <Navigation />
-      <ContentWrapper>
+      <ContentWrapper className={contentWrapperClassName}>
         <main>{children}</main>
       </ContentWrapper>
       {!hideFooter && <Footer />}
