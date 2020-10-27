@@ -5,6 +5,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Button from "../components/button"
+import NewsletterFormShort from "../components/newsletterformshort"
 
 const GeneratorWrapper = styled.div`
   display: flex;
@@ -13,6 +14,10 @@ const GeneratorWrapper = styled.div`
   @media (min-width: 768px) {
     flex-direction: row;
     align-items: flex-start;
+  }
+
+  .formkit-form {
+    background: none;
   }
 `
 
@@ -75,6 +80,25 @@ const Input = styled.input`
   }
 `
 
+const FormWrapper = styled.section`
+  max-width: calc(700px + 2rem);
+  background: var(--navBackground);
+  margin: 4rem auto 2rem;
+  padding: 1rem;
+  border: var(--inputBorder);
+  border-radius: 1rem;
+  box-shadow: var(--navBoxShadow);
+
+  form {
+    margin: 0;
+  }
+
+  .disclaimer {
+    font-size: 12px;
+    margin-bottom: 0rem;
+  }
+`
+
 function HypothesisGenerator(props) {
   const { data } = props
   const siteTitle = data.site.siteMetadata.title
@@ -111,7 +135,7 @@ function HypothesisGenerator(props) {
 
   return (
     <Layout location={props.location} title={siteTitle} wrapperFormat="wide">
-      <SEO title="Tools - Hypothesis Generator" />
+      <SEO title="Hypothesis Generator | Tools | That's an Egg" description="Setting up your A/B testing hypothesis can be hard. Use this simple tool to generate a strong hypothesis. That's an Egg." />
       <GeneratorWrapper>
         <section>
           <h1>Hypothesis Generator</h1>
@@ -198,6 +222,13 @@ function HypothesisGenerator(props) {
           )}
         </Hypothesis>
       </GeneratorWrapper>
+      <FormWrapper>
+        <p>
+          Want to <b>stay in-touch</b> about new articles and more awesome tools like this?
+        </p>
+        <NewsletterFormShort />
+        <p className="disclaimer">I respect your privacy. Unsubscribe at anytime. No spam.</p>
+      </FormWrapper>
     </Layout>
   )
 }

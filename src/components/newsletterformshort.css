@@ -1,0 +1,21 @@
+.formkit-form[data-uid="f32c5f2d07"][min-width~="700"] [data-style="clean"],
+.formkit-form[data-uid="f32c5f2d07"][min-width~="800"] [data-style="clean"] {
+  padding: 0px;
+}
+
+.formkit-form[data-uid="f32c5f2d07"] .formkit-input {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.formkit-form[data-uid="f32c5f2d07"] .formkit-input:focus {
+  border-color: #fec150;
+}
+
+.formkit-form[data-uid="f32c5f2d07"] .formkit-submit {
+  font-weight: 700;
+  color: rgb(22, 22, 22);
+}
