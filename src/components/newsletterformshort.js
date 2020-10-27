@@ -20,10 +20,10 @@ export default function NewsletterFormShort() {
         <ul className="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
         <div data-element="fields" data-stacked="false" className="seva-fields formkit-fields">
           <div className="formkit-field">
-            <input className="formkit-input" aria-label="Your first name" name="fields[first_name]" placeholder="Your first name" type="text" />
+            <input className="formkit-input" aria-label="Your first name" name="fields[first_name]" placeholder="Your first name" type="text" required />
           </div>
           <div className="formkit-field">
-            <input className="formkit-input" name="email_address" aria-label="Your email address" placeholder="Your email address" required="" type="email" />
+            <input className="formkit-input" name="email_address" aria-label="Your email address" placeholder="Your email address" required="" type="email" required />
           </div>
           <button data-element="submit" className="formkit-submit formkit-submit">
             <div className="formkit-spinner">
