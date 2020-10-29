@@ -31,6 +31,11 @@ const ContentWrapper = styled.div`
     padding: ${rhythm(1.5)} 1.3125rem;
   }
 
+  &.full {
+    max-width: none;
+    padding: 0;
+  }
+
   @media (min-width: 768px) {
     min-height: calc(100vh - 140px);
   }
@@ -44,6 +49,8 @@ export default function Layout(props) {
   let contentWrapperClassName = ""
   if (wrapperFormat === "wide") {
     contentWrapperClassName = "wide"
+  } else if (wrapperFormat === "full") {
+    contentWrapperClassName = "full"
   }
 
   return (

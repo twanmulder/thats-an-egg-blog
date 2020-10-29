@@ -35,11 +35,7 @@ function Bio() {
             />
             <p style={{ marginBottom: "0" }}>
               Personal blog by{" "}
-              <a
-                href={`https://twitter.com/${social.twitter}`}
-                target="_blank"
-                rel="noreferrer noopener"
-              >
+              <a href={`https://twitter.com/${social.twitter}`} target="_blank" rel="noreferrer noopener">
                 {author}
               </a>
               .
