@@ -197,7 +197,7 @@ function IndexPage(props) {
       render={data => {
         return (
           <Fragment>
-            <Layout wrapperFormat="full">
+            <Layout wrapperFormat="full" navStyle="hero">
               <SEO title="Articles making your developer life easier" keywords={[`developer`, `portfolio`, `javascript`, `react`, `blog`]} />
 
               <Hero>

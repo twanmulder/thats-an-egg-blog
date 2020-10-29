@@ -23,6 +23,20 @@ const StyledNavWrapper = styled.div`
   background: var(--navBackground);
   transition: var(--theme-transition);
   box-shadow: var(--navBoxShadow);
+
+  &.hero {
+    background: #fec150;
+    box-shadow: none;
+
+    a {
+      color: #1a1103;
+    }
+
+    .slider {
+      border: 1px solid #1a1103;
+      background-color: #fec150;
+    }
+  }
 `
 
 const StyledNavigation = styled.nav`
@@ -83,21 +97,22 @@ const StyledListItem = styled.li`
   }
 `
 
-export default function Navigation() {
+export default function Navigation(props) {
+  const { navStyle } = props
+
+  let navigationClassName = ""
+  if (navStyle === "hero") {
+    navigationClassName = "hero"
+  }
+
   return (
-    <StyledNavWrapper>
+    <StyledNavWrapper className={navigationClassName}>
       <StyledNavigation>
         <Link to="/" aria-label="Go back to the homepage">
           <StaticQuery
             query={logoQuery}
             render={data => {
-              return (
-                <Image
-                  fixed={data.avatar.childImageSharp.fixed}
-                  alt="That's an Egg logo, a fried egg in a pan"
-                  style={{ display: `block` }}
-                />
-              )
+              return <Image fixed={data.avatar.childImageSharp.fixed} alt="That's an Egg logo, a fried egg in a pan" style={{ display: `block` }} />
             }}
           />
           <p>That's an Egg</p>

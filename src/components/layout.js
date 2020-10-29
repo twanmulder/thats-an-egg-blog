@@ -55,7 +55,7 @@ export default function Layout(props) {
 
   return (
     <Wrapper>
-      <Navigation />
+      <Navigation navStyle={props.navStyle} />
       <ContentWrapper className={contentWrapperClassName}>
         <main>{children}</main>
       </ContentWrapper>

@@ -47,7 +47,7 @@ const Slider = styled.span`
     height: 26px;
     width: 26px;
     left: 4px;
-    bottom: 5px;
+    bottom: 4px;
     background-color: #fff;
     box-shadow: inset 1px 1px 0px 0px #e6e6e6;
   }
@@ -87,28 +87,10 @@ function DarkmodeToggle() {
     <ThemeToggler>
       {({ theme, toggleTheme }) => (
         <Label>
-          <Input
-            type="checkbox"
-            onChange={e => toggleTheme(e.target.checked ? "dark" : "light")}
-            checked={theme === "dark"}
-          />
+          <Input type="checkbox" onChange={e => toggleTheme(e.target.checked ? "dark" : "light")} checked={theme === "dark"} />
           <Slider className="slider">
-            <Icon
-              src={moon}
-              width="16"
-              height="16"
-              role="presentation"
-              className={theme === "dark" ? "moon-icon -visible" : "moon-icon"}
-              style={{ pointerEvents: "none" }}
-            />
-            <Icon
-              src={sun}
-              width="16"
-              height="16"
-              role="presentation"
-              className={theme === "dark" ? "sun-icon" : "sun-icon -visible"}
-              style={{ pointerEvents: "none" }}
-            />
+            <Icon src={moon} width="16" height="16" role="presentation" className={theme === "dark" ? "moon-icon -visible" : "moon-icon"} style={{ pointerEvents: "none" }} />
+            <Icon src={sun} width="16" height="16" role="presentation" className={theme === "dark" ? "sun-icon" : "sun-icon -visible"} style={{ pointerEvents: "none" }} />
           </Slider>
         </Label>
       )}
