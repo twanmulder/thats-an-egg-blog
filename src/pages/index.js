@@ -13,7 +13,7 @@ const StyledPostWrapper = styled.section`
   position: relative;
   background: var(--navBackground);
   border-radius: 1rem;
-  padding: 40px 80px 60px 80px;
+  padding: 60px 80px;
   margin: ${rhythm(3)} auto;
   max-width: 800px;
 
