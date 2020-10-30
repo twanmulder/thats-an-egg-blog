@@ -9,7 +9,7 @@ function NotFoundPage(props) {
   const siteTitle = data.site.siteMetadata.title
 
   return (
-    <Layout location={props.location} title={siteTitle} hideFooter="true">
+    <Layout location={props.location} title={siteTitle}>
       <SEO title="404: Not Found" />
       <h1>Not Found</h1>
       <p>
