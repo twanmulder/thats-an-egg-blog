@@ -68,6 +68,8 @@ const StyledLink = styled(Link)`
 
   .link-description {
     color: var(--textNormal);
+    font-style: italic;
+    oapcity: 0.8;
     margin-bottom: ${rhythm(1 / 4)};
   }
 
