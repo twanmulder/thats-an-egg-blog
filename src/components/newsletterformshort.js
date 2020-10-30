@@ -23,7 +23,7 @@ export default function NewsletterFormShort() {
             <input className="formkit-input" aria-label="Your first name" name="fields[first_name]" placeholder="Your first name" type="text" required />
           </div>
           <div className="formkit-field">
-            <input className="formkit-input" name="email_address" aria-label="Your email address" placeholder="Your email address" required="" type="email" required />
+            <input className="formkit-input" name="email_address" aria-label="Your email address" placeholder="Your email address" type="email" required />
           </div>
           <button data-element="submit" className="formkit-submit formkit-submit">
             <div className="formkit-spinner">

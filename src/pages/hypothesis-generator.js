@@ -2,9 +2,10 @@ import React, { Fragment, useState } from "react"
 import styled from "styled-components"
 import { graphql } from "gatsby"
 
+import { rhythm } from "../utils/typography"
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Button from "../components/button"
 import NewsletterFormShort from "../components/newsletterformshort"
 
 const GeneratorWrapper = styled.div`
@@ -50,6 +51,30 @@ const Hypothesis = styled.section`
 
     &:last-child {
       margin-bottom: 0;
+    }
+  }
+
+  button {
+    display: block;
+    border: none;
+    color: var(--buttonColor);
+    background: var(--buttonBackground);
+    text-align: center;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 10px 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 6px;
+    margin-top: ${rhythm(3 / 4)};
+    margin-bottom: 0;
+
+    &:hover {
+      box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.25);
     }
   }
 `
@@ -215,9 +240,8 @@ function HypothesisGenerator(props) {
                   )}
                 </p>
               </div>
-              <div onClick={handleButtonClick}>
-                <Button marginBottom="0">Copy hypothesis</Button>
-              </div>
+
+              <button onClick={handleButtonClick}>Copy hypothesis</button>
             </Fragment>
           )}
         </Hypothesis>
