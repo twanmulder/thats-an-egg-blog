@@ -132,14 +132,14 @@ export const heroQuery = graphql`
   query HeroQuery {
     avatarLarge: file(absolutePath: { regex: "/twan_transparent.png/" }) {
       childImageSharp {
-        fixed(width: 420, height: 420, quality: 100) {
+        fixed(width: 420, height: 420, quality: 50) {
           ...GatsbyImageSharpFixed
         }
       }
     }
     avatarSmall: file(absolutePath: { regex: "/twan_transparent.png/" }) {
       childImageSharp {
-        fixed(width: 160, height: 160, quality: 100) {
+        fixed(width: 160, height: 160, quality: 50) {
           ...GatsbyImageSharpFixed
         }
       }
