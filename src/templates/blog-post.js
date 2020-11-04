@@ -9,14 +9,20 @@ import SEO from "../components/seo"
 import NewsletterForm from "../components/newsletterform"
 import JumpToTop from "../components/jumptotop"
 
-import { rhythm, scale } from "../utils/typography"
+import { rhythm } from "../utils/typography"
+import { formatReadingTime } from "../utils/helpers"
 
-const BlogPostBody = styled.article`
-  .blog-date {
-    display: block;
-    margin-top: ${rhythm(-1)};
-    margin-bottom: ${rhythm(1)};
-  }
+const BlogPostBody = styled.article``
+
+const BlogPostTitle = styled.h1`
+  margin-bottom: ${rhythm(0.25)};
+`
+
+const BlogPostDetails = styled.p`
+  display: block;
+  margin-bottom: ${rhythm(1)};
+  font-size: 14px;
+  line-height: ${rhythm(1)};
 `
 
 const StyledPostNavigation = styled.nav`
@@ -35,20 +41,13 @@ function BlogPostTemplate(props) {
   return (
     <Fragment>
       <Layout>
-        <SEO
-          title={post.frontmatter.title}
-          description={post.frontmatter.description || post.excerpt}
-        />
+        <SEO title={post.frontmatter.title} description={post.frontmatter.description || post.excerpt} />
         <BlogPostBody>
-          <h1>{post.frontmatter.title}</h1>
-          <p
-            className="blog-date"
-            style={{
-              ...scale(-1 / 5),
-            }}
-          >
+          <BlogPostTitle>{post.frontmatter.title}</BlogPostTitle>
+          <BlogPostDetails className="blog-details">
             {post.frontmatter.date}
-          </p>
+            {` • ${formatReadingTime(post.timeToRead)}`}
+          </BlogPostDetails>
           <MDXRenderer>{post.body}</MDXRenderer>
           <hr style={{ marginBottom: rhythm(1.5) }} />
         </BlogPostBody>
@@ -97,6 +96,7 @@ export const pageQuery = graphql`
       id
       excerpt(pruneLength: 160)
       body
+      timeToRead
       frontmatter {
         title
         date(formatString: "DD MMMM, YYYY")
