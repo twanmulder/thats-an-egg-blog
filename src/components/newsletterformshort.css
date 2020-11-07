@@ -4,6 +4,8 @@
 }
 
 .formkit-form[data-uid="f32c5f2d07"] .formkit-input {
+  color: var(--textNormal);
+  background-color: var(--navBackground);
   border-left: none;
   border-right: none;
   border-top: none;
@@ -18,4 +20,10 @@
 .formkit-form[data-uid="f32c5f2d07"] .formkit-submit {
   font-weight: 700;
   color: rgb(22, 22, 22);
+}
+
+.formkit-form[data-uid="f32c5f2d07"] .form-disclaimer {
+  font-size: 12px;
+  text-align: right;
+  opacity: 0.5;
 }

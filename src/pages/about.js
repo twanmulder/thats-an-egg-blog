@@ -75,13 +75,10 @@ function About() {
           Egg!".
         </p>
         <Link to="/">
-          <Button marginTop={rhythm(1)} marginBottom={rhythm(1)}>
+          <Button marginTop={rhythm(1)} marginBottom={rhythm(2)}>
             Start Reading
           </Button>
         </Link>
-        <p>
-          Want to <b>stay in-touch</b> about new articles and tools/products I build?
-        </p>
         <NewsletterFormShort />
       </ContentWrapper>
     </Layout>

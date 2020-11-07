@@ -247,11 +247,7 @@ function HypothesisGenerator(props) {
         </Hypothesis>
       </GeneratorWrapper>
       <FormWrapper>
-        <p>
-          Want to <b>stay in-touch</b> about new articles and more awesome tools like this?
-        </p>
         <NewsletterFormShort />
-        <p className="disclaimer">I respect your privacy. Unsubscribe at anytime. No spam.</p>
       </FormWrapper>
     </Layout>
   )

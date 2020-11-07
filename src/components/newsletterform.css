@@ -1,6 +1,9 @@
 .formkit-form {
-  background-color: rgb(255, 255, 255);
   border-radius: 6px;
+}
+
+.formkit-form[data-uid="812b8a9345"] {
+  background-color: rgb(255, 255, 255);
 }
 
 .formkit-background {
