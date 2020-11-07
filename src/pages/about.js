@@ -1,27 +1,27 @@
 import React from "react"
-import { Link, StaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
+import { Link } from "gatsby"
 import styled from "styled-components"
 
 import { rhythm } from "../utils/typography"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Hero from "../components/hero"
 import Button from "../components/button"
+import NewsletterFormShort from "../components/newsletterformshort"
 
-const avatarQuery = graphql`
-  query AvatarQuery {
-    avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
-      childImageSharp {
-        fixed(width: 75, height: 75, quality: 100) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-  }
+const ContentWrapper = styled.section`
+  position: relative;
+  background: var(--navBackground);
+  border-radius: 1rem;
+  padding: 60px 80px;
+  margin: ${rhythm(3)} auto;
+  max-width: 800px;
 `
 
 const StyledHeader = styled.h1`
+  margin-top: 0;
+
   @media (min-width: 42rem) {
     display: flex !important;
     align-items: center;
@@ -32,59 +32,58 @@ const StyledHeader = styled.h1`
   }
 `
 
-const StyledAvatar = styled(Image)`
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: ${rhythm(3 / 4)};
-  border-radius: 100%;
-
-  img {
-    border-radius: 50%;
-  }
-`
-
 function About() {
+  const daysInAYear = 365
   const oneDay = 24 * 60 * 60 * 1000 // hours*minutes*seconds*milliseconds
   const firstDate = new Date(2019, 3, 1)
   const secondDate = new Date()
-  const diffDays = Math.round(Math.abs((firstDate - secondDate) / oneDay))
+  const totalDiffDays = Math.round(Math.abs((firstDate - secondDate) / oneDay))
+
+  const diffYears = Math.floor(totalDiffDays / daysInAYear)
+  const diffDays = Math.floor(totalDiffDays % daysInAYear)
+  const formattedDifference = `${diffYears} year${diffYears > 1 ? "s" : ""} and ${diffDays} day${diffDays > 1 ? "s" : ""}`
+  console.log(formattedDifference)
 
   return (
-    <Layout>
+    <Layout wrapperFormat="full" navStyle="hero">
       <SEO title="Home" keywords={[`developer`, `portfolio`, `javascript`, `react`, `blog`]} />
-      <StyledHeader>
-        <StaticQuery
-          query={avatarQuery}
-          render={data => {
-            return <StyledAvatar fixed={data.avatar.childImageSharp.fixed} alt="Twan Mulder" style={{ display: `block` }} />
-          }}
-        />
-        <span>Hey there, I'm Twan </span>
-        <span role="img" aria-label="peace emoji">
-          ✌️
-        </span>
-      </StyledHeader>
-      <p>
-        <strong>I'm a Creative Developer and Technical CRO Consultant from the Netherlands.</strong>
-        <br />
-        Currently, I've been employed at{" "}
-        <a href="https://stormdigital.nl" target="_blank" rel="noopener noreferrer">
-          Storm Digital
-        </a>{" "}
-        for {diffDays} days.
-      </p>
-      <p>These days, web-development can be a very daunting task to learn for the developer who's just starting out. With things like JavaScript frameworks, server-side rendering, and REST/CRUD API's, it doesn't get a lot simpler either.</p>
-      <p>However, it doesn't have to be this way!</p>
-      <p>
-        <strong> I love writing about making your developer life easier. </strong>
-        From basic HTML & CSS, to more complicated subjects regarding web-development, I write about all of them.
-      </p>
-      <p>
-        You might know the expression <em>"That's a piece of cake"</em>. In Dutch, we have a saying that goes likewise. Roughly translated back to English, it says <em>"That's an Egg"</em>. With my writing, I want to make you feel confident in your ability as a developer and think; "That's an Egg!".
-      </p>
-      <Link to="/">
-        <Button>Start Reading</Button>
-      </Link>
+      <Hero />
+      <ContentWrapper>
+        <StyledHeader>
+          <span>Hey there, I'm Twan </span>
+          <span role="img" aria-label="peace emoji">
+            ✌️
+          </span>
+        </StyledHeader>
+        <p>
+          <strong>I'm a Developer and CRO Specialist from the Netherlands.</strong>
+          <br />
+          Currently, I've been employed at{" "}
+          <a href="https://stormdigital.nl" target="_blank" rel="noopener noreferrer">
+            Storm Digital
+          </a>{" "}
+          for {formattedDifference}.
+        </p>
+        <p>These days, web-development can be a very daunting task to learn for the developer who's just starting out. With things like JavaScript frameworks, server-side rendering, and REST/CRUD API's, it doesn't get a lot simpler either.</p>
+        <p>However, it doesn't have to be this way!</p>
+        <p>
+          <strong> I love writing about making your developer life easier. </strong>
+          From basic HTML & CSS, to more complicated subjects regarding web-development, I write about all of them.
+        </p>
+        <p>
+          You might know the expression <em>"That's a piece of cake"</em>. In Dutch, we have a saying that goes likewise. Roughly translated back to English, it says <em>"That's an Egg"</em>. With my writing, I want to make you feel confident in your ability as a developer and think; "That's an
+          Egg!".
+        </p>
+        <Link to="/">
+          <Button marginTop={rhythm(1)} marginBottom={rhythm(1)}>
+            Start Reading
+          </Button>
+        </Link>
+        <p>
+          Want to <b>stay in-touch</b> about new articles and tools/products I build?
+        </p>
+        <NewsletterFormShort />
+      </ContentWrapper>
     </Layout>
   )
 }
