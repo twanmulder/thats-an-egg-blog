@@ -248,10 +248,16 @@ export default function Navigation(props) {
         </Link>
         <DesktopList>
           <DesktopListItem>
-            <Link to="/about">About</Link>
+            <Link to="/">Blog</Link>
+          </DesktopListItem>
+          <DesktopListItem>
+            <Link to="/resources">Resources</Link>
           </DesktopListItem>
           <DesktopListItem>
             <Link to="/newsletter">Newsletter</Link>
+          </DesktopListItem>
+          <DesktopListItem>
+            <Link to="/about">About</Link>
           </DesktopListItem>
           {isMobile ? null : <DarkmodeToggle />}
         </DesktopList>
@@ -265,10 +271,16 @@ export default function Navigation(props) {
         <MobileNav className={isNavOpen ? "is-active" : null}>
           <ul>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/">Blog</Link>
+            </li>
+            <li>
+              <Link to="/resources">Resources</Link>
             </li>
             <li>
               <Link to="/newsletter">Newsletter</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
             </li>
             <li>{isMobile ? <DarkmodeToggle /> : null}</li>
           </ul>

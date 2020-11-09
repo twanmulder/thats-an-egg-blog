@@ -1,0 +1,42 @@
+[
+  {
+    "subjectTitle": "Conversion Rate Optimization",
+    "categories": [
+      {
+        "categoryName": "Resources",
+        "categoryItems": [
+          {
+            "name": "Dark Patterns",
+            "copy": "Dark Patterns is a website detailing all different kinds of Dark Patterns. <br/> What are Dark Patterns? Dark Patterns are tricks used in websites and apps that make you do things that you didn't mean to, like buying or signing up for something.",
+            "link": "https://darkpatterns.org/"
+          }
+        ]
+      },
+      {
+        "categoryName": "Tools",
+        "categoryItems": [
+          {
+            "name": "Copytesting",
+            "copy": "Improve your website copy using quantified data, from real people. Copytesting is the only audience research tool for copy. Get data on where your copy misses the mark, so you can fix it, and increase sales.",
+            "link": "https://copytesting.com/"
+          },
+          {
+            "name": "Google Optimize",
+            "copy": "Google Optimize is a service that Google provides as a part of their Google Marketing Platform. <br/>Your website is your store window. Engage your website visitors like never before. Create personalized experiences and run website tests — for free.",
+            "link": "https://marketingplatform.google.com/about/optimize/"
+          },
+          {
+            "name": "Hotjar",
+            "copy": "Hotjar is a powerful tool that reveals the online behavior and voice of your users. <br/>By combining both Analysis and Feedback tools, Hotjar gives you the ‘big picture’ of how to improve your site's user experience and performance/conversion rates.",
+            "link": "https://www.hotjar.com/"
+          },
+          {
+            "name": "Usabilla",
+            "copy": "Use digital customer feedback to understand the “why” behind your data. <br/>Ask your users the right questions at the right moment in their customer journey to make better informed decisions",
+            "link": "https://usabilla.com/"
+          }
+        ]
+      }
+    ]
+  }
+]

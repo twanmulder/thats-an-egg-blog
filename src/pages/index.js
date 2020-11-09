@@ -1,10 +1,9 @@
-import React, { Fragment } from "react"
+import React from "react"
 import { Link, graphql, StaticQuery } from "gatsby"
 import styled from "styled-components"
 
 import { rhythm, boldWeight } from "../utils/typography"
 
-import Twitter from "../../static/assets/icons/twitter.js"
 import Send from "../../static/assets/icons/send.js"
 
 import Layout from "../components/layout"
@@ -157,40 +156,38 @@ function IndexPage(props) {
       query={pageQuery}
       render={data => {
         return (
-          <Fragment>
-            <Layout wrapperFormat="full" navStyle="hero">
-              <SEO title="Articles making your developer life easier" keywords={[`developer`, `portfolio`, `javascript`, `react`, `blog`]} />
-              <Hero />
-              <StyledPostWrapper>
-                <h4>Most recent article</h4>
-                {posts.map(({ node }) => {
-                  const title = node.frontmatter.title || node.fields.slug
-                  return (
-                    <StyledLink to={`blog${node.fields.slug}`} key={node.fields.slug}>
-                      <h2>{title}</h2>
-                      <p
-                        className="link-description"
-                        dangerouslySetInnerHTML={{
-                          __html: node.frontmatter.description || node.excerpt,
-                        }}
-                      />
-                      <p className="link-read-more">
-                        Read more
-                        <ChevronRight />
-                      </p>
-                    </StyledLink>
-                  )
-                })}
-              </StyledPostWrapper>
-              <IndexLinks>
-                <Link to="/newsletter">
-                  <h2>Join the Newsletter</h2>
-                  <p>Stay up-to-date</p>
-                  <Send />
-                </Link>
-              </IndexLinks>
-            </Layout>
-          </Fragment>
+          <Layout wrapperFormat="full" navStyle="hero">
+            <SEO title="Articles making your developer life easier" keywords={[`developer`, `portfolio`, `javascript`, `react`, `blog`]} />
+            <Hero />
+            <StyledPostWrapper>
+              <h4>Most recent article</h4>
+              {posts.map(({ node }) => {
+                const title = node.frontmatter.title || node.fields.slug
+                return (
+                  <StyledLink to={`blog${node.fields.slug}`} key={node.fields.slug}>
+                    <h2>{title}</h2>
+                    <p
+                      className="link-description"
+                      dangerouslySetInnerHTML={{
+                        __html: node.frontmatter.description || node.excerpt,
+                      }}
+                    />
+                    <p className="link-read-more">
+                      Read more
+                      <ChevronRight />
+                    </p>
+                  </StyledLink>
+                )
+              })}
+            </StyledPostWrapper>
+            <IndexLinks>
+              <Link to="/newsletter">
+                <h2>Join the Newsletter</h2>
+                <p>Stay up-to-date</p>
+                <Send />
+              </Link>
+            </IndexLinks>
+          </Layout>
         )
       }}
     />
