@@ -125,11 +125,11 @@ const Categories = props => {
 export default function Resources() {
   return (
     <Layout wrapperFormat="full" navStyle="hero">
-      <SEO title="Articles making your developer life easier" keywords={[`developer`, `portfolio`, `javascript`, `react`, `blog`]} />
+      <SEO title="An overview of useful resources" keywords={[`developer`, `portfolio`, `javascript`, `react`, `blog`]} />
       <Hero />
       <ResourcesWrapper>
         <h2>That's an Egg Resources</h2>
-        <p>An overview of useful CRO / UX resources - Ready to use, ready to roll.</p>
+        <p>An overview of useful resources - Ready to use, ready to roll.</p>
 
         {resources.map(subject => {
           const title = subject.subjectTitle

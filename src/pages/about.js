@@ -47,11 +47,10 @@ function About() {
   const diffYears = Math.floor(totalDiffDays / daysInAYear)
   const diffDays = Math.floor(totalDiffDays % daysInAYear)
   const formattedDifference = `${diffYears} year${diffYears > 1 ? "s" : ""} and ${diffDays} day${diffDays > 1 ? "s" : ""}`
-  console.log(formattedDifference)
 
   return (
     <Layout wrapperFormat="full" navStyle="hero">
-      <SEO title="Home" keywords={[`developer`, `portfolio`, `javascript`, `react`, `blog`]} />
+      <SEO title="About me, Twan Mulder" keywords={[`developer`, `portfolio`, `javascript`, `react`, `blog`]} />
       <Hero />
       <ContentWrapper>
         <StyledHeader>
