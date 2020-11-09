@@ -11,6 +11,8 @@ body {
   --jumpToTopIconColor: hsl(0, 0%, 99%);
   --navBackground: #fff;
   --navBoxShadow: 0 2px 6px 0 rgba(0, 0, 0, 0.025);
+  --navMobileButtonColor: #1a1103;
+  --navMobileButtonColorOpen: #1a1103;
   --footerBackground: #fff;
   --footerBoxShadow: 0 -2px 6px 0 rgba(0, 0, 0, 0.025);
   --inputBorder: 1px solid #f0f0f0;
@@ -29,6 +31,8 @@ body.dark {
   --blockquoteBorderColor: #fec150;
   --jumpToTopIconColor: hsl(0, 0%, 10%);
   --navBackground: hsl(0, 0%, 15%);
+  --navMobileButtonColor: #1a1103;
+  --navMobileButtonColorOpen: hsl(0, 0%, 95%);
   --footerBackground: hsl(0, 0%, 15%);
   --inputBorder: 1px solid #373737;
   --inputFocusBorderColor: #373737;

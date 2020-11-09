@@ -113,11 +113,11 @@ function HypothesisGenerator(props) {
   })
   const hasFormAtLeastOneEntry = Object.values(formData).some(x => x !== null && x !== false && x !== "")
 
-  const handleInputChange = event => {
-    const inputName = event.target.name
-    const inputValue = event.target.value
-    updateForm({ ...formData, [inputName]: inputValue })
-  }
+  // const handleInputChange = event => {
+  //   const inputName = event.target.name
+  //   const inputValue = event.target.value
+  //   updateForm({ ...formData, [inputName]: inputValue })
+  // }
 
   const handleCheckboxChange = event => {
     const chechboxName = event.target.name

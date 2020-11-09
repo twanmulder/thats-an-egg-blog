@@ -51,7 +51,7 @@ const StyledPostWrapper = styled.section`
 
   @media (max-width: 767px) {
     border-radius: 0;
-    padding: 20px;
+    padding: 40px 20px 20px 20px;
   }
 `
 

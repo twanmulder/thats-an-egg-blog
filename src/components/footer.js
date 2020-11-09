@@ -67,18 +67,10 @@ export default function Footer() {
           That's an Egg
         </Link>
         <FooterLinks>
-          <a
-            href="https://twitter.com/toktoktwan"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://twitter.com/toktoktwan" target="_blank" rel="noopener noreferrer">
             Twitter
           </a>
-          <a
-            href="https://github.com/twanmulder"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://github.com/twanmulder" target="_blank" rel="noopener noreferrer">
             GitHub
           </a>
           <Link to="/privacypolicy">Privacy Policy</Link>
