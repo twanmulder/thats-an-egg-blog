@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { Link, StaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 import styled, { createGlobalStyle } from "styled-components"
@@ -225,13 +225,26 @@ const GlobalStyle = createGlobalStyle`
 
 export default function Navigation(props) {
   const [isNavOpen, updateNavOpenState] = useState(false)
-  const isMobile = window.innerWidth <= 768
+  const [isMobile, updateIsMobile] = useState(false)
   const { navStyle } = props
   const navigationClassName = navStyle === "hero" ? "hero" : ""
 
   const handleToggleNav = () => {
     updateNavOpenState(!isNavOpen)
   }
+
+  const handleScreenResize = () => {
+    updateIsMobile(window.innerWidth <= 768)
+  }
+
+  useEffect(() => {
+    handleScreenResize()
+    window.addEventListener("resize", handleScreenResize)
+
+    return () => {
+      window.removeEventListener("resize", handleScreenResize)
+    }
+  }, [])
 
   return (
     <Header className={navigationClassName}>
