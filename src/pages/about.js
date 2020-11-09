@@ -17,6 +17,11 @@ const ContentWrapper = styled.section`
   padding: 60px 80px;
   margin: ${rhythm(3)} auto;
   max-width: 800px;
+
+  @media (max-width: 767px) {
+    border-radius: 0;
+    padding: 40px 20px 20px 20px;
+  }
 `
 
 const StyledHeader = styled.h1`
