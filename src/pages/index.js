@@ -40,7 +40,7 @@ const StyledPostWrapper = styled.section`
   }
 
   h4 + a + a {
-    h3 {
+    h2 {
       margin-top: ${rhythm(3)};
     }
   }
@@ -65,14 +65,14 @@ const StyledLink = styled(Link)`
     }
   }
 
-  h3 {
+  h2 {
     margin-bottom: ${rhythm(1 / 4)};
   }
 
   .link-description {
     color: var(--textNormal);
     font-style: italic;
-    oapcity: 0.8;
+    opacity: 0.8;
     margin-bottom: ${rhythm(1 / 4)};
   }
 
@@ -104,53 +104,47 @@ const StyledLink = styled(Link)`
 
 const IndexLinks = styled.section`
   margin: ${rhythm(3)} auto;
-  padding: 0 20px;
+  padding: 0 10px;
   max-width: 800px;
-
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 370px);
-  gap: 20px;
-
-  @media (max-width: 767px) {
-    grid-template-columns: 1fr;
-  }
 
   a {
     display: flex;
     flex-direction: column;
     border-radius: 0.5rem;
     padding: 20px;
+    background: #fec150;
+    color: #1a1103;
     transition: all 0.3s ease-in-out 0s;
 
     :hover {
       transform: scale(1.03);
       opacity: 0.9;
       box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 30px -5px;
+
+      svg {
+        opacity: 0.5;
+      }
     }
   }
 
+  h2 {
+    margin: 0;
+    color: #1a1103;
+  }
+
   p {
+    font-style: italic;
     flex: 1 1;
     margin: 0;
     font-size: 1.25rem;
   }
 
-  .twitter-link {
-    background: #1da1f2;
-    color: #fff;
-  }
-
-  .newsletter-link {
-    background: #fec150;
-    color: #1a1103;
-  }
-
   svg {
-    flex: 1 1;
-    margin: 2rem 0 0 auto;
-    width: 32px;
-    height: 32px;
-    opacity: 0.5;
+    margin: 0 0 0 auto;
+    width: 50px;
+    height: 50px;
+    opacity: 0.25;
+    transition: all 0.3s ease-in-out 0s;
   }
 `
 
@@ -173,7 +167,7 @@ function IndexPage(props) {
                   const title = node.frontmatter.title || node.fields.slug
                   return (
                     <StyledLink to={`blog${node.fields.slug}`} key={node.fields.slug}>
-                      <h3>{title}</h3>
+                      <h2>{title}</h2>
                       <p
                         className="link-description"
                         dangerouslySetInnerHTML={{
@@ -189,12 +183,9 @@ function IndexPage(props) {
                 })}
               </StyledPostWrapper>
               <IndexLinks>
-                <a href="https://twitter.com/toktoktwan" target="_blank" rel="noopener noreferrer" className="twitter-link">
-                  <p>Follow me on Twitter</p>
-                  <Twitter />
-                </a>
-                <Link to="/newsletter" className="newsletter-link">
-                  <p>Join the Newsletter</p>
+                <Link to="/newsletter">
+                  <h2>Join the Newsletter</h2>
+                  <p>Stay up-to-date</p>
                   <Send />
                 </Link>
               </IndexLinks>
