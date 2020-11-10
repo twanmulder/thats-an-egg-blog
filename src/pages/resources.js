@@ -20,19 +20,24 @@ const ResourcesWrapper = styled.section`
   max-width: 800px;
 
   h2 {
-    text-decoration: underline;
-    text-decoration-color: #fec150;
+    display: inline-block;
+    background: #fec150;
+    color: #1a1103;
 
     :first-child {
       text-decoration: none;
       margin-top: 0;
+      background: transparent;
+      color: var(--textNormal);
       font-size: 2.5rem;
       font-weight: 900;
     }
   }
 
   h3 {
-    margin-bottom: 1rem;
+    margin: 0 0 1rem 0;
+    text-decoration: underline;
+    text-decoration-color: #fec150;
   }
 
   @media (max-width: 767px) {
@@ -61,7 +66,8 @@ const CategoryItem = styled.article`
       margin: -1rem 0 0 0;
       padding: 1rem;
       border-radius: 0.25rem;
-      opacity: 0.8;
+      opacity: 0.5;
+      transition: opacity 0.2s ease;
 
       display: flex;
       align-items: center;
