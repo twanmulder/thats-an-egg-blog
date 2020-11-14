@@ -33,7 +33,8 @@ const StyledPostWrapper = styled.section`
     border: 0.25rem solid var(--linkTitleHover);
     border-radius: 1rem;
 
-    h3 {
+    h2 {
+      margin-top: 3.5rem;
       color: var(--linkTitleHover);
     }
   }
@@ -56,7 +57,7 @@ const StyledPostWrapper = styled.section`
 
 const StyledLink = styled(Link)`
   :hover {
-    h3 {
+    h2 {
       color: var(--linkTitleHover);
     }
     svg polyline:nth-child(1) {
@@ -65,6 +66,7 @@ const StyledLink = styled(Link)`
   }
 
   h2 {
+    margin-top: ${rhythm(1)};
     margin-bottom: ${rhythm(1 / 4)};
   }
 
@@ -76,7 +78,7 @@ const StyledLink = styled(Link)`
   }
 
   .link-read-more {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     margin-bottom: ${rhythm(1.5)};
     font-weight: ${boldWeight};
@@ -163,8 +165,9 @@ function IndexPage(props) {
               <h4>Most recent article</h4>
               {posts.map(({ node }) => {
                 const title = node.frontmatter.title || node.fields.slug
+                console.log(node.fields.slug)
                 return (
-                  <StyledLink to={`blog${node.fields.slug}`} key={node.fields.slug}>
+                  <StyledLink to={`/blog${node.fields.slug}`} key={node.fields.slug}>
                     <h2>{title}</h2>
                     <p
                       className="link-description"
