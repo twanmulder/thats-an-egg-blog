@@ -34,6 +34,156 @@
             "name": "Usabilla",
             "copy": "Use digital customer feedback to understand the “why” behind your data. <br/>Ask your users the right questions at the right moment in their customer journey to make better informed decisions",
             "link": "https://usabilla.com/"
+          },
+          {
+            "name": "Visual Website Optimizer (VWO)",
+            "copy": "VWO (previously Visual Website Optimizer) optimizes customer experience, by improving conversions through visitor analysis, experimentation & re-engagement.",
+            "link": "https://vwo.com/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "subjectTitle": "User Experience",
+    "categories": [
+      {
+        "categoryName": "Articles",
+        "categoryItems": [
+          {
+            "name": "Smashing Magazine",
+            "copy": "Established online magazine for professional web designers and developers; check out their dedicated UX Design category for practical tips, useful guidelines, best practices and case studies.",
+            "link": "https://www.smashingmagazine.com/category/ux-design/"
+          },
+          {
+            "name": "UX Booth",
+            "copy": "The UX Booth is a publication by and for the user experience community. Our readership consists mostly of beginning-to-intermediate user experience and interaction designers, but anyone interested in making the web a better place to be is welcome.",
+            "link": "https://www.uxbooth.com/"
+          },
+          {
+            "name": "UX Mastery",
+            "copy": "UX Mastery’s global community is curious and collaborative, with a passion for practical, insightful content and services that help with their career, their teams and their projects.",
+            "link": "https://uxmastery.com/"
+          },
+          {
+            "name": "UX Collective",
+            "copy": "A big part of what we learned in UX comes from online reading: articles, tutorials, resources, blogs. It’s all available out there — but there's a lot. UX is becoming increasingly popular, and with that comes a lot of clutter, noise and disorientation.",
+            "link": "https://uxdesign.cc/"
+          }
+        ]
+      },
+      {
+        "categoryName": "Books",
+        "categoryItems": [
+          {
+            "name": "Don't Make Me Think - Steve Krug",
+            "copy": "Established online magazine for professional web designers and developers; check out their dedicated UX Design category for practical tips, useful guidelines, best practices and case studies.",
+            "link": "https://www.goodreads.com/book/show/18197267-don-t-make-me-think-revisited"
+          },
+          {
+            "name": "The Elements of User Experience - Jesse James Garrett",
+            "copy": "Smart organizations recognize that Web design is more than just creating clean code and sharp graphics. A site that really works fulfills your strategic objectives while meeting the needs of your users.",
+            "link": "https://www.goodreads.com/book/show/1867.The_Elements_of_User_Experience"
+          },
+          {
+            "name": "The UX Team of One - Leah Buley",
+            "copy": "The User Experience Team of One prescribes a range of approaches that have big impact and take less time and fewer resources than the standard lineup of UX deliverables.",
+            "link": "https://www.goodreads.com/book/show/18177290-the-user-experience-team-of-one"
+          }
+        ]
+      },
+      {
+        "categoryName": "Libraries",
+        "categoryItems": [
+          {
+            "name": "Adele",
+            "copy": "The repository of publicly available design systems and pattern libraries.",
+            "link": "https://adele.uxpin.com/"
+          },
+          {
+            "name": "UI Garage",
+            "copy": "Daily handpicked UI inspiration & patternsFind specific design inspiration for web, mobile and tablet. Search over 4,547 patterns categorized and handpicked for you.",
+            "link": "https://uigarage.net/"
+          },
+          {
+            "name": "UI-Patterns",
+            "copy": "User Interface Design patterns are recurring solutions that solve common design problems. Design patterns are standard reference points for the experienced user interface designer.",
+            "link": "http://ui-patterns.com/"
+          }
+        ]
+      },
+      {
+        "categoryName": "Newsletters",
+        "categoryItems": [
+          {
+            "name": "Sidebar",
+            "copy": "Since 2012, Sidebar has been collecting the best links about UI design, typography, CSS, user research, and all other facets of design.",
+            "link": "https://sidebar.io/"
+          }
+        ]
+      },
+      {
+        "categoryName": "Podcasts",
+        "categoryItems": [
+          {
+            "name": "Users Know: What is Wrong with UX?",
+            "copy": "Laura Klein, Author of Build Better Products & UX for Lean Startups, talks together with her colleague Kate all about everything wrong with UX nowadays.",
+            "link": "https://www.usersknow.com/podcast"
+          },
+          {
+            "name": "Design Details",
+            "copy": "Brian Lovin & Marshal Bock are both designers who love talking about design, development, products, interfaces, games, and more. Marshall currently leads design at YouTube Gaming and Brian is working on GitHub's native mobile apps.",
+            "link": "https://designdetails.fm/"
+          }
+        ]
+      },
+      {
+        "categoryName": "Resources",
+        "categoryItems": [
+          {
+            "name": "Growth Design: Psych 101",
+            "copy": "Growth Design talks about 101 different cognitive biases and design principles (with examples and tips) and how these influence your user experience.",
+            "link": "https://growth.design/psychology/#resources"
+          },
+          {
+            "name": "Humane by Design",
+            "copy": "A resource that provides guidance for designing ethically humane digital products through patterns focused on user well-being.",
+            "link": "https://humanebydesign.com/"
+          },
+          {
+            "name": "Interaction Design Foundation",
+            "copy": "We are an independent nonprofit initiative with an objective that sounds like a paradox: “Raise global design education to an Ivy League standard, while at the same time reduce costs to as low as possible.”",
+            "link": "https://www.interaction-design.org/"
+          }
+        ]
+      },
+      {
+        "categoryName": "Tools",
+        "categoryItems": [
+          {
+            "name": "Maze",
+            "copy": "Maze is a user testing platform that turns your prototype into actionable insights from real users, bringing confidence to the design process.",
+            "link": "https://maze.design/"
+          },
+          {
+            "name": "Tobii (pro)",
+            "copy": "Eye-tracking for research. We help businesses and science professionals gain real insights into human behaviour with world-leading eye tracking solutions and services. Tobii Pro Insight, our research consultancy, conducts attention-based studies helping organizations make better business-critical decisions.",
+            "link": "https://www.tobiipro.com/"
+          }
+        ]
+      },
+      {
+        "categoryName": "YouTube",
+        "categoryItems": [
+          {
+            "name": "Mike Locke",
+            "copy": "Passionate and successful thought-leader in UI/UX Design with high proficiencies in Problem Solving, Visual UI Design and UX Design Methods and Principles.",
+            "link": "https://www.youtube.com/user/mlwebco"
+          },
+          {
+            "name": "The Futur",
+            "copy": "The Futur is an online education platform loaded with content, courses, and tools to help you build better design skills and better creative businesses.",
+            "link": "https://thefutur.com/videos"
           }
         ]
       }
