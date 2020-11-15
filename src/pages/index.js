@@ -165,7 +165,6 @@ function IndexPage(props) {
               <h4>Most recent article</h4>
               {posts.map(({ node }) => {
                 const title = node.frontmatter.title || node.fields.slug
-                console.log(node.fields.slug)
                 return (
                   <StyledLink to={`/blog${node.fields.slug}`} key={node.fields.slug}>
                     <h2>{title}</h2>
