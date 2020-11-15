@@ -1,12 +1,5 @@
-/**
- * Bio component that queries for data
- * with Gatsby's StaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/static-query/
- */
-
 import React from "react"
-import { StaticQuery, graphql } from "gatsby"
+import { StaticQuery, Link, graphql } from "gatsby"
 import Image from "gatsby-image"
 import styled from "styled-components"
 
@@ -17,27 +10,12 @@ function Bio() {
     <StaticQuery
       query={bioQuery}
       render={data => {
-        const { author, social } = data.site.siteMetadata
+        const { author } = data.site.siteMetadata
         return (
           <Container>
-            <Image
-              fixed={data.avatar.childImageSharp.fixed}
-              alt={author}
-              style={{
-                marginRight: rhythm(1 / 2),
-                marginBottom: 0,
-                minWidth: 50,
-                borderRadius: `100%`,
-              }}
-              imgStyle={{
-                borderRadius: `50%`,
-              }}
-            />
-            <p style={{ marginBottom: "0" }}>
-              Personal blog by{" "}
-              <a href={`https://twitter.com/${social.twitter}`} target="_blank" rel="noreferrer noopener">
-                {author}
-              </a>
+            <Image fixed={data.avatar.childImageSharp.fixed} alt={author} />
+            <p>
+              Personal blog by <Link to="/about">{author}</Link>
               .
               <br />
               Making your developer life easier, one article at a time.
@@ -51,9 +29,9 @@ function Bio() {
 
 const bioQuery = graphql`
   query BioQuery {
-    avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+    avatar: file(absolutePath: { regex: "/twan_transparent.png/" }) {
       childImageSharp {
-        fixed(width: 50, height: 50, quality: 100) {
+        fixed(width: 50, height: 50, quality: 20) {
           ...GatsbyImageSharpFixed
         }
       }
@@ -61,9 +39,6 @@ const bioQuery = graphql`
     site {
       siteMetadata {
         author
-        social {
-          twitter
-        }
       }
     }
   }
@@ -71,6 +46,17 @@ const bioQuery = graphql`
 
 const Container = styled.div`
   display: flex;
+  align-items: center;
+
+  .gatsby-image-wrapper {
+    margin: 0 ${rhythm(1 / 2)} 0;
+    background: #fec150;
+    border-radius: 100%;
+  }
+
+  p {
+    margin: 0;
+  }
 `
 
 export default Bio
