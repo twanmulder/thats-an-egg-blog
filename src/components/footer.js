@@ -8,7 +8,6 @@ const StyledFooter = styled.div`
   color: var(--buttonColor);
   text-align: center;
   background: var(--footerBackground);
-  box-shadow: var(--footerBoxShadow);
   transition: var(--theme-transition);
 
   footer {

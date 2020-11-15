@@ -22,11 +22,9 @@ const logoQuery = graphql`
 const Header = styled.header`
   background: var(--navBackground);
   transition: var(--theme-transition);
-  box-shadow: var(--navBoxShadow);
 
   &.hero {
     background: #fec150;
-    box-shadow: none;
 
     a {
       color: #1a1103;
