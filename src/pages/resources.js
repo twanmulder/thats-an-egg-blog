@@ -36,8 +36,11 @@ const ResourcesWrapper = styled.section`
 
   h3 {
     margin: 0 0 1rem 0;
-    text-decoration: underline;
-    text-decoration-color: #fec150;
+
+    span {
+      text-decoration: underline;
+      text-decoration-color: #fec150;
+    }
   }
 
   @media (max-width: 767px) {
@@ -116,10 +119,12 @@ const Categories = props => {
   return (
     <Fragment>
       {categories.map(category => {
-        const { categoryName, categoryItems } = category
+        const { categoryName, categoryEmoji, categoryItems } = category
         return (
           <Fragment key={categoryName}>
-            <h3>{categoryName}</h3>
+            <h3>
+              {categoryEmoji} <span>{categoryName}</span>
+            </h3>
             <CategoryItems categoryItems={categoryItems} />
           </Fragment>
         )
