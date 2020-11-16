@@ -20,7 +20,7 @@ For example, if the user selects a button on a webpage, you might want to respon
 
 In this article, I’ll talk about **the 2 ways of handling events and which method you should use** depending on your situation.
 
-# The 2 ways of handling JavaScript Events
+## The 2 ways of handling JavaScript Events
 
 As of today, there are 2 ways to handle events in JavaScript.
 
@@ -29,7 +29,7 @@ As of today, there are 2 ways to handle events in JavaScript.
 
 So what do these look like?
 
-## Method 1 — an Event Handler
+### Method 1 — an Event Handler
 
 An event handler can be recognized by **the JavaScript using an “EventHandler” property of the object**.
 
@@ -59,7 +59,7 @@ In this example, the “onclick” event handler property is used so that when a
 
 The “onclick” event handler property is just one of MANY event handlers that can be used. For a full list, you can [check out the entire list on MDN](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers).
 
-## Method 2 — an Event Listener
+### Method 2 — an Event Listener
 
 The other method to use events in JavaScript is by adding an event listener to an object.
 
@@ -91,7 +91,7 @@ This time, instead of using the “onclick” property, we add an event listener
 
 There are also a TON of events that can be listened for using an event listener. Here is [the complete list of all events that can be listened for](https://developer.mozilla.org/en-US/docs/Web/Events).
 
-# What’s the difference?
+## What’s the difference?
 
 There’s a subtle, but important difference between these 2 methods of handling events.
 
@@ -125,7 +125,7 @@ In the example above, the “onclick” event handler is used twice.
 
 That way, the first one will be overwritten and when a user clicks the button, it will log “How are you?” to the console.
 
-## So what happens when we use “addEventListener”?
+### So what happens when we use “addEventListener”?
 
 ![JavaScript code block showing the use of multiple click event listeners.](../../assets/button-multiple-eventlistener.png "JavaScript code block showing the use of multiple click event listeners.")
 
@@ -152,7 +152,7 @@ In the example above, we add multiple event listeners to the button.
 
 This way, when a user clicks it, it will trigger both functions and log “Hello! How are you?” to the console.
 
-# Which one should you use?
+## Which one should you use?
 
 Which method you should use, will depend entirely on your use case.
 
@@ -160,7 +160,7 @@ Do you need to attach more than one event to an element? Will you in the future?
 
 That’s why, **in general, the use of “addEventListener” is advised**.
 
-# So what have we learned?
+## So what have we learned?
 
 1. There are 2 methods of handling events, using an event handler property or adding an event listener.
 2. For a given element, you can only have one event handler per event type, but you can have multiple event listeners.
