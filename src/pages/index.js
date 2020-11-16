@@ -29,24 +29,18 @@ const StyledPostWrapper = styled.section`
   h4 + a {
     min-width: 100%;
     display: inline-block;
-    padding: 0 2rem;
+    margin-top: 0;
+    padding: ${rhythm(1.5)} ${rhythm(1)};
     border: 0.25rem solid var(--linkTitleHover);
     border-radius: 1rem;
 
     h2 {
-      margin-top: 3.5rem;
       color: var(--linkTitleHover);
     }
   }
 
   h4 + a + a {
-    h2 {
-      margin-top: ${rhythm(3)};
-    }
-  }
-
-  a {
-    box-shadow: none;
+    margin-top: ${rhythm(1)};
   }
 
   @media (max-width: 767px) {
@@ -56,7 +50,14 @@ const StyledPostWrapper = styled.section`
 `
 
 const StyledLink = styled(Link)`
+  display: inline-block;
+  box-shadow: none;
+  margin: ${rhythm(3 / 4)} 0;
+  padding: ${rhythm(1 / 2)} 0 ${rhythm(1 / 2)} 0;
+
   :hover {
+    box-shadow: none;
+
     h2 {
       color: var(--linkTitleHover);
     }
@@ -66,7 +67,7 @@ const StyledLink = styled(Link)`
   }
 
   h2 {
-    margin-top: ${rhythm(1)};
+    margin-top: 0;
     margin-bottom: ${rhythm(1 / 4)};
   }
 
@@ -80,7 +81,7 @@ const StyledLink = styled(Link)`
   .link-read-more {
     display: inline-flex;
     align-items: center;
-    margin-bottom: ${rhythm(1.5)};
+    margin-bottom: 0;
     font-weight: ${boldWeight};
 
     :hover svg polyline:nth-child(2),
