@@ -10,7 +10,7 @@ function NewsletterSuccess() {
       <h1>You're in!</h1>
       <p>Thank you for subscribing to "That's an Egg"s updates.</p>
 
-      <Link to="/blog">
+      <Link to="/">
         <Button>Read some articles</Button>
       </Link>
     </Layout>
