@@ -3,6 +3,8 @@ import { graphql, StaticQuery } from "gatsby"
 import Image from "gatsby-image"
 import styled from "styled-components"
 
+import { rhythm } from "../utils/typography"
+
 const HeroWrapper = styled.section`
   position: relative;
   background: #fec150;
@@ -19,11 +21,27 @@ const HeroWrapper = styled.section`
     justify-content: space-between;
   }
 
+  &.--hide-image {
+    > div {
+      padding: 40px 40px 60px 80px;
+    }
+
+    h1 {
+      padding-bottom: 0;
+    }
+  }
+
   @media (max-width: 767px) {
     margin-bottom: -5.25rem;
 
     > div {
-      padding: 20px 20px;
+      padding: 20px;
+    }
+
+    &.--hide-image {
+      > div {
+        padding: 20px;
+      }
     }
   }
 
@@ -61,6 +79,13 @@ const HeroTitleWrapper = styled.div`
     margin: 0;
   }
 
+  h2 {
+    margin: ${rhythm(1 / 2)} 0 0 0;
+    font-size: 1rem;
+    font-style: italic;
+    color: #474747;
+  }
+
   @media (max-width: 1023px) {
     h1 {
       padding-bottom: 60px;
@@ -93,33 +118,41 @@ const HeroImageWrapper = styled.div`
   }
 `
 
-export default function Hero() {
+export default function Hero(props) {
+  const { hideImage } = props
+  const title = props.title || "Hi, I'm Twan Mulder. I help make your developer life easier."
+  const subtitle = props.subtitle || false
+
   return (
     <StaticQuery
       query={heroQuery}
       render={data => {
         return (
-          <HeroWrapper>
+          <HeroWrapper className={hideImage ? "--hide-image" : ""}>
             <div>
-              <HeroSmallImageWrapper>
-                <Image
-                  fixed={data.avatarSmall.childImageSharp.fixed}
-                  className="hero-small-image"
-                  style={{
-                    borderRadius: `100%`,
-                  }}
-                  imgStyle={{
-                    borderRadius: `50%`,
-                  }}
-                ></Image>
-              </HeroSmallImageWrapper>
-
+              {hideImage ? null : (
+                <HeroSmallImageWrapper>
+                  <Image
+                    fixed={data.avatarSmall.childImageSharp.fixed}
+                    className="hero-small-image"
+                    style={{
+                      borderRadius: `100%`,
+                    }}
+                    imgStyle={{
+                      borderRadius: `50%`,
+                    }}
+                  ></Image>
+                </HeroSmallImageWrapper>
+              )}
               <HeroTitleWrapper>
-                <h1>Hi, I'm Twan Mulder. I help make your developer life easier.</h1>
+                <h1>{title}</h1>
+                {subtitle ? <h2>{subtitle}</h2> : null}
               </HeroTitleWrapper>
-              <HeroImageWrapper>
-                <Image fixed={data.avatarLarge.childImageSharp.fixed}></Image>
-              </HeroImageWrapper>
+              {hideImage ? null : (
+                <HeroImageWrapper>
+                  <Image fixed={data.avatarLarge.childImageSharp.fixed}></Image>
+                </HeroImageWrapper>
+              )}
             </div>
           </HeroWrapper>
         )

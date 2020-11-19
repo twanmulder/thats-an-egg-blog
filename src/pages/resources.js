@@ -26,12 +26,7 @@ const ResourcesWrapper = styled.section`
     color: #1a1103;
 
     :first-child {
-      text-decoration: none;
       margin-top: 0;
-      background: transparent;
-      color: var(--textNormal);
-      font-size: 2.5rem;
-      font-weight: 900;
     }
   }
 
@@ -136,14 +131,14 @@ const Categories = props => {
 }
 
 export default function Resources() {
+  const title = "That's an Egg Resources"
+  const subtitle = "An overview of useful resources - Ready to use, ready to roll."
+
   return (
     <Layout wrapperFormat="full" navStyle="hero">
       <SEO title="An overview of useful resources" keywords={[`developer`, `portfolio`, `javascript`, `react`, `blog`]} />
-      <Hero />
+      <Hero title={title} subtitle={subtitle} hideImage={true} />
       <ResourcesWrapper>
-        <h2>That's an Egg Resources</h2>
-        <p>An overview of useful resources - Ready to use, ready to roll.</p>
-
         {resources.map(subject => {
           const title = subject.subjectTitle
           return (
