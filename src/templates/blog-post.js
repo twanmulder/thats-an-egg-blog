@@ -15,6 +15,7 @@ import { formatReadingTime } from "../utils/helpers"
 const Body = styled.article`
   pre {
     position: relative;
+    box-shadow: 0 20px 15px -15px rgba(40, 45, 51, 0.5);
 
     ::before {
       content: attr(data-language);

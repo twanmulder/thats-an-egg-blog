@@ -29,9 +29,10 @@
     "gatsby-remark-images": "^2.0.6",
     "gatsby-remark-responsive-iframe": "^2.1.1",
     "gatsby-remark-smartypants": "^2.0.9",
-    "gatsby-remark-vscode": "^1.0.4",
+    "gatsby-remark-vscode": "^3.2.0",
     "gatsby-source-filesystem": "^2.0.29",
     "gatsby-transformer-sharp": "^2.1.18",
+    "material-theme": "github:Binaryify/OneDark-Pro",
     "netlify-cms-app": "^2.9.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -42,7 +43,8 @@
     "typeface-montserrat": "0.0.54",
     "typeface-open-sans": "^0.0.75",
     "typography": "^0.16.19",
-    "typography-theme-wordpress-2016": "^0.16.19"
+    "typography-theme-wordpress-2016": "^0.16.19",
+    "vscode-theme-onedark": "github:akamud/vscode-theme-onedark"
   },
   "devDependencies": {
     "prettier": "^1.17.0"

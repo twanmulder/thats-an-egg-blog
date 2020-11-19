@@ -52,6 +52,10 @@ module.exports = {
           },
           {
             resolve: `gatsby-remark-vscode`,
+            options: {
+              theme: "One Dark Pro",
+              extensions: ["material-theme"],
+            },
           },
           {
             resolve: `gatsby-remark-copy-linked-files`,

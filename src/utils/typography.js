@@ -46,6 +46,10 @@ Wordpress2016.overrideThemeStyles = () => {
       overflow: "hidden",
       clip: "rect(0 0 0 0)",
     },
+    code: {
+      fontSize: "1rem",
+      lineHeight: "1.55rem",
+    },
   }
 }
 
