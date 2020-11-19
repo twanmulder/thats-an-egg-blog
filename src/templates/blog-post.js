@@ -13,6 +13,16 @@ import { rhythm } from "../utils/typography"
 import { formatReadingTime } from "../utils/helpers"
 
 const Body = styled.article`
+  h6 {
+    margin-top: -1.75rem;
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.8;
+    font-weight: normal;
+    font-style: normal;
+    font-family: Open Sans, sans-serif;
+  }
+
   pre {
     position: relative;
     box-shadow: 0 20px 15px -15px rgba(40, 45, 51, 0.5);
