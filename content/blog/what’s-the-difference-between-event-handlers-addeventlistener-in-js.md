@@ -2,6 +2,7 @@
 path: whats-the-difference-between-Event-Handlers-and-addEventListener-in-JS
 date: 2020-11-16T15:49:14.690Z
 title: What’s the difference between Event Handlers & addEventListener in JS?
+categories: JavaScript
 description: The difference is subtle but essential to know.
 ---
 ![A bike leaning against a yellow wall, decorative image.](../../assets/button-bike.jpg "A bike leaning against a yellow wall, decorative image.")
