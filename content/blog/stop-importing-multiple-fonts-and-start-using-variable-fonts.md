@@ -2,6 +2,7 @@
 path: stop-importing-multiple-fonts-and-start-using-variable-fonts
 date: 2020-05-10T20:47:39.006Z
 title: Stop importing Multiple Fonts and Start using Variable Fonts
+categories: Performance, CSS
 description: Learn how you can make Variable Fonts work to your advantage in
   this beginner-friendly article.
 ---
