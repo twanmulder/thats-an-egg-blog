@@ -162,6 +162,8 @@ So after adding our “fadeIn” animation to the text and stars, this is the re
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
 
+###### ( Hit the refresh button inside the Sandbox )
+
 Quite pretty, but most importantly, very simple!
 
 ## Wrapping up
@@ -213,6 +215,8 @@ Putting it all together, this is the end-result 😄
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
+
+###### ( Hit the refresh button inside the Sandbox )
 
 ## In conclusion
 
