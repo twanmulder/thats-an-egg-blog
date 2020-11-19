@@ -18,6 +18,7 @@ const ResourcesWrapper = styled.section`
   padding: 60px 80px;
   margin: ${rhythm(3)} auto;
   max-width: 800px;
+  box-shadow: 0 20px 15px -15px rgba(40, 45, 51, 0.05);
 
   h2 {
     display: inline-block;
@@ -90,6 +91,7 @@ const NewsletterSection = styled.section`
   padding: 60px 80px 40px;
   margin: ${rhythm(3)} auto;
   max-width: 800px;
+  box-shadow: 0 20px 15px -15px rgba(40, 45, 51, 0.05);
 `
 
 const CategoryItems = props => {

@@ -17,6 +17,7 @@ const StyledPostWrapper = styled.section`
   padding: 60px 80px;
   margin: ${rhythm(3)} auto;
   max-width: 800px;
+  box-shadow: 0 20px 15px -15px rgba(40, 45, 51, 0.05);
 
   h4 {
     margin: 0;
@@ -87,12 +88,13 @@ const IndexLinks = styled.section`
     padding: 20px;
     background: #fec150;
     color: #1a1103;
+    box-shadow: 0 20px 15px -15px rgba(254, 192, 77, 0.7);
     transition: all 0.3s ease-in-out 0s;
 
     :hover {
       transform: scale(1.03);
       opacity: 0.9;
-      box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 30px -5px;
+      box-shadow: 0px 10px 30px -5px rgba(254, 192, 77, 0.5);
 
       svg {
         opacity: 0.5;
