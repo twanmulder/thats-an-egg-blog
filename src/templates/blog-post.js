@@ -12,20 +12,20 @@ import JumpToTop from "../components/jumptotop"
 import { rhythm } from "../utils/typography"
 import { formatReadingTime } from "../utils/helpers"
 
-const BlogPostBody = styled.article``
+const Body = styled.article``
 
-const BlogPostTitle = styled.h1`
-  margin-bottom: ${rhythm(0.25)};
+const Title = styled.h1`
+  margin-bottom: ${rhythm(1 / 4)};
 `
 
-const BlogPostDetails = styled.p`
+const Details = styled.p`
   display: block;
   margin-bottom: ${rhythm(1)};
   font-size: 14px;
   line-height: ${rhythm(1)};
 `
 
-const StyledPostNavigation = styled.nav`
+const PostNavigation = styled.nav`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -34,23 +34,56 @@ const StyledPostNavigation = styled.nav`
   padding: 0;
 `
 
+const CategoriesWrapper = styled.div`
+  margin-bottom: ${rhythm(1 / 4)};
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  div {
+    padding: ${rhythm(1 / 8)} ${rhythm(1 / 3)};
+    border-radius: ${rhythm(1 / 4)};
+    font-size: 0.75rem;
+    background: var(--categoriesButtonBackground);
+    color: var(--linkTitleHover);
+  }
+
+  div:not(:first-child) {
+    margin-left: ${rhythm(1 / 2)};
+  }
+`
+
+const Categories = props => {
+  const { categories } = props
+
+  return (
+    <CategoriesWrapper>
+      {categories.map(category => {
+        return <div key={category}>{category}</div>
+      })}
+    </CategoriesWrapper>
+  )
+}
+
 function BlogPostTemplate(props) {
   const post = props.data.mdx
+  const categories = post.frontmatter.categories?.split(", ").sort()
   const { previous, next } = props.pageContext
 
   return (
     <Fragment>
       <Layout>
         <SEO title={post.frontmatter.title} description={post.frontmatter.description || post.excerpt} />
-        <BlogPostBody>
-          <BlogPostTitle>{post.frontmatter.title}</BlogPostTitle>
-          <BlogPostDetails className="blog-details">
+        <Body>
+          <Title>{post.frontmatter.title}</Title>
+          {categories.length ? <Categories categories={categories} /> : null}
+          <Details className="blog-details">
             {post.frontmatter.date}
             {` • ${formatReadingTime(post.timeToRead)}`}
-          </BlogPostDetails>
+          </Details>
           <MDXRenderer>{post.body}</MDXRenderer>
           <hr style={{ marginBottom: rhythm(1.5) }} />
-        </BlogPostBody>
+        </Body>
         <article>
           <NewsletterForm />
           <h3 style={{ marginTop: rhythm(1.5) }}>
@@ -59,22 +92,22 @@ function BlogPostTemplate(props) {
             </Link>
           </h3>
           <Bio />
-          <StyledPostNavigation>
+          <PostNavigation>
             <li>
               {previous && (
-                <Link to={`blog${previous.fields.slug}`} rel="prev">
+                <Link to={`/blog${previous.fields.slug}`} rel="prev">
                   ← {previous.frontmatter.title}
                 </Link>
               )}
             </li>
             <li>
               {next && (
-                <Link to={`blog${next.fields.slug}`} rel="next">
+                <Link to={`/blog${next.fields.slug}`} rel="next">
                   {next.frontmatter.title} →
                 </Link>
               )}
             </li>
-          </StyledPostNavigation>
+          </PostNavigation>
         </article>
       </Layout>
       <JumpToTop />
@@ -101,6 +134,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "DD MMMM, YYYY")
         description
+        categories
       }
     }
   }
