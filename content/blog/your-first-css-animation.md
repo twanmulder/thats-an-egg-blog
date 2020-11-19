@@ -2,6 +2,7 @@
 path: your-first-css-animation
 date: 2020-04-18T20:10:09.181Z
 title: Your First CSS Animation
+categories: Animation, CSS, HTML
 description: Read all about creating beautiful and smooth web-animations using just CSS.
 ---
 ![Computer screen showing a code editor. The code is written in CSS.](../../assets/code-screen.png "CSS Animation in IDE")
