@@ -8,17 +8,6 @@ import { rhythm } from "../utils/typography"
 
 const Wrapper = styled.div`
   min-height: 100vh;
-
-  iframe {
-    width: 100%;
-  }
-  @media (min-width: 1024px) {
-    iframe {
-      width: 150%;
-      margin-left: -10rem;
-      margin-right: -10rem;
-    }
-  }
 `
 
 const ContentWrapper = styled.div`

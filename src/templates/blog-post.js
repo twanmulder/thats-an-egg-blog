@@ -12,7 +12,40 @@ import JumpToTop from "../components/jumptotop"
 import { rhythm } from "../utils/typography"
 import { formatReadingTime } from "../utils/helpers"
 
-const Body = styled.article``
+const Body = styled.article`
+  pre {
+    position: relative;
+
+    ::before {
+      content: attr(data-language);
+      text-transform: uppercase;
+      position: absolute;
+      top: 0.25rem;
+      right: 0.75rem;
+      opacity: 0.5;
+      font-style: italic;
+      z-index: 9999;
+      border-radius: 0.25rem 0.25rem 0 0;
+    }
+  }
+
+  iframe {
+    width: 100%;
+  }
+
+  @media (min-width: 1024px) {
+    pre {
+      width: 120%;
+      margin-left: -10%;
+    }
+
+    iframe {
+      width: 150%;
+      margin-left: -10rem;
+      margin-right: -10rem;
+    }
+  }
+`
 
 const Title = styled.h1`
   margin-bottom: ${rhythm(1 / 4)};
