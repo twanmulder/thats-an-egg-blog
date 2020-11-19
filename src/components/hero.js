@@ -23,7 +23,7 @@ const HeroWrapper = styled.section`
 
   &.--hide-image {
     > div {
-      padding: 40px 40px 60px 80px;
+      padding: 80px 40px 60px 80px;
     }
 
     h1 {
