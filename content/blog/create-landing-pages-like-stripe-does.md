@@ -2,6 +2,7 @@
 path: create-landing-pages-like-stripe-does
 date: 2020-04-18T21:18:45.309Z
 title: Create landing pages like Stripe does
+categories: HTML, CSS
 description: Using basic CSS tricks to create beautiful websites.
 ---
 ![Logo of the business "Stripe"](../../assets/stripe-logo.png)
