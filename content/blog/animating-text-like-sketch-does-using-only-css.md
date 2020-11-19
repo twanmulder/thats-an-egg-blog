@@ -7,6 +7,8 @@ description: Using CSS to create a beautiful staggering text animation.
 ---
 ![The homepage of "Sketch", animating their hero title](../../assets/sketch-homepage.gif "Sketch’s landing page, which we’ll be recreating (partly)")
 
+###### Sketch’s landing page, which we’ll be recreating (partly)
+
 As a front-end developer/designer, I mostly use Figma or Adobe XD at my place of work. Recently though, I found myself wanting to try out Sketch. Landing on [their homepage](https://www.sketch.com/), there was a *staggering* text animation happening. As a small challenge to myself, I tried recreating it and sharing this process with you.
 
 <hr/>
@@ -131,6 +133,8 @@ And that’s it! We did it 🎉
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
+
+###### ( Hit the refresh button inside the Sandbox )
 
 Now this is a very static way to do this, and it can be built using Javascript to dynamically create these elements, but this was just a quick way of demonstrating how to recreate this effect.
 
