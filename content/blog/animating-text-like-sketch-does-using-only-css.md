@@ -2,6 +2,7 @@
 path: animating-text-like-sketch-does-using-only-CSS
 date: 2020-04-19T18:12:22.007Z
 title: Animating text like Sketch does using only CSS
+categories: Animation, CSS, HTML
 description: Using CSS to create a beautiful staggering text animation.
 ---
 ![The homepage of "Sketch", animating their hero title](../../assets/sketch-homepage.gif "Sketch’s landing page, which we’ll be recreating (partly)")
