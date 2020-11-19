@@ -2,6 +2,7 @@
 path: 5-Ways-You’re-Not-Making-Your-Website-Accessible
 date: 2020-10-11T18:51:28.004Z
 title: 5 Ways You’re Not Making Your Website Accessible
+categories: Accessibility, HTML, CSS
 description: It doesn’t have to be that way!
 ---
 ![Code block showing the title, subtitle, and author of this article. Prototypr 2020 Twan Mulder.](../../assets/articleheader.png "Code block showing the title, subtitle, and author of this article. Prototypr 2020 Twan Mulder.")
