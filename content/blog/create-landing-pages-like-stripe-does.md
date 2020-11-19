@@ -7,6 +7,8 @@ description: Using basic CSS tricks to create beautiful websites.
 ---
 ![Logo of the business "Stripe"](../../assets/stripe-logo.png)
 
+###### Striking isn’t it?
+
 *Every single time I get to open [Stripes website](https://stripe.com/), I can’t help but smile a little. A fast-loading, beautifully designed website which uses awe-inspiring animations and techniques to get the correct message to its users. My favourite pages include the ones about [the enterprise](https://stripe.com/enterprise), [payments](https://stripe.com/payments), or [Sigma](https://stripe.com/sigma). There is so much you can learn from this website, and not just as a designer or developer.*
 
 *Today, we’re diving into how Stripe uses small and easy-to-use CSS tricks to create a **staggering** website.*
@@ -14,6 +16,8 @@ description: Using basic CSS tricks to create beautiful websites.
 *<hr/>*
 
 ![The homepage of the company Stripe](../../assets/stripe-home-page.png)
+
+###### What we’ll be (partly) recreating
 
 ## Instructions / follow along
 
@@ -84,6 +88,8 @@ That’s all for the HTML! We’ve created our background, a text element, and a
 
 ![Stripe's homepage recreated, without styling](../../assets/stripe-progress-1.png)
 
+###### What we’ve got so far (very pretty)
+
 ## CSS Styling
 
 *Making it pretty*
@@ -138,6 +144,8 @@ And we did it! Using some simple styling on our text and image, we now have a pa
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
+
+###### ( Hit the refresh button inside the Sandbox )
 
 Of course, this is just the beginning of creating a simple homepage. What we did find out here, is how easy it is to use the skew method inside CSS to manipulate our background instead of creating multiple images/SVGs for different breakpoints.
 
