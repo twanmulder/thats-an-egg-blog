@@ -2,6 +2,7 @@
 path: 6-essential-javascript-tips-for-the-developer-of-2020
 date: 2020-09-07T20:34:23.514Z
 title: 6 Essential JavaScript Tips for the Developer of 2020
+categories: JavaScript, Performance
 description: Doesn’t matter if you’re a noob or a pro, you should read these!
 ---
 ![](https://cdn-images-1.medium.com/max/2400/1*6lr62oeoWQnRyvKhEE7fpA.png)
