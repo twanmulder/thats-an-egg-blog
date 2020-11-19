@@ -16,6 +16,7 @@ body {
   --inputBorder: 1px solid #f0f0f0;
   --inputFocusBorderColor: #b6dcfb;
   --inputFocusBoxShadow: inset 0 0 0 2px #036ec5;
+  --categoriesButtonBackground: #f0f8ff;
   --theme-transition: color 0.2s ease, background-color 0.2s ease, border 0.2s ease;
 }
 
@@ -35,6 +36,7 @@ body.dark {
   --inputBorder: 1px solid #373737;
   --inputFocusBorderColor: #373737;
   --inputFocusBoxShadow: inset 0 0 0 2px #fec150;
+  --categoriesButtonBackground: #333;
 }
 
 /* COMPLEX BUTTON STYLING */

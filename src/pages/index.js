@@ -1,15 +1,14 @@
-import React from "react"
+import React, { Fragment } from "react"
 import { Link, graphql, StaticQuery } from "gatsby"
 import styled from "styled-components"
 
-import { rhythm, boldWeight } from "../utils/typography"
+import { rhythm } from "../utils/typography"
 
 import Send from "../../static/assets/icons/send.js"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Hero from "../components/hero"
-import ChevronRight from "../components/chevronright"
 
 const StyledPostWrapper = styled.section`
   position: relative;
@@ -61,9 +60,6 @@ const StyledLink = styled(Link)`
     h2 {
       color: var(--linkTitleHover);
     }
-    svg polyline:nth-child(1) {
-      opacity: 1;
-    }
   }
 
   h2 {
@@ -76,31 +72,6 @@ const StyledLink = styled(Link)`
     font-style: italic;
     opacity: 0.8;
     margin-bottom: ${rhythm(1 / 4)};
-  }
-
-  .link-read-more {
-    display: inline-flex;
-    align-items: center;
-    margin-bottom: 0;
-    font-weight: ${boldWeight};
-
-    :hover svg polyline:nth-child(2),
-    :hover svg polyline:nth-child(3) {
-      opacity: 1;
-    }
-
-    svg {
-      margin-left: ${rhythm(1 / 6)};
-
-      polyline {
-        opacity: 0;
-        transition: 0.2s opacity ease-in-out;
-      }
-
-      polyline:nth-child(3) {
-        transition-delay: 0.08s;
-      }
-    }
   }
 `
 
@@ -150,6 +121,63 @@ const IndexLinks = styled.section`
   }
 `
 
+const CategoriesWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  div {
+    padding: ${rhythm(1 / 8)} ${rhythm(1 / 3)};
+    border-radius: ${rhythm(1 / 4)};
+    font-size: 0.75rem;
+    background: var(--categoriesButtonBackground);
+    color: var(--linkTitleHover);
+  }
+
+  div:not(:first-child) {
+    margin-left: ${rhythm(1 / 2)};
+  }
+`
+
+const Categories = props => {
+  const { categories } = props
+
+  return (
+    <CategoriesWrapper>
+      {categories.map(category => {
+        return <div key={category}>{category}</div>
+      })}
+    </CategoriesWrapper>
+  )
+}
+
+const BlogPosts = props => {
+  const { posts } = props
+
+  return (
+    <Fragment>
+      {posts.map(({ node }) => {
+        const title = node.frontmatter.title || node.fields.slug
+        const categories = node.frontmatter.categories
+        const categoriesArray = categories.split(", ").sort()
+
+        return (
+          <StyledLink to={`/blog${node.fields.slug}`} key={node.fields.slug}>
+            <h2>{title}</h2>
+            <p
+              className="link-description"
+              dangerouslySetInnerHTML={{
+                __html: node.frontmatter.description || node.excerpt,
+              }}
+            />
+            {categoriesArray.length ? <Categories categories={categoriesArray} /> : null}
+          </StyledLink>
+        )
+      })}
+    </Fragment>
+  )
+}
+
 function IndexPage(props) {
   const { data } = props
   const posts = data.allMdx.edges
@@ -164,24 +192,7 @@ function IndexPage(props) {
             <Hero />
             <StyledPostWrapper>
               <h4>Most recent article</h4>
-              {posts.map(({ node }) => {
-                const title = node.frontmatter.title || node.fields.slug
-                return (
-                  <StyledLink to={`/blog${node.fields.slug}`} key={node.fields.slug}>
-                    <h2>{title}</h2>
-                    <p
-                      className="link-description"
-                      dangerouslySetInnerHTML={{
-                        __html: node.frontmatter.description || node.excerpt,
-                      }}
-                    />
-                    <p className="link-read-more">
-                      Read more
-                      <ChevronRight />
-                    </p>
-                  </StyledLink>
-                )
-              })}
+              <BlogPosts posts={posts} />
             </StyledPostWrapper>
             <IndexLinks>
               <Link to="/newsletter">
@@ -216,6 +227,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             description
+            categories
           }
         }
       }
