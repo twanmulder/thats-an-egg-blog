@@ -2,6 +2,7 @@
 path: dynamically-creating-animations-using-greensock
 date: 2020-04-20T20:37:24.571Z
 title: Dynamically creating animations using Greensock
+categories: Animation, CSS, GSAP, JavaScript
 description: How you can utilise Greensocks powerful methods to create beautiful animations.
 ---
 ![The text "The best products start with Sketch" appear/slide in to frame](../../assets/dynamic-sketch.gif "This is what we’ll be generating dynamically!")
