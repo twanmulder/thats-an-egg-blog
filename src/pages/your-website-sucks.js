@@ -81,7 +81,7 @@ export default function YourWebsiteSucks() {
   return (
     <Fragment>
       <Layout wrapperFormat="full" navStyle="hero">
-        <SEO title="An overview of useful resources" keywords={[`developer`, `portfolio`, `javascript`, `react`, `blog`]} />
+        <SEO title="An overview of useful resources" image="meta-image-website-sucks.png" socImage="twitter-social-website-sucks.png" keywords={[`developer`, `portfolio`, `javascript`, `react`, `blog`]} />
         <Hero title={title} subtitle={subtitle} />
         <ContentWrapper>
           <h2>Hey, your website sucks!</h2>
