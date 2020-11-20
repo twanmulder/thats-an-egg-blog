@@ -5,6 +5,7 @@ import styled from "styled-components"
 import { rhythm } from "../utils/typography"
 
 import Send from "../../static/assets/icons/send.js"
+import ThumbsUp from "../../static/assets/icons/thumbs-up.js"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -99,6 +100,24 @@ const IndexLinks = styled.section`
       svg {
         opacity: 0.5;
       }
+    }
+
+    + a {
+      margin-top: ${rhythm(1)};
+    }
+  }
+
+  .your-website-sucks {
+    background: var(--websiteSucksBackground);
+    color: #056ec5;
+    box-shadow: 0 20px 15px -15px rgba(5, 110, 197, 0.2);
+
+    :hover {
+      box-shadow: 0px 10px 30px -5px rgba(5, 110, 197, 0.15);
+    }
+
+    h2 {
+      color: #056ec5;
     }
   }
 
@@ -197,6 +216,11 @@ function IndexPage(props) {
               <BlogPosts posts={posts} />
             </StyledPostWrapper>
             <IndexLinks>
+              <Link to="/your-website-sucks" className="your-website-sucks">
+                <h2>Your website sucks</h2>
+                <p>Get feedback on your product, portfolio, etc.</p>
+                <ThumbsUp />
+              </Link>
               <Link to="/newsletter">
                 <h2>Join the Newsletter</h2>
                 <p>Stay up-to-date</p>
