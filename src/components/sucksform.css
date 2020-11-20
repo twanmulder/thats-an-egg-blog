@@ -1,0 +1,30 @@
+.formkit-form[data-uid="9cc131ddb2"] {
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+}
+
+.formkit-form[data-uid="9cc131ddb2"] .formkit-input {
+  color: var(--textNormal);
+  background-color: var(--navBackground);
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 0;
+}
+
+.formkit-form[data-uid="9cc131ddb2"] .formkit-input:focus {
+  border-color: #fec150;
+}
+
+.formkit-form[data-uid="9cc131ddb2"] .formkit-submit {
+  font-weight: 700;
+  color: rgb(22, 22, 22);
+}
+
+.formkit-form[data-uid="9cc131ddb2"] .form-disclaimer {
+  font-size: 12px;
+  text-align: right;
+  opacity: 0.5;
+}
