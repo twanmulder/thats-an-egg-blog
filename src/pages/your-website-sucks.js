@@ -131,7 +131,7 @@ export default function YourWebsiteSucks() {
           </blockquote>
           <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-          <h2>What did people say?</h2>
+          <h2>What have people said?</h2>
           <img src="../../assets/review-1.png" alt="Review by Bugsy Sailor: Thanks! This is nice to get critical feedback as mostly I only hear back from friends/family who aren't involved in ux/ui/dev/design." />
           <img src="../../assets/review-2.png" alt="Review by Alex: Thank you!" />
           <img src="../../assets/review-3.png" alt="Review by Sara Miteva: Thank you so much, Twan! Really appreciate it." />
