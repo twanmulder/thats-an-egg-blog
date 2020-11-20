@@ -60,7 +60,7 @@ const Notification = styled.div`
   font-weight: bold;
   padding: ${rhythm(1 / 2)} 20px;
   transform: translateY(100%);
-  animation: move-up 0.5s 2s ease-in-out forwards;
+  animation: move-up 0.4s 1.5s ease forwards;
 
   @keyframes move-up {
     100% {
@@ -76,7 +76,7 @@ const SubmittedNotification = () => {
 export default function YourWebsiteSucks() {
   const title = "Your website sucks and I'll tell you why"
   const subtitle = "Get feedback on your product, portfolio, anything!"
-  const hasSubmittedForm = new URLSearchParams(window.location.search).get("submitted")
+  const hasSubmittedForm = typeof window !== "undefined" && new URLSearchParams(window.location.search).get("submitted")
 
   return (
     <Fragment>
