@@ -6,6 +6,7 @@ import { rhythm } from "../utils/typography"
 
 import Send from "../../static/assets/icons/send.js"
 import ThumbsUp from "../../static/assets/icons/thumbs-up.js"
+import ArrowRight from "../../static/assets/icons/arrow-right.js"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -27,34 +28,45 @@ const StyledPostWrapper = styled.section`
     color: var(--linkTitleHover);
   }
 
-  h4 + a {
-    min-width: 100%;
-    display: inline-block;
-    margin-top: 0;
-    padding: ${rhythm(1.5)} ${rhythm(1)};
-    border: 0.25rem solid var(--linkTitleHover);
-    border-radius: 1rem;
-
-    h2 {
-      color: var(--linkTitleHover);
-    }
-  }
-
-  h4 + a + a {
-    margin-top: ${rhythm(1)};
-  }
-
   @media (max-width: 767px) {
     border-radius: 0;
     padding: 40px 20px 20px 20px;
   }
 `
 
+const Circle = styled.div`
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+  right: -60px;
+  bottom: -60px;
+  background: var(--linkTitleHover);
+  transform: scale(0);
+  will-change: transform;
+  transition: transform 0.35s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+`
+
 const StyledLink = styled(Link)`
   display: inline-block;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
   box-shadow: none;
+  border-radius: 1rem;
   margin: ${rhythm(3 / 4)} 0;
   padding: ${rhythm(1 / 2)} 0 ${rhythm(1 / 2)} 0;
+
+  :nth-child(2) {
+    min-width: 100%;
+    margin-top: 0;
+    padding: ${rhythm(1.5)} ${rhythm(1)};
+    border: 0.25rem solid var(--linkTitleHover);
+
+    h2 {
+      color: var(--linkTitleHover);
+    }
+  }
 
   :hover {
     box-shadow: none;
@@ -62,11 +74,22 @@ const StyledLink = styled(Link)`
     h2 {
       color: var(--linkTitleHover);
     }
+
+    svg {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+
+    ${Circle} {
+      transform: scale(1);
+      transition: transform 0.35s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    }
   }
 
   h2 {
     margin-top: 0;
     margin-bottom: ${rhythm(1 / 4)};
+    transition: color 0.35s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
   }
 
   .link-description {
@@ -74,6 +97,17 @@ const StyledLink = styled(Link)`
     font-style: italic;
     opacity: 0.8;
     margin-bottom: ${rhythm(1 / 4)};
+  }
+
+  svg {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    color: var(--bg);
+
+    opacity: 0;
+    transform: translate3d(-${rhythm(1 / 4)}, 0, 0);
+    transition: transform 0.35s cubic-bezier(0.165, 0.84, 0.44, 1) 0s, opacity 0.35s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
   }
 `
 
@@ -192,6 +226,8 @@ const BlogPosts = props => {
               }}
             />
             {categoriesArray.length ? <Categories categories={categoriesArray} /> : null}
+            <Circle />
+            <ArrowRight />
           </StyledLink>
         )
       })}
