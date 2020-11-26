@@ -100,7 +100,7 @@ const CategoryItems = props => {
             <h4>{name}</h4>
             <div>
               <p dangerouslySetInnerHTML={{ __html: copy }}></p>
-              <a href={`${link}?href=thatsanegg`}>
+              <a href={`${link}?href=thatsanegg`} target="_blank" rel="noopener noreferrer">
                 <ExternalLink />
               </a>
             </div>
