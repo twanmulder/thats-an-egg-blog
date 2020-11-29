@@ -13,6 +13,14 @@ import { rhythm } from "../utils/typography"
 import { formatReadingTime } from "../utils/helpers"
 
 const Body = styled.article`
+  a {
+    box-shadow: 0 1px 0 0 currentColor;
+
+    :hover {
+      box-shadow: none;
+    }
+  }
+
   h6 {
     margin-top: -1.75rem;
     text-align: center;
