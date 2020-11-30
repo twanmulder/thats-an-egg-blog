@@ -153,8 +153,8 @@ Sometimes, you just need to swap 2 variables around. This simple trick will allo
 
 ```javascript
 // Swap the values of 2 variables
-var a = 1;
-var b = 2;
+let a = 1;
+let b = 2;
 
 [a, b] = [b, a];
 // Result: 
