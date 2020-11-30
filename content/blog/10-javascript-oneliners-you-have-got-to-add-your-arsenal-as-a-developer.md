@@ -123,7 +123,7 @@ Generating an RGB color is a little more simple, but creating a random HEX color
 
 ```javascript
 // Generate a random HEX color
-randomColor = () => `#${Math.random().toString(16).slice(2, 8).padEnd(6, '0')}`;
+randomColor = () => `#${Math.random().toString(16).slice(2, 8).padStart(6, '0')}`;
 
 // Or
 const randomColor = () => `#${(~~(Math.random()*(1<<24))).toString(16)}`;
