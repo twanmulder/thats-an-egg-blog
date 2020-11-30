@@ -70,7 +70,7 @@ Using the “isArray” method and checking if the length of the array is higher
 
 ```javascript
 // Check if an array contains any items
-const isNotEmpty = arr => Array.isArray(arr) && Object.keys(arr).length > 0;
+const isNotEmpty = arr => Array.isArray(arr) && arr.length > 0;
 
 isNotEmpty([1, 2, 3]);
 // Result: true
