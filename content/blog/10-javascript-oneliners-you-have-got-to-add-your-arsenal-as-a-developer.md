@@ -55,8 +55,11 @@ A very straight forward way of converting a string to a number using type coerci
 ![JavaScript function that converts a string containing a number to an actual number](../../assets/one-3.png)
 
 ```javascript
-// Convert a string to a number
+// Convert a string to a number explicitly
 toNumber = str => +str;
+
+// Convert a string to a number implicitly
+toNumber = str => Number(str);
 
 toNumber("2");
 // Result: 2
