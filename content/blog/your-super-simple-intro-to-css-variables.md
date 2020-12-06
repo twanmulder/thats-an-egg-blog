@@ -274,6 +274,6 @@ I hope you learned something new today!
 
 Thank you so much for reading. For a little more in-depth knowledge on CSS Variables, definitely check out [the MDN spec for them](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties).
 
-If you like reading about CSS and web-development, you can read about [creating your first CSS animation](https://blog.prototypr.io/your-first-css-animation-69f0a83d8154) or [6 Essential JavaScript Tips for the Developer of 2020](https://blog.prototypr.io/6-essential-javascript-tips-for-the-developer-of-2020-6128c0181625).
+If you like reading about CSS and web-development, you can read about [creating your first CSS animation](/blog/your-first-css-animation/) or [6 Essential JavaScript Tips for the Developer of 2020](/blog/6-essential-javascript-tips-for-the-developer-of-2020/).
 
 Thanks! 😄
