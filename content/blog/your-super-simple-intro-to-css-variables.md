@@ -177,7 +177,7 @@ Something that comes up a lot, is the naming of your variables.
 
 A simple rule that you can keep in mind is:
 
-> *"Don’t name your variable based on its content, but on its purpose."*
+> **"Don’t name your variable based on its content, but on its purpose."**
 
 For example:
 
