@@ -3,7 +3,9 @@ path: your-super-simple-intro-to-css-variables
 date: 2020-12-06T21:09:39.542Z
 title: Your super-simple intro to CSS Variables
 categories: CSS
-description: Get started with this powerful CSS feature
+description: In this article, I'll go through why you should know what CSS
+  Variables are and how you can use them to level-up your CSS skills as a
+  developer.
 ---
 ![Woman typing on laptop. Decorative image.](../../assets/cssvar-bg.jpg "Woman typing on laptop. Decorative image.")
 
