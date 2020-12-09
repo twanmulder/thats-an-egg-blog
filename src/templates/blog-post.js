@@ -64,6 +64,41 @@ const Body = styled.article`
       margin-right: -10rem;
     }
   }
+
+  h2 .anchor,
+  h3 .anchor,
+  h4 .anchor,
+  h5 .anchor {
+    display: none;
+  }
+
+  @media (min-width: 769px) {
+    h2,
+    h3,
+    h4,
+    h5 {
+      scroll-margin-top: 128px;
+
+      :hover .anchor {
+        opacity: 0.75;
+      }
+
+      .anchor {
+        color: inherit;
+        display: block;
+        position: absolute;
+        left: 0px;
+        transform: translateX(-125%) translateY(-2px);
+        transition: opacity 250ms ease 0s;
+        opacity: 0;
+        box-shadow: none;
+
+        svg {
+          color: var(--textNormal);
+        }
+      }
+    }
+  }
 `
 
 const Title = styled.h1`
