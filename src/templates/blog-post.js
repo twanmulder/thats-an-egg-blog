@@ -68,7 +68,7 @@ const Body = styled.article`
     h3,
     h4,
     h5 {
-      scroll-margin-top: 128px;
+      scroll-margin-top: 50px;
 
       :hover .anchor {
         opacity: 0.75;
