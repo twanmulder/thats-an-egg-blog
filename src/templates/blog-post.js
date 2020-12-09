@@ -148,7 +148,6 @@ function BlogPostTemplate(props) {
   const categories = post.frontmatter.categories?.split(", ").sort()
   const tableOfContents = post.tableOfContents
   const { previous, next } = props.pageContext
-  console.log(tableOfContents["items"])
 
   return (
     <Fragment>
