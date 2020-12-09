@@ -20,7 +20,7 @@ Check out these 10 oneliners to step up your JavaScript game!
 
 <hr/>
 
-### 1. Capitalize the first letter of a string
+## 1. Capitalize the first letter of a string
 
 Using this function, you’ll be able to capitalize the first letter of the input of a string. This could be a single word, but also an entire sentence.
 
@@ -34,7 +34,7 @@ capitalize("hello, you are a cool person!");
 // Result: "Hello, you are a cool person!"
 ```
 
-### 2. Calculate the number of days between two dates
+## 2. Calculate the number of days between two dates
 
 This can be a little tricky to figure out sometimes. The “1000 \* 60 \* 60 * 24” is the number of milliseconds that are in a single day.
 
@@ -48,7 +48,7 @@ diffDays(new Date('2014-12-19'), new Date('2020-01-01'));
 // Result: 1839
 ```
 
-### 3. Convert a string to a number
+## 3. Convert a string to a number
 
 A very straight forward way of converting a string to a number using type coercion.
 
@@ -65,7 +65,7 @@ toNumber("2");
 // Result: 2
 ```
 
-### 4. Check if an array contains any items
+## 4. Check if an array contains any items
 
 Using the “isArray” method and checking if the length of the array is higher than 0, we can check if it is empty.
 
@@ -82,7 +82,7 @@ isNotEmpty([]);
 // Result: false
 ```
 
-### 5. Different ways of merging multiple arrays
+## 5. Different ways of merging multiple arrays
 
 There are a couple of different ways of merging arrays. One of them is using the “concat” method. Another one is using the spread operator (“…”).
 
@@ -104,7 +104,7 @@ const merge = [...new Set(a.concat(b))];
 const merge = [...new Set([...a, ...b])];
 ```
 
-### 6. Sort an array containing numbers
+## 6. Sort an array containing numbers
 
 JavaScript is very tricky when it comes to its built-in sort method. It doesn’t handle numbers well, so this function is a simple way of sorting your array.
 
@@ -118,7 +118,7 @@ sort([1, 5, 2, 4, 3]);
 // Result: [1, 2, 3, 4, 5]
 ```
 
-### 7. Generate a random HEX color
+## 7. Generate a random HEX color
 
 Generating an RGB color is a little more simple, but creating a random HEX color can get a little complex. This function will allow you to generate a random HEX color.
 
@@ -132,7 +132,7 @@ randomColor = () => `#${Math.random().toString(16).slice(2, 8).padStart(6, '0')}
 const randomColor = () => `#${(~~(Math.random()*(1<<24))).toString(16)}`;
 ```
 
-### 8. Get the value of a specified cookie
+## 8. Get the value of a specified cookie
 
 Know the name of a cookie and want to read out its specific value?
 
@@ -148,7 +148,7 @@ cookie('_ga');
 // Result: "GA1.2.1929736587.1601974046"
 ```
 
-### 9. Swap the values of 2 variables
+## 9. Swap the values of 2 variables
 
 Sometimes, you just need to swap 2 variables around. This simple trick will allow you to do that in a single line!
 
@@ -165,7 +165,7 @@ let b = 2;
 // b = 1
 ```
 
-### 10. Get the text that the user has selected
+## 10. Get the text that the user has selected
 
 Whenever a user has selected text using the cursor, we can access it using “getSelection” method on the window object.
 

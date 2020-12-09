@@ -11,7 +11,7 @@ You think your website may look good and that it functions properly, but have yo
 
 Here are 5 ways you’re probably not doing it right and how to fix them:
 
-### 1. Not using aria-current for your highlighted navigation item
+## 1. Not using aria-current for your highlighted navigation item
 
 ![HTML code block showing how you can use the aria-current attribute to indicate the current page](../../assets/menu-html.png "HTML code block showing how you can use the aria-current attribute to indicate the current page")
 
@@ -52,7 +52,7 @@ nav a[aria-current="page"] {
 }
 ```
 
-### 2. Not hiding punctuation using “aria-hidden”
+## 2. Not hiding punctuation using “aria-hidden”
 
 ![HTML code block showing how you can use the aria-hidden attribute to hide items from a screenreader.](../../assets/ariahidden.png "HTML code block showing how you can use the aria-hidden attribute to hide items from a screenreader.")
 
@@ -74,7 +74,7 @@ You can use the ARIA-HIDDEN attribute to hide items from the screen reader, but 
 <a href="/contact">Contact</a>
 ```
 
-### 3. Make buttons with icons accessible
+## 3. Make buttons with icons accessible
 
 ![HTML code block showing how you can add a descriptive text to a button containing only an icon.](../../assets/icon-html.png "HTML code block showing how you can add a descriptive text to a button containing only an icon.")
 
@@ -116,7 +116,7 @@ The user won’t be able to see this text, but the screen reader will pick up on
 }
 ```
 
-### 4. IF you have to use a DIV as a button, at least make it accessible
+## 4. IF you have to use a DIV as a button, at least make it accessible
 
 ![HTML code block showing how you can make a DIV that is used as a button accessible.](../../assets/buttondiv.png "HTML code block showing how you can make a DIV that is used as a button accessible.")
 
@@ -140,7 +140,7 @@ Set the ARIA-PRESSED to FALSE so the screen reader knows that the button isn’t
 <div class="button" role="button" tabindex="0" aria-pressed="false">Try for Free</div>
 ```
 
-### 5. PLEASE use alt text for the images you’re using
+## 5. PLEASE use alt text for the images you’re using
 
 ![HTML code block showing how you can make images descriptive using the “alt” attribute.](../../assets/imgalt.png "HTML code block showing how you can make images descriptive using the “alt” attribute.")
 
@@ -176,7 +176,7 @@ Don’t remove the alt, just leave it empty:
 
 <hr />
 
-# That’s all!
+## That’s all!
 
 Look at how much you’ve learned! I hope you will use this knowledge to make the web just a little bit better.
 

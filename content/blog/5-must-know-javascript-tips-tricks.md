@@ -9,7 +9,7 @@ description: Must know JavaScript tips & tricks for the JS developer of 2020
 
 JavaScript keeps adding new and neat features. Sometimes, it’s hard to keep up. In this article, I’ll share a couple of cool tips & tricks to keep you up to speed and deepen your JS knowledge.
 
-### 1. Create an array with unique values using the “Set” object
+## 1. Create an array with unique values using the “Set” object
 
 ![Create an array with unique items using "Set" by That's an Egg blog javascript 2020](../../assets/setarray.png "Create an array with unique items using \"Set\" by That's an Egg blog  javascript 2020")
 
@@ -26,7 +26,7 @@ Now, this example uses integers, but you can use strings and floating-point numb
 
 For a little more in-depth knowledge about the Set object, check out this [article by Claire-Parker Jones](https://dev.to/clairecodes/how-to-create-an-array-of-unique-values-in-javascript-using-sets-5dg6).
 
-### 2. Shorten your “if” statements
+## 2. Shorten your “if” statements
 
 ![Shorten if statement using ternary, by That's an Egg 2020 javascript blog](../../assets/ifstatement.png "Shorten if statement using ternary, by That's an Egg 2020 javascript blog")
 
@@ -51,7 +51,7 @@ iAmHungry? bakeAnEgg() : 0
 
 Remember, readability & ease-of-use are more important than a couple less lines of code.
 
-### 3. Shorten an array using its length property
+## 3. Shorten an array using its length property
 
 ![Shorten an aray using it's length property, by That's an Egg blog 2020 javascript](../../assets/arraylength.png "Shorten an aray using it's length property, by That's an Egg blog 2020 javascript")
 
@@ -66,7 +66,7 @@ array.length = 4
 
 Important to know though is that this is a destructive way of changing the array. This means you lose all the other values that used to be in the array.
 
-### 4. Using the spread operator to combine objects
+## 4. Using the spread operator to combine objects
 
 ![Use the spread operator to combine objects, by That's an Egg 2020 javascript blog](../../assets/spreadobject.png "Use the spread operator to combine objects, by That's an Egg 2020 javascript blog")
 
@@ -87,7 +87,7 @@ const objCombined = {...obj1, ...obj2, ...obj3}
 
 Something to keep in mind while using this is that whenever you update one of the objects, it doesn’t reflect those changes in the combined object.
 
-### 5. Using the window.location object
+## 5. Using the window.location object
 
 ![Access the window object using javascript, by That's an Egg blog 2020](../../assets/windowobject.png "Access the window object using javascript, by That's an Egg blog 2020")
 
@@ -107,6 +107,6 @@ window.location.search == `?s=article`
 
 - - -
 
-#### That’s all!
+## That’s all!
 
 Thanks for reading, look at how much you’ve learned 😄

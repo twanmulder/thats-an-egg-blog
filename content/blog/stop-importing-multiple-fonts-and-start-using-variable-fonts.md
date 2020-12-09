@@ -16,7 +16,7 @@ description: Learn how you can make Variable Fonts work to your advantage in
 
 *In this short article, I’ll take you through how you can use variable fonts to your advantage in creating efficient & fun websites.*
 
-*<hr />*
+<hr />
 
 ## Introduction
 
@@ -32,13 +32,9 @@ You will need to import all three of these fonts, which can affect your page’s
 
 Imagine needing even more different typefaces and fonts!
 
-<br />
-
 ### This is where variable fonts come into play.
 
 Instead of needing to import multiple fonts for all the different **weights** and *italics* you are using, you need to import just **ONE**.
-
-<br />
 
 ## Follow along
 
@@ -51,8 +47,6 @@ These are the steps we will be following:
 * **(extra) Change the Weights**
 
 That’s all you’ll need 😄
-
-<br />
 
 ## Link to the Font
 
@@ -87,8 +81,6 @@ Then, we define which font weights will be used. For this article, we’ll be us
 ```
 
 Great! Now the font is ready to use 🥳
-
-<br />
 
 ## Set the Weights
 
@@ -134,7 +126,6 @@ So instead of using 100/200/300/etc. we can use any number in between.
 
 We’ll be using this in the final/extra step!
 
-<br />
 
 ## **(extra) Change the Weights**
 
