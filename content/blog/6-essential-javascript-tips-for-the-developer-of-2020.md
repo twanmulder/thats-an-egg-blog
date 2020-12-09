@@ -115,7 +115,7 @@ let avg = sum / values.length;
 
 We can get the total sum of all the items inside an array using the reduce method, after which we divide it by its length to get the average.
 
-### 6. Convert truthy/falsy values to boolean
+## 6. Convert truthy/falsy values to boolean
 
 ![](https://cdn-images-1.medium.com/max/2400/1*tsuLOYxPZtmogjar_QYnCQ.png)
 

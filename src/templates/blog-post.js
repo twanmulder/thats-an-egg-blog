@@ -6,6 +6,7 @@ import styled from "styled-components"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import TableOfContents from "../components/tableofcontents"
 import NewsletterForm from "../components/newsletterform"
 import JumpToTop from "../components/jumptotop"
 
@@ -13,6 +14,8 @@ import { rhythm } from "../utils/typography"
 import { formatReadingTime } from "../utils/helpers"
 
 const Body = styled.article`
+  max-width: calc(1100px - 350px);
+
   a {
     box-shadow: 0 1px 0 0 currentColor;
 
@@ -21,7 +24,7 @@ const Body = styled.article`
     }
   }
 
-  h6 {
+  p > img + em {
     margin-top: -1.75rem;
     text-align: center;
     font-size: 14px;
@@ -29,6 +32,7 @@ const Body = styled.article`
     font-weight: normal;
     font-style: normal;
     font-family: Open Sans, sans-serif;
+    display: block;
   }
 
   pre {
@@ -50,19 +54,6 @@ const Body = styled.article`
 
   iframe {
     width: 100%;
-  }
-
-  @media (min-width: 1024px) {
-    pre {
-      width: 120%;
-      margin-left: -10%;
-    }
-
-    iframe {
-      width: 150%;
-      margin-left: -10rem;
-      margin-right: -10rem;
-    }
   }
 
   h2 .anchor,
@@ -155,12 +146,15 @@ const Categories = props => {
 function BlogPostTemplate(props) {
   const post = props.data.mdx
   const categories = post.frontmatter.categories?.split(", ").sort()
+  const tableOfContents = post.tableOfContents
   const { previous, next } = props.pageContext
+  console.log(tableOfContents["items"])
 
   return (
     <Fragment>
-      <Layout>
+      <Layout wrapperFormat="article">
         <SEO title={post.frontmatter.title} description={post.frontmatter.description || post.excerpt} />
+        {typeof tableOfContents["items"] === "undefined" ? null : <TableOfContents table={tableOfContents} />}
         <Body>
           <Title>{post.frontmatter.title}</Title>
           {categories.length ? <Categories categories={categories} /> : null}
@@ -170,32 +164,33 @@ function BlogPostTemplate(props) {
           </Details>
           <MDXRenderer>{post.body}</MDXRenderer>
           <hr style={{ marginBottom: rhythm(1.5) }} />
+
+          <article>
+            <NewsletterForm />
+            <h3 style={{ marginTop: rhythm(1.5) }}>
+              <Link to="/" style={{ boxShadow: `none` }}>
+                That's an Egg
+              </Link>
+            </h3>
+            <Bio />
+            <PostNavigation>
+              <li>
+                {previous && (
+                  <Link to={`/blog${previous.fields.slug}`} rel="prev">
+                    ← {previous.frontmatter.title}
+                  </Link>
+                )}
+              </li>
+              <li>
+                {next && (
+                  <Link to={`/blog${next.fields.slug}`} rel="next">
+                    {next.frontmatter.title} →
+                  </Link>
+                )}
+              </li>
+            </PostNavigation>
+          </article>
         </Body>
-        <article>
-          <NewsletterForm />
-          <h3 style={{ marginTop: rhythm(1.5) }}>
-            <Link to="/" style={{ boxShadow: `none` }}>
-              That's an Egg
-            </Link>
-          </h3>
-          <Bio />
-          <PostNavigation>
-            <li>
-              {previous && (
-                <Link to={`/blog${previous.fields.slug}`} rel="prev">
-                  ← {previous.frontmatter.title}
-                </Link>
-              )}
-            </li>
-            <li>
-              {next && (
-                <Link to={`/blog${next.fields.slug}`} rel="next">
-                  {next.frontmatter.title} →
-                </Link>
-              )}
-            </li>
-          </PostNavigation>
-        </article>
       </Layout>
       <JumpToTop />
     </Fragment>
@@ -217,6 +212,7 @@ export const pageQuery = graphql`
       excerpt(pruneLength: 160)
       body
       timeToRead
+      tableOfContents
       frontmatter {
         title
         date(formatString: "DD MMMM, YYYY")

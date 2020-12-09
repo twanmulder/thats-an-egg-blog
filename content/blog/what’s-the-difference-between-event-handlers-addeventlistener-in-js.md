@@ -69,8 +69,7 @@ By adding an event listener to an object, we can catch a wide range of events tr
 You may also be familiar with this. They may look a little something like this:
 
 ![JavaScript code block showing the use of an event listener](../../assets/button-eventlistener.png "JavaScript code block showing the use of an event listener")
-
-###### Using an added click event listener to log “Hello!” in the console
+*Using an added click event listener to log “Hello!” in the console*
 
 ```javascript
 const button = document.querySelector(".btn");
@@ -105,8 +104,7 @@ Which takes us to the main learning:
 That’s the key difference. So what does this look like?
 
 ![JavaScript code block showing how when you use the “onclick” property of an element twice, it will overwrite the first one.](../../assets/button-multiple-eventhandler.png "JavaScript code block showing how when you use the “onclick” property of an element twice, it will overwrite the first one.")
-
-###### Here, the second event handler will overwrite the first one.
+*Here, the second event handler will overwrite the first one.*
 
 ```javascript
 const button = document.querySelector(".btn");
@@ -129,8 +127,7 @@ That way, the first one will be overwritten and when a user clicks the button, i
 ### So what happens when we use “addEventListener”?
 
 ![JavaScript code block showing the use of multiple click event listeners.](../../assets/button-multiple-eventlistener.png "JavaScript code block showing the use of multiple click event listeners.")
-
-###### Using event listeners, we can call multiple functions when a user clicks on the button.
+*Using event listeners, we can call multiple functions when a user clicks on the button.*
 
 ```javascript
 const button = document.querySelector(".btn");

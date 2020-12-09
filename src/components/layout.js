@@ -25,6 +25,18 @@ const ContentWrapper = styled.div`
     padding: 0;
   }
 
+  &.article {
+    max-width: 1100px;
+    padding: ${rhythm(1.5)} 1.3125rem;
+
+    main {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  }
+
   @media (min-width: 768px) {
     min-height: calc(100vh - 140px);
   }
@@ -40,6 +52,8 @@ export default function Layout(props) {
     contentWrapperClassName = "wide"
   } else if (wrapperFormat === "full") {
     contentWrapperClassName = "full"
+  } else if (wrapperFormat === "article") {
+    contentWrapperClassName = "article"
   }
 
   return (

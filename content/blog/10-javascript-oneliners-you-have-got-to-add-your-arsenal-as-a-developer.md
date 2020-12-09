@@ -7,8 +7,7 @@ description: "Step up your JavaScript game in a couple of minutes by learning
   these awesome oneliners. "
 ---
 ![Decoration image by Charles Deluvio. A hand showing a single finger.](../../assets/one-bg.jpg)
-
-###### Photo by [Charles Deluvio](https://unsplash.com/@charlesdeluvio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/one?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+*Photo by [Charles Deluvio](https://unsplash.com/@charlesdeluvio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/one?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*
 
 JavaScript can do a lot of amazing things!
 

@@ -164,7 +164,7 @@ And here we go:
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
 
-###### Move your mouse inside the Sandbox!
+*Move your mouse inside the Sandbox!*
 
 Here’s a GIF of the effect if you’re on mobile:
 
