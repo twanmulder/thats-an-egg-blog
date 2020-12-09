@@ -23,7 +23,7 @@ In this article, I’ll go through why you should know what CSS Variables are an
 
 - - -
 
-## So what are CSS Variables?
+## What are CSS Variables?
 
 *CSS Variables (or CSS Custom Properties) are entities defined by CSS authors that contain specific values to be reused throughout a document.*
 
@@ -173,7 +173,7 @@ If you want to fiddle around with this code, I’ve [created a sandbox where you
 
 - - -
 
-## So now we know the basics, what are some do’s and don’ts?
+## Now that we know the basics, what are some do’s and don’ts?
 
 Something that comes up a lot, is the naming of your variables.
 
@@ -226,7 +226,7 @@ Saves a ton of time, and a ton of headaches!
 
 - - -
 
-## So, what about Internet Explorer?
+## Oh boy, what about Internet Explorer?
 
 Ah, the good old browser compatibility check.
 
@@ -264,7 +264,7 @@ It’s a little more complex, there’s an [awesome article on Readium that goes
 
 - - -
 
-## So, what have we learned?
+## Conclusion - What have we learned?
 
 * We can create our own CSS Variables in the CSS files we’re using.
 * We do this by creating a custom property that starts with 2 dashes.
