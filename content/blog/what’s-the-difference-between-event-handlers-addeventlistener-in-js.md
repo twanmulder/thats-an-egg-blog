@@ -39,8 +39,7 @@ Sounds a little complex, but you’ve probably already seen it before.
 It could look like something like this:
 
 ![JavaScript code block showing the use of an event handler](../../assets/button-eventhandler.png "JavaScript code block showing the use of an event handler")
-
-###### Using the onclick event handler to log “Hello!” in the console
+*Using the onclick event handler to log “Hello!” in the console*
 
 ```javascript
 const button = document.querySelector(".btn");
