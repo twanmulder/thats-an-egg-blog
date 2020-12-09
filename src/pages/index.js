@@ -97,6 +97,7 @@ const StyledLink = styled(Link)`
     font-style: italic;
     opacity: 0.8;
     margin-bottom: ${rhythm(1 / 4)};
+    max-width: 90%;
   }
 
   svg {
