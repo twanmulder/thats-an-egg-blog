@@ -8,6 +8,7 @@ description: In this article, I'll go through why you should know what CSS
   developer.
 ---
 ![Woman typing on laptop. Decorative image.](../../assets/cssvar-bg.jpg "Woman typing on laptop. Decorative image.")
+*Photo by [Sigmund](https://unsplash.com/@sigmund) on [Unsplash](https://unsplash.com/s/photos/css)*
 
 I’ve been using CSS variables for quite some time now. They save me a bunch of time and headaches when it comes to writing CSS.
 
@@ -20,8 +21,6 @@ Or you’re just starting your journey as a web-developer and stumbled on the te
 Maybe you just want to freshen up your knowledge on the concept.
 
 In this article, I’ll go through why you should know what CSS Variables are and how you can use them to level-up your CSS skills as a developer.
-
-- - -
 
 ## What are CSS Variables?
 
@@ -36,8 +35,6 @@ A CSS Variable will look a lot like a regular line of CSS.
 But instead of using an already existing property like “font-size”, “margin”, or “padding”, we will create our own custom property.
 
 Hence the name “CSS Custom Properties”.
-
-- - -
 
 ## Okay, that’s cool, but how do I create a CSS Variable?
 
@@ -70,8 +67,6 @@ So now, our CSS will look like this:
 Our CSS Variable `--super-cool-text-color` is now available anywhere in our CSS file.
 
 This means we can now start styling our website using this variable.
-
-- - -
 
 ## So we created a CSS Variable, now how do I use it?
 
@@ -171,8 +166,6 @@ And BOOM, all our headers just turned from red to blue.
 
 If you want to fiddle around with this code, I’ve [created a sandbox where you can edit the CSS yourself and see what happens!](https://codesandbox.io/s/css-variables-21hzk?file=/src/styles.css)
 
-- - -
-
 ## Now that we know the basics, what are some do’s and don’ts?
 
 Something that comes up a lot, is the naming of your variables.
@@ -224,8 +217,6 @@ Now, if we want to update the color of our background, we know exactly which var
 
 Saves a ton of time, and a ton of headaches!
 
-- - -
-
 ## Oh boy, what about Internet Explorer?
 
 Ah, the good old browser compatibility check.
@@ -261,8 +252,6 @@ This looks like it defeats the purpose of CSS Variables, and you’re pretty rig
 Thankfully, there is a way to work around this using some JavaScript.
 
 It’s a little more complex, there’s an [awesome article on Readium that goes in-depth on this problem.](https://readium.org/readium-css/docs/CSS07-variables.html#fallback)
-
-- - -
 
 ## Conclusion - What have we learned?
 
