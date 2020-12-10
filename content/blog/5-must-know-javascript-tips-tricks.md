@@ -3,7 +3,8 @@ path: 5-Must-know-Javascript-Tips-&-Tricks
 date: 2020-07-13T12:34:16.666Z
 title: 5 Must-know Javascript Tips & Tricks
 categories: JavaScript
-description: Must know JavaScript tips & tricks for the JS developer of 2020
+description: JavaScript keeps adding new and neat features. In this article,
+  we'll go through 5 must-know JS tips and tricks
 ---
 ![Screenshot of That's an Egg logo, blog about 5 must know javascript tips and tricks 2020 developer](../../assets/screenshot.png "Screenshot of That's an Egg logo, blog about 5 must know javascript tips and tricks 2020 developer")
 
