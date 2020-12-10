@@ -4,7 +4,8 @@ import styled from "styled-components"
 const Toc = styled.aside`
   position: sticky;
   padding-left: 50px;
-  top: 175px;
+  top: 90px;
+  margin-top: 60px;
   max-height: 70vh;
   width: 350px;
   display: none;
