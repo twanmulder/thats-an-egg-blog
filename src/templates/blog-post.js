@@ -1,7 +1,7 @@
 import React, { Fragment } from "react"
 import { Link, graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
-import styled from "styled-components"
+import styled, { createGlobalStyle } from "styled-components"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -13,7 +13,28 @@ import JumpToTop from "../components/jumptotop"
 import { rhythm } from "../utils/typography"
 import { formatReadingTime } from "../utils/helpers"
 
+const GlobalStyle = createGlobalStyle`
+  p, li {
+    font-size: 19px;
+  }
+
+  p {
+    margin-bottom: 32px;
+  }
+
+  @media (max-width: 563px) {
+    p, li {
+      font-size: 18px;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+    }
+  }
+`
+
 const Body = styled.article`
+  width: 100%;
   max-width: calc(1100px - 350px);
 
   a {
@@ -151,6 +172,7 @@ function BlogPostTemplate(props) {
 
   return (
     <Fragment>
+      <GlobalStyle />
       <Layout wrapperFormat="article">
         <SEO title={post.frontmatter.title} description={post.frontmatter.description || post.excerpt} />
         {typeof tableOfContents["items"] === "undefined" ? null : <TableOfContents table={tableOfContents} />}
