@@ -108,6 +108,10 @@ const DesktopListItem = styled.li`
   &:not(:last-child) {
   }
 
+  a {
+    font-size: 16px;
+  }
+
   @media (min-width: 768px) {
     padding-right: ${rhythm(1.5)};
   }
@@ -259,7 +263,7 @@ export default function Navigation(props) {
         </Link>
         <DesktopList>
           <DesktopListItem>
-            <Link to="/">Blog</Link>
+            <Link to="/blog">Blog</Link>
           </DesktopListItem>
           <DesktopListItem>
             <Link to="/resources">Resources</Link>

@@ -28,15 +28,6 @@ const StyledPostWrapper = styled.section`
     color: var(--linkTitleHover);
   }
 
-  .view-articles {
-    color: var(--linkTitleHover);
-    font-size: 19px;
-
-    :hover {
-      box-shadow: none;
-    }
-  }
-
   @media (max-width: 767px) {
     border-radius: 0;
     padding: 40px 20px 20px 20px;
@@ -245,24 +236,24 @@ const BlogPosts = props => {
   )
 }
 
-function IndexPage(props) {
+function Blog(props) {
+  const title = "Blog - All articles"
+  const subtitle = "You can find all my articles here!"
+
   const { data } = props
   const posts = data.allMdx.edges
 
   return (
     <StaticQuery
-      query={pageQuery}
+      query={blogPageQuery}
       render={data => {
         return (
           <Layout wrapperFormat="full" navStyle="hero">
             <SEO title="Articles making your developer life easier" keywords={[`developer`, `portfolio`, `javascript`, `react`, `blog`]} />
-            <Hero />
+            <Hero title={title} subtitle={subtitle} hideImage={true} />
             <StyledPostWrapper>
               <h4>Most recent article</h4>
               <BlogPosts posts={posts} />
-              <Link to="/blog" className="view-articles">
-                View all articles
-              </Link>
             </StyledPostWrapper>
             <IndexLinks>
               <Link to="/your-website-sucks" className="your-website-sucks">
@@ -283,16 +274,16 @@ function IndexPage(props) {
   )
 }
 
-export default IndexPage
+export default Blog
 
-export const pageQuery = graphql`
-  query PageQuery {
+export const blogPageQuery = graphql`
+  query blogPageQuery {
     site {
       siteMetadata {
         title
       }
     }
-    allMdx(limit: 5, sort: { fields: [frontmatter___date], order: DESC }) {
+    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
           excerpt

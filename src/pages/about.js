@@ -79,7 +79,7 @@ function About() {
           You might know the expression <em>"That's a piece of cake"</em>. In Dutch, we have a saying that goes likewise. Roughly translated back to English, it says <em>"That's an Egg"</em>. With my writing, I want to make you feel confident in your ability as a developer and think; "That's an
           Egg!".
         </p>
-        <Link to="/">
+        <Link to="/blog">
           <Button marginTop={rhythm(1)} marginBottom={rhythm(2)}>
             Start Reading
           </Button>
