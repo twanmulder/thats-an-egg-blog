@@ -6,7 +6,7 @@ categories: Performance, CSS
 description: Learn how you can make Variable Fonts work to your advantage in
   this beginner-friendly article.
 ---
-![Letters spread out over a wooden table](../../assets/letters.jpg "Letters spread out over a wooden table")
+![Letters spread out over a wooden table](/assets/letters.jpg "Letters spread out over a wooden table")
 
 ***Variable Fonts.***
 
@@ -56,7 +56,7 @@ There’s this great resource called *[v-fonts.com](https://v-fonts.com/)* where
 
 I found a great font called “Roboto Delta” hosted *[here](https://googlefonts.github.io/fluid/)*. I’ll be using this from here on.
 
-![Screenshot of the website "v-fonts.com"](../../assets/v-fonts.png "Screenshot of the website \"v-fonts.com\"")
+![Screenshot of the website "v-fonts.com"](/assets/v-fonts.png "Screenshot of the website \"v-fonts.com\"")
 
 Once we’ve found our variable font, we can start link to it in our CSS file.
 
@@ -168,7 +168,7 @@ And here we go:
 
 Here’s a GIF of the effect if you’re on mobile:
 
-![GIF of text, it's font-weight changing based on the cursor's position](../../assets/moving-cursor.gif "GIF of text, it's font-weight changing based on the cursor's position")
+![GIF of text, it's font-weight changing based on the cursor's position](/assets/moving-cursor.gif "GIF of text, it's font-weight changing based on the cursor's position")
 
 <hr />
 

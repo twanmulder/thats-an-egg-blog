@@ -5,7 +5,7 @@ title: What’s the difference between Event Handlers & addEventListener in JS?
 categories: JavaScript
 description: The difference is subtle but essential to know.
 ---
-![A bike leaning against a yellow wall, decorative image.](../../assets/button-bike.jpg "A bike leaning against a yellow wall, decorative image.")
+![A bike leaning against a yellow wall, decorative image.](/assets/button-bike.jpg "A bike leaning against a yellow wall, decorative image.")
 
 Events!
 
@@ -38,7 +38,7 @@ Sounds a little complex, but you’ve probably already seen it before.
 
 It could look like something like this:
 
-![JavaScript code block showing the use of an event handler](../../assets/button-eventhandler.png "JavaScript code block showing the use of an event handler")
+![JavaScript code block showing the use of an event handler](/assets/button-eventhandler.png "JavaScript code block showing the use of an event handler")
 *Using the onclick event handler to log “Hello!” in the console*
 
 ```javascript
@@ -67,7 +67,7 @@ By adding an event listener to an object, we can catch a wide range of events tr
 
 You may also be familiar with this. They may look a little something like this:
 
-![JavaScript code block showing the use of an event listener](../../assets/button-eventlistener.png "JavaScript code block showing the use of an event listener")
+![JavaScript code block showing the use of an event listener](/assets/button-eventlistener.png "JavaScript code block showing the use of an event listener")
 *Using an added click event listener to log “Hello!” in the console*
 
 ```javascript
@@ -102,7 +102,7 @@ Which takes us to the main learning:
 
 That’s the key difference. So what does this look like?
 
-![JavaScript code block showing how when you use the “onclick” property of an element twice, it will overwrite the first one.](../../assets/button-multiple-eventhandler.png "JavaScript code block showing how when you use the “onclick” property of an element twice, it will overwrite the first one.")
+![JavaScript code block showing how when you use the “onclick” property of an element twice, it will overwrite the first one.](/assets/button-multiple-eventhandler.png "JavaScript code block showing how when you use the “onclick” property of an element twice, it will overwrite the first one.")
 *Here, the second event handler will overwrite the first one.*
 
 ```javascript
@@ -125,7 +125,7 @@ That way, the first one will be overwritten and when a user clicks the button, i
 
 ### So what happens when we use “addEventListener”?
 
-![JavaScript code block showing the use of multiple click event listeners.](../../assets/button-multiple-eventlistener.png "JavaScript code block showing the use of multiple click event listeners.")
+![JavaScript code block showing the use of multiple click event listeners.](/assets/button-multiple-eventlistener.png "JavaScript code block showing the use of multiple click event listeners.")
 *Using event listeners, we can call multiple functions when a user clicks on the button.*
 
 ```javascript

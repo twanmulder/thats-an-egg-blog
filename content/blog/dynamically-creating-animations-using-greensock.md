@@ -5,7 +5,7 @@ title: Dynamically creating animations using Greensock
 categories: Animation, CSS, GSAP, JavaScript
 description: How you can utilise Greensocks powerful methods to create beautiful animations.
 ---
-![The text "The best products start with Sketch" appear/slide in to frame](../../assets/dynamic-sketch.gif "This is what we’ll be generating dynamically!")
+![The text "The best products start with Sketch" appear/slide in to frame](/assets/dynamic-sketch.gif "This is what we’ll be generating dynamically!")
 *This is what we’ll be generating dynamically!*
 
 *This is actually a follow-up on my previous article “[Animating text like Sketch does using only CSS](https://www.thatsanegg.com/blog/animating-text-like-sketch-does-using-only-css/)”. It isn’t necessary to read it before going any further, but it does provide a good starting point and some basic knowledge of what is going on.*
@@ -56,7 +56,7 @@ So far, nothing crazy. With some simple CSS styling, we get a page looking like 
 
 So to fully understand how we will create this effect, I highly recommend reading [this 3 min. article](https://www.thatsanegg.com/blog/animating-text-like-sketch-does-using-only-css/) on the CSS logic behind it. In short, we create a “wordContainer” in which we’ll place a single word. Then, we hide its overflow and position the words below the container. This way, the words are not visible until we animate them upwards. We create a slight delay in the upward movement of the words, so they appear one after the other.
 
-![A GIF showing the CSS overflow property](../../assets/overflow-container-animation.gif "TOP overflow: visible, BOTTOM overflow: hidden")
+![A GIF showing the CSS overflow property](/assets/overflow-container-animation.gif "TOP overflow: visible, BOTTOM overflow: hidden")
 *TOP “overflow: visible”, BOTTOM “overflow: hidden”*
 
 To start off, we define a sentence that we want to display. In this case, we’ll use “The best products start with Sketch”. We’ll put it in an array like this:
@@ -195,4 +195,4 @@ So far, we’ve created a very neat, dynamically generated text animation. We di
 
 Thank you for reading!
 
-![Banner containing the logo of Sketch](../../assets/sketch-banner-blue.png "blue Sketch banner")
+![Banner containing the logo of Sketch](/assets/sketch-banner-blue.png "blue Sketch banner")

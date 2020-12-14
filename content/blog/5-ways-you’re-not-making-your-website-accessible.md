@@ -5,7 +5,7 @@ title: 5 Ways You’re Not Making Your Website Accessible
 categories: Accessibility, HTML, CSS
 description: It doesn’t have to be that way!
 ---
-![Code block showing the title, subtitle, and author of this article. Prototypr 2020 Twan Mulder.](../../assets/articleheader.png "Code block showing the title, subtitle, and author of this article. Prototypr 2020 Twan Mulder.")
+![Code block showing the title, subtitle, and author of this article. Prototypr 2020 Twan Mulder.](/assets/articleheader.png "Code block showing the title, subtitle, and author of this article. Prototypr 2020 Twan Mulder.")
 
 You think your website may look good and that it functions properly, but have you thought about accessibility? Accessibility shouldn’t be an afterthought, it should be the standard!
 
@@ -13,7 +13,7 @@ Here are 5 ways you’re probably not doing it right and how to fix them:
 
 ## 1. Not using aria-current for your highlighted navigation item
 
-![HTML code block showing how you can use the aria-current attribute to indicate the current page](../../assets/menu-html.png "HTML code block showing how you can use the aria-current attribute to indicate the current page")
+![HTML code block showing how you can use the aria-current attribute to indicate the current page](/assets/menu-html.png "HTML code block showing how you can use the aria-current attribute to indicate the current page")
 
 I see a lot of websites highlighting the current page the user is on inside the navigation. A great way of showing the user where they are.
 
@@ -39,7 +39,7 @@ Use the ARIA-CURRENT attribute to let the screen reader know what, for example, 
 
 You can even use the ARIA-CURRENT selector in CSS to change the styling of the highlighted navigation element. No more “active” classes.
 
-![CSS code block showing how you can use the aria-current selector to style your elements.](../../assets/menu-css.png "CSS code block showing how you can use the aria-current selector to style your elements.")
+![CSS code block showing how you can use the aria-current selector to style your elements.](/assets/menu-css.png "CSS code block showing how you can use the aria-current selector to style your elements.")
 
 ```css
 /* DON'T STYLE IT LIKE THIS */
@@ -54,7 +54,7 @@ nav a[aria-current="page"] {
 
 ## 2. Not hiding punctuation using “aria-hidden”
 
-![HTML code block showing how you can use the aria-hidden attribute to hide items from a screenreader.](../../assets/ariahidden.png "HTML code block showing how you can use the aria-hidden attribute to hide items from a screenreader.")
+![HTML code block showing how you can use the aria-hidden attribute to hide items from a screenreader.](/assets/ariahidden.png "HTML code block showing how you can use the aria-hidden attribute to hide items from a screenreader.")
 
 You may want to show a couple of links separated by a dot. Maybe in your footer or in your navigation.
 
@@ -76,7 +76,7 @@ You can use the ARIA-HIDDEN attribute to hide items from the screen reader, but 
 
 ## 3. Make buttons with icons accessible
 
-![HTML code block showing how you can add a descriptive text to a button containing only an icon.](../../assets/icon-html.png "HTML code block showing how you can add a descriptive text to a button containing only an icon.")
+![HTML code block showing how you can add a descriptive text to a button containing only an icon.](/assets/icon-html.png "HTML code block showing how you can add a descriptive text to a button containing only an icon.")
 
 Using a button with only an icon inside it?
 
@@ -101,7 +101,7 @@ Add a span inside your button containing this descriptive text. You can then hid
 
 The user won’t be able to see this text, but the screen reader will pick up on it and read it to the user.
 
-![CSS code block showing how you can hide an elements from view but not from a screenreader.](../../assets/icon-css.png "CSS code block showing how you can hide an elements from view but not from a screenreader.")
+![CSS code block showing how you can hide an elements from view but not from a screenreader.](/assets/icon-css.png "CSS code block showing how you can hide an elements from view but not from a screenreader.")
 
 ```css
 .visuallyhidden {
@@ -118,7 +118,7 @@ The user won’t be able to see this text, but the screen reader will pick up on
 
 ## 4. IF you have to use a DIV as a button, at least make it accessible
 
-![HTML code block showing how you can make a DIV that is used as a button accessible.](../../assets/buttondiv.png "HTML code block showing how you can make a DIV that is used as a button accessible.")
+![HTML code block showing how you can make a DIV that is used as a button accessible.](/assets/buttondiv.png "HTML code block showing how you can make a DIV that is used as a button accessible.")
 
 This is something that I see happen way too much.
 
@@ -142,7 +142,7 @@ Set the ARIA-PRESSED to FALSE so the screen reader knows that the button isn’t
 
 ## 5. PLEASE use alt text for the images you’re using
 
-![HTML code block showing how you can make images descriptive using the “alt” attribute.](../../assets/imgalt.png "HTML code block showing how you can make images descriptive using the “alt” attribute.")
+![HTML code block showing how you can make images descriptive using the “alt” attribute.](/assets/imgalt.png "HTML code block showing how you can make images descriptive using the “alt” attribute.")
 
 This may be an obvious one to some of you, but this is a very important point that a lot of developers forget or don’t make time for
 

@@ -5,7 +5,7 @@ title: Create landing pages like Stripe does
 categories: HTML, CSS
 description: Using basic CSS tricks to create beautiful websites.
 ---
-![Logo of the business "Stripe"](../../assets/stripe-logo.png)
+![Logo of the business "Stripe"](/assets/stripe-logo.png)
 *Striking isn’t it?*
 
 *Every single time I get to open [Stripes website](https://stripe.com/), I can’t help but smile a little. A fast-loading, beautifully designed website which uses awe-inspiring animations and techniques to get the correct message to its users. My favourite pages include the ones about [the enterprise](https://stripe.com/enterprise), [payments](https://stripe.com/payments), or [Sigma](https://stripe.com/sigma). There is so much you can learn from this website, and not just as a designer or developer.*
@@ -14,7 +14,7 @@ description: Using basic CSS tricks to create beautiful websites.
 
 *<hr/>*
 
-![The homepage of the company Stripe](../../assets/stripe-home-page.png)
+![The homepage of the company Stripe](/assets/stripe-home-page.png)
 
 ###### What we’ll be (partly) recreating
 
@@ -85,7 +85,7 @@ Now that we’ve got out text, the only thing left will be the image. I’ve kin
 
 That’s all for the HTML! We’ve created our background, a text element, and an image. Now let’s get to styling 😄
 
-![Stripe's homepage recreated, without styling](../../assets/stripe-progress-1.png)
+![Stripe's homepage recreated, without styling](/assets/stripe-progress-1.png)
 *What we’ve got so far (very pretty)*
 
 ## CSS Styling

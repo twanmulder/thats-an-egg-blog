@@ -7,7 +7,7 @@ description: In this article, I'll go through why you should know what CSS
   Variables are and how you can use them to level-up your CSS skills as a
   developer.
 ---
-![Woman typing on laptop. Decorative image.](../../assets/cssvar-bg.jpg "Woman typing on laptop. Decorative image.")
+![Woman typing on laptop. Decorative image.](/assets/cssvar-bg.jpg "Woman typing on laptop. Decorative image.")
 *Photo by [Sigmund](https://unsplash.com/@sigmund) on [Unsplash](https://unsplash.com/s/photos/css)*
 
 I’ve been using CSS variables for quite some time now. They save me a bunch of time and headaches when it comes to writing CSS.
@@ -40,7 +40,7 @@ Hence the name “CSS Custom Properties”.
 
 Declaring a CSS Variable is done using a custom property name that begins with a double hyphen (`--`), and a property value that can be any valid CSS value. Like any other property, this is written inside a ruleset, like so:
 
-![CSS Code Block.](../../assets/cssvar-1.png "CSS Code Block.")
+![CSS Code Block.](/assets/cssvar-1.png "CSS Code Block.")
 
 ```css
 element {
@@ -56,7 +56,7 @@ This is why it is a common practice to add the CSS Variables to the `:root` pseu
 
 So now, our CSS will look like this:
 
-![CSS Code Block.](../../assets/cssvar-2.png "CSS Code Block.")
+![CSS Code Block.](/assets/cssvar-2.png "CSS Code Block.")
 
 ```css
 :root {
@@ -78,7 +78,7 @@ Whenever you’re working on a large or complex project, your CSS tends to get c
 
 Imagine you have some custom styling for the headers on your website:
 
-![CSS Code Block.](../../assets/cssvar-3.png "CSS Code Block.")
+![CSS Code Block.](/assets/cssvar-3.png "CSS Code Block.")
 
 ```css
 h1 {
@@ -106,7 +106,7 @@ We’ll have to change it at three different places (for the h1, h2, and h3).
 
 **Now, let’s add our CSS Variable magic:**
 
-![CSS Code Block.](../../assets/cssvar-4.png "CSS Code Block.")
+![CSS Code Block.](/assets/cssvar-4.png "CSS Code Block.")
 
 ```css
 /* CREATE OUR CSS VARIABLE */
@@ -139,7 +139,7 @@ Awesome!
 
 If we now want to change the color of our text, we only have to update the CSS at one place, the variable that we have created:
 
-![CSS Code Block.](../../assets/cssvar-5.png "CSS Code Block.")
+![CSS Code Block.](/assets/cssvar-5.png "CSS Code Block.")
 
 ```css
 :root {
@@ -180,7 +180,7 @@ Let’s say you’re creating a variable for the background color of your websit
 
 You might want to call the variable “--light-grey”, because you want the background to be light-grey.
 
-![CSS Code Block.](../../assets/cssvar-6.png "CSS Code Block.")
+![CSS Code Block.](/assets/cssvar-6.png "CSS Code Block.")
 
 ```css
 :root {
@@ -201,7 +201,7 @@ That’s so much work, work we were looking to avoid using a CSS Variable.
 
 So instead of naming our variable “--light-grey”, let’s name it after its purpose, which is: Being the color of our background.
 
-![CSS Code Block.](../../assets/cssvar-7.png "CSS Code Block.")
+![CSS Code Block.](/assets/cssvar-7.png "CSS Code Block.")
 
 ```css
 :root {
@@ -223,7 +223,7 @@ Ah, the good old browser compatibility check.
 
 Well, let’s see which browsers do and don’t support CSS Variables:
 
-![Screenshot of MDN, showing the CSS Variables Browser Compatibility.](../../assets/cssvar-8.png "Screenshot of MDN, showing the CSS Variables Browser Compatibility.")
+![Screenshot of MDN, showing the CSS Variables Browser Compatibility.](/assets/cssvar-8.png "Screenshot of MDN, showing the CSS Variables Browser Compatibility.")
 
 Well, that sucks.
 
@@ -233,7 +233,7 @@ If you HAVE to support IE11 and want to use CSS Variables, you’ll have to crea
 
 This might look something like this:
 
-![CSS Code Block.](../../assets/cssvar-9.png "CSS Code Block.")
+![CSS Code Block.](/assets/cssvar-9.png "CSS Code Block.")
 
 ```css
 :root {
