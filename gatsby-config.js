@@ -20,6 +20,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-feed-mdx`,
     `gatsby-plugin-preact`,
+    `gatsby-remark-images`,
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
@@ -28,9 +29,8 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
-              loading: `lazy`,
-              tracedSVG: true,
+              maxWidth: 1035,
+              sizeByPixelDensity: true,
             },
           },
           {
