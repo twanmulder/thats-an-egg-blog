@@ -3,8 +3,8 @@ path: 10 -JavaScript-Oneliners-You-Have-Got-to-Add-Your-Arsenal-as-a-Developer
 date: 2020-11-29T20:56:25.380Z
 title: 10 JavaScript Oneliners You Have Got to Add Your Arsenal as a Developer
 categories: JavaScript
-description: "Step up your JavaScript game in a couple of minutes by learning
-  these awesome oneliners. "
+description: Step up your JavaScript game in a couple of minutes by learning
+  these awesome oneliners.
 ---
 ![Decoration image by Charles Deluvio. A hand showing a single finger.](../../assets/one-bg.jpg)
 *Photo by [Charles Deluvio](https://unsplash.com/@charlesdeluvio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/one?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*
