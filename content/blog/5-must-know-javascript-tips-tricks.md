@@ -12,7 +12,7 @@ JavaScript keeps adding new and neat features. Sometimes, it’s hard to keep up
 
 ## 1. Create an array with unique values using the “Set” object
 
-![Create an array with unique items using "Set" by That's an Egg blog javascript 2020](/assets/setarray.png "Create an array with unique items using \"Set\" by That's an Egg blog  javascript 2020")
+![Create an array with unique items using Set by That's an Egg blog javascript 2020](/assets/setarray.png "Create an array with unique items using Set by That's an Egg blog  javascript 2020")
 
 Imagine having an array with some duplicate items and wanting to filter out only the unique ones.
 
