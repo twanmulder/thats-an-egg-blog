@@ -45,8 +45,8 @@ const Body = styled.article`
     }
   }
 
-  p > img + em {
-    margin-top: -1.75rem;
+  p > undefined + em {
+    margin-top: 0.5rem;
     text-align: center;
     font-size: 14px;
     opacity: 0.8;
@@ -54,6 +54,10 @@ const Body = styled.article`
     font-style: normal;
     font-family: Open Sans, sans-serif;
     display: block;
+  }
+
+  .gatsby-resp-image-link {
+    box-shadow: none;
   }
 
   pre {
