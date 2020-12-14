@@ -30,6 +30,7 @@
     "gatsby-remark-autolink-headers": "^2.7.0",
     "gatsby-remark-copy-linked-files": "^2.0.11",
     "gatsby-remark-images": "^2.0.6",
+    "gatsby-remark-relative-images": "^2.0.2",
     "gatsby-remark-responsive-iframe": "^2.1.1",
     "gatsby-remark-smartypants": "^2.0.9",
     "gatsby-remark-vscode": "^3.2.0",

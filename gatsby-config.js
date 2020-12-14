@@ -10,6 +10,27 @@ module.exports = {
     },
   },
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/static/assets`,
+        name: "uploaded-images",
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/blog`,
+        name: `blog`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/assets`,
+        name: `assets`,
+      },
+    },
     `gatsby-plugin-dark-mode`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-netlify-cms`,
@@ -27,10 +48,16 @@ module.exports = {
         extensions: [".mdx", ".md"],
         gatsbyRemarkPlugins: [
           {
+            resolve: `gatsby-remark-relative-images`,
+          },
+          {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 1035,
-              sizeByPixelDensity: true,
+              maxWidth: 750,
+              quality: 100,
+              withWebp: {
+                quality: 100,
+              },
             },
           },
           {
@@ -60,26 +87,6 @@ module.exports = {
             },
           },
         ],
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/assets`,
-        name: `assets`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/static/assets`,
       },
     },
     {
