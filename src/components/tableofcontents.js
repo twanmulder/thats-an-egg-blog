@@ -101,7 +101,6 @@ function renderItems(items, activeId, shouldIndent) {
 
 export default function TableOfContents(props) {
   const table = props.table["items"]
-  console.log(table)
   const idList = getIds(table)
   const activeId = useActiveId(idList)
 
