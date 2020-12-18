@@ -31,7 +31,7 @@ That’s all you’ll need 😄
 
 *If you don’t have a website of your own to which you wish to add this functionality, use this demo website to follow along.*
 
-<iframe src="https://codesandbox.io/embed/step-1-dark-mode-using-css-variables-b5d3e?fontsize=14&hidenavigation=1&theme=dark"
+<iframe src="https://codesandbox.io/embed/step-1-dark-mode-using-css-variables-b5d3e?fontsize=14&hidenavigation=1&theme=dark&runonclick=1"
      style="height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="\\[STEP 1] DARK MODE USING CSS VARIABLES"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
@@ -301,7 +301,7 @@ And there we go! A fully functioning light/dark mode using CSS Variables, some b
 
 You can check out the fully working demo right here:
 
-<iframe src="https://codesandbox.io/embed/result-dark-mode-using-css-variables-zyno2?fontsize=14&hidenavigation=1&module=%2Fsrc%2Fmain.js&theme=dark"
+<iframe src="https://codesandbox.io/embed/result-dark-mode-using-css-variables-zyno2?fontsize=14&hidenavigation=1&module=%2Fsrc%2Fmain.js&theme=dark&runonclick=1"
      style="height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="[RESULT] DARK MODE USING CSS VARIABLES"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
