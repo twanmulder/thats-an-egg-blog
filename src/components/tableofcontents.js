@@ -86,9 +86,11 @@ function renderItems(items, activeId, shouldIndent) {
   return (
     <Fragment>
       {items.map(item => {
+        const anchorStyling = shouldIndent ? { paddingLeft: "12px", marginTop: "5px", fontSize: "14px" } : {}
+
         return (
           <Fragment>
-            <a key={item.url} href={item.url} className={activeId === item?.url?.slice(1) ? "active" : ""} style={shouldIndent ? "padding-left: 12px; margin-top: 5px; font-size: 14px;" : ""}>
+            <a key={item.url} href={item.url} className={activeId === item?.url?.slice(1) ? "active" : ""} style={anchorStyling}>
               {item.title}
             </a>
             {item.items && renderItems(item.items, activeId, true)}
