@@ -109,7 +109,7 @@ export default function TableOfContents(props) {
     <Toc>
       <InnerScroll>
         <h2>Table of contents</h2>
-        {renderItems(table, activeId)}
+        {renderItems(table, activeId, false)}
       </InnerScroll>
     </Toc>
   )
