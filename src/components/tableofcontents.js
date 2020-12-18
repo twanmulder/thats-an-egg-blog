@@ -82,16 +82,16 @@ function useActiveId(itemIds) {
   return activeId
 }
 
-function renderItems(items, activeId) {
+function renderItems(items, activeId, shouldIndent) {
   return (
     <Fragment>
       {items.map(item => {
         return (
           <Fragment>
-            <a key={item.url} href={item.url} className={activeId === item?.url?.slice(1) ? "active" : ""}>
+            <a key={item.url} href={item.url} className={activeId === item?.url?.slice(1) ? "active" : ""} style={shouldIndent ? "padding-left: 12px; margin-top: 5px; font-size: 14px;" : ""}>
               {item.title}
             </a>
-            {item.items && renderItems(item.items, activeId)}
+            {item.items && renderItems(item.items, activeId, true)}
           </Fragment>
         )
       })}
