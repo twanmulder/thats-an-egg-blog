@@ -40,6 +40,8 @@ const Toc = styled.aside`
 const InnerScroll = styled.nav`
   overflow: hidden;
   overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
 `
 
 function getIds(items) {
@@ -99,6 +101,7 @@ function renderItems(items, activeId) {
 
 export default function TableOfContents(props) {
   const table = props.table["items"]
+  console.log(table)
   const idList = getIds(table)
   const activeId = useActiveId(idList)
 
