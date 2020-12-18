@@ -5,7 +5,7 @@ title: Create your own Dark Mode using JS, CSS Variables, and localStorage
 categories: HTML, CSS, JavaScript
 description: Get your own dark mode up and running in just a few minutes!
 ---
-![Cover image of article, showing a picture of the author and the title of the article](assets/darkmode-bg.png "Cover image of article, showing a picture of the author and the title of the article")
+![Cover image of article, showing a picture of the author and the title of the article](/assets/darkmode-bg.png "Cover image of article, showing a picture of the author and the title of the article")
 
 ## Dark Mode
 
@@ -52,7 +52,7 @@ Starting, we’ll add the CSS Variables for our default/light mode. We can add t
 
 `:root` is a pseudo-class that matches `<html>`. Actually, it's exactly the same as if we had used `html` in place of `:root` (except it has higher specificity).
 
-![CSS root selector, showing the default/light mode variables](assets/darkmode-1.png "CSS root selector, showing the default/light mode variables")
+![CSS root selector, showing the default/light mode variables](/assets/darkmode-1.png "CSS root selector, showing the default/light mode variables")
 
 ```css
 :root {
@@ -67,7 +67,7 @@ Starting, we’ll add the CSS Variables for our default/light mode. We can add t
 
 Then, we’ll add the CSS Variables for our dark mode.
 
-![CSS data-theme dark attribute selector, showing the dark mode variables](assets/darkmode-2.png "CSS data-theme dark attribute selector, showing the dark mode variables")
+![CSS data-theme dark attribute selector, showing the dark mode variables](/assets/darkmode-2.png "CSS data-theme dark attribute selector, showing the dark mode variables")
 
 ```css
 [data-theme="dark"] {
@@ -86,7 +86,7 @@ What is `[data-theme="dark"]`? This means we are referencing to a data attribute
 
 Now that we’ve created our CSS Variables, we can use them in our CSS file to style our elements:
 
-![CSS variables being used to style our CSS elements](assets/darkmode-3.png "CSS variables being used to style our CSS elements")
+![CSS variables being used to style our CSS elements](/assets/darkmode-3.png "CSS variables being used to style our CSS elements")
 
 ```css
 body {
@@ -116,7 +116,7 @@ The toggle we’ll be building is mainly just a checkbox. We will add some custo
 
 The icons are from feathericons.com. I’ve left them out of the code here, but you can download them from their website or copy them from the Sandbox.
 
-![HTML code block, showing how we created a checkbox toggle](assets/darkmode-4.png "HTML code block, showing how we created a checkbox toggle")
+![HTML code block, showing how we created a checkbox toggle](/assets/darkmode-4.png "HTML code block, showing how we created a checkbox toggle")
 
 ```html
 <div class="theme-switch-wrapper">
@@ -132,7 +132,7 @@ The icons are from feathericons.com. I’ve left them out of the code here, but 
 
 And here is the CSS (it’s quite a lot):
 
-![CSS code block of our theme toggle styling](assets/darkmode-5.png "CSS code block of our theme toggle styling")
+![CSS code block of our theme toggle styling](/assets/darkmode-5.png "CSS code block of our theme toggle styling")
 
 ```css
 .theme-switch-wrapper {
@@ -224,7 +224,7 @@ We can split writing our JS up in 3 features:
 
 ### Adding the event handlers
 
-![JS code block showing how we added an event listener + functionality to our toggle-switch](assets/darkmode-6.png "JS code block showing how we added an event listener + functionality to our toggle-switch")
+![JS code block showing how we added an event listener + functionality to our toggle-switch](/assets/darkmode-6.png "JS code block showing how we added an event listener + functionality to our toggle-switch")
 
 ```javascript
 // Get the theme toggle input
@@ -253,7 +253,7 @@ We can use a browser’s localStorage to store anything! It’s a great place to
 
 Let’s update our `switchTheme` function:
 
-![JS code block saving our theme preference to localStorage](assets/darkmode-7.png "JS code block saving our theme preference to localStorage")
+![JS code block saving our theme preference to localStorage](/assets/darkmode-7.png "JS code block saving our theme preference to localStorage")
 
 ```javascript
 function switchTheme(e) {
@@ -281,7 +281,7 @@ If it is, we can update our our root element accordingly.
 
 We’ll set the correct `data-theme` attribute and check/uncheck our theme toggle.
 
-![JS code block checkin if there is a theme preference and updating the website accordingly](assets/darkmode-8.png "JS code block checkin if there is a theme preference and updating the website accordingly")
+![JS code block checkin if there is a theme preference and updating the website accordingly](/assets/darkmode-8.png "JS code block checkin if there is a theme preference and updating the website accordingly")
 
 ```javascript
 // Get the current theme from local storage
