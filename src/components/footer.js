@@ -73,7 +73,6 @@ export default function Footer() {
             GitHub
           </a>
           <Link to="/privacypolicy">Privacy Policy</Link>
-          <Link to="/rss.xml">RSS</Link>
         </FooterLinks>
       </footer>
     </StyledFooter>
