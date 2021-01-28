@@ -18,6 +18,7 @@ body {
   --inputFocusBoxShadow: inset 0 0 0 2px #036ec5;
   --categoriesButtonBackground: #f0f8ff;
   --websiteSucksBackground: #eff8fe;
+  --codeBackgroundColor: hsl(0deg 0% 95%);
   --theme-transition: color 0.2s ease, background-color 0.2s ease, border 0.2s ease;
 }
 
@@ -39,6 +40,7 @@ body.dark {
   --inputFocusBoxShadow: inset 0 0 0 2px #fec150;
   --categoriesButtonBackground: #333;
   --websiteSucksBackground: #9fd5f9;
+  --codeBackgroundColor: hsl(0deg 0% 25%);
 }
 
 /* COMPLEX BUTTON STYLING */

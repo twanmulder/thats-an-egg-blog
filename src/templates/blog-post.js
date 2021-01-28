@@ -60,6 +60,12 @@ const Body = styled.article`
     box-shadow: none;
   }
 
+  p code {
+    background: var(--codeBackgroundColor);
+    border-radius: 4px;
+    padding: 2px 6px;
+  }
+
   pre {
     position: relative;
     box-shadow: 0 20px 15px -15px rgba(40, 45, 51, 0.5);
