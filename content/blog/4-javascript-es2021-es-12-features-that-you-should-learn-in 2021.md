@@ -14,6 +14,7 @@ New features that are added to JavaScript each year go through a four-stage proc
 
 Let's get started!
 
+---
 
 ## String.prototype.replaceAll
 
@@ -41,6 +42,8 @@ let string = "Wow, he doesn't like Porsche? I guess he must be crazy!"
 string.replaceAll("he","she")
 // Result: "Wow, she doesn't like Porsche? I guess she must be crazy!"
 ```
+
+---
 
 ## Logical Assignment Operators
 
@@ -90,6 +93,8 @@ a = a && b
 a &&= b
 ```
 
+---
+
 ## Numeric Separators
 
 Now this is mostly a cosmetic change that will have very little impact on the performance on your actual code, but it might help avoiding errors whenever you need to insert numeric values to your code (f.i. while defining constants).
@@ -120,6 +125,8 @@ const NO_MILLION = _1_000_000;    // ReferenceError
 ```
 
 Keep in mind, that beginning or ending an integer/number with an underscore will return an error!
+
+---
 
 ## Promise.any
 
