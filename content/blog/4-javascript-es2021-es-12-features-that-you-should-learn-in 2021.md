@@ -21,7 +21,7 @@ Let's get started!
 
 In JavaScript, the `.replace()` method will currently only replace the first instance of a pattern.
 
-![JavaScript Code block showing how to use the replace method.](/assets/2021-1.png)
+![JavaScript Code block showing how to use the replace method.](/assets/es2021-1.png)
 
 ```javascript
 let string = "Wow, he doesn't like Porsche? I guess he must be crazy!"
@@ -33,7 +33,7 @@ If we want to replace all the matches of a pattern in a string, the only way to 
 
 With the new `.replaceAll()` method, we can update all the instances in one go without the performance hit of creating a RegEx:
 
-![JavaScript Code block showing the use of the replace all method.](/assets/2021-2.png)
+![JavaScript Code block showing the use of the replace all method.](/assets/es2021-2.png)
 
 ```javascript
 let string = "Wow, he doesn't like Porsche? I guess he must be crazy!"
@@ -58,7 +58,7 @@ Here are some examples:
 
 **`a ||= b` returns `a` if `a` is truthy or `b` if `a` is falsy**
 
-![JavaScript Code block showing the use of the logical assignment operator.](/assets/2021-3.png)
+![JavaScript Code block showing the use of the logical assignment operator.](/assets/es2021-3.png)
 
 ```javascript
 // The Old Way
@@ -75,7 +75,7 @@ a ||= b
 
 **`a &&= b` returns `b` if `a` is truthy or `a` if `a` is falsy**
 
-![JavaScript Code block showing the use of the logical assignment operator.](/assets/2021-4.png)
+![JavaScript Code block showing the use of the logical assignment operator.](/assets/es2021-4.png)
 
 ```javascript
 // The Old Way
@@ -96,7 +96,7 @@ Now this is mostly a cosmetic change that will have very little impact on the pe
 
 It will also speed up reading numbers, even though it's just a very TINY amount. Not an enormous update that will change the way we program, but definitely a nice-to-have.
 
-![JavaScript Code block showing how to use the numeric separator (underscore).](/assets/2021-5.png)
+![JavaScript Code block showing how to use the numeric separator (underscore).](/assets/es2021-5.png)
 
 ```javascript
 const MILLION = 1_000_000;       // 1000000
@@ -105,7 +105,7 @@ const BILLION = 1_000_000_000;   // 1000000000
 
 The cool thing about the Numeric Separator, it that it can also be used after the period/comma of a number! Here are a few examples:
 
-![JavaScript Code block showing how to use the numeric separator (underscore).](/assets/2021-6.png)
+![JavaScript Code block showing how to use the numeric separator (underscore).](/assets/es2021-6.png)
 
 ```javascript
 // You can break the digits in any way
@@ -135,7 +135,7 @@ In contrast, the `Promise.any` method will only return if any of the promises SU
 
 This might look something like:
 
-![JavaScript code block showing how to use the Promise any method.](/assets/2021-7.png)
+![JavaScript code block showing how to use the Promise any method.](/assets/es2021-7.png)
 
 ```javascript
 Promise.any([get('www.medium.com'), get('www.thatsanegg.com')])
