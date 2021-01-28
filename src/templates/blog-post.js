@@ -22,6 +22,30 @@ const GlobalStyle = createGlobalStyle`
     margin-bottom: 32px;
   }
 
+  hr {
+    box-sizing: content-box;
+    height: 0;
+    display: block;
+    border: 0;
+    text-align: center;
+    overflow: visible;
+    margin-top: 52px;
+    margin-bottom: 42px;
+
+    :before {
+      content: '...';
+      display: inline-block;
+      margin-left: .6em;
+      position: relative;
+      top: -30px;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 30px;
+      font-family: serif;
+      letter-spacing: .6em;
+    }
+  }
+
   @media (max-width: 563px) {
     p, li {
       font-size: 18px;
@@ -194,7 +218,7 @@ function BlogPostTemplate(props) {
             {` • ${formatReadingTime(post.timeToRead)}`}
           </Details>
           <MDXRenderer>{post.body}</MDXRenderer>
-          <hr style={{ marginBottom: rhythm(1.5) }} />
+          <hr />
 
           <article>
             <NewsletterForm />
