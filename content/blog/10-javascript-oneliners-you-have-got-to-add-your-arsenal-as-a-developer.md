@@ -1,5 +1,5 @@
 ---
-path: 10 -JavaScript-Oneliners-You-Have-Got-to-Add-Your-Arsenal-as-a-Developer
+path: 10-JavaScript-Oneliners-You-Have-Got-to-Add-Your-Arsenal-as-a-Developer
 date: 2020-11-29T20:56:25.380Z
 title: 10 JavaScript Oneliners You Have Got to Add Your Arsenal as a Developer
 categories: JavaScript
