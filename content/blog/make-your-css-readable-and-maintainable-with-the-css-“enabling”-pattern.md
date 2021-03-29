@@ -4,7 +4,7 @@ date: 2021-03-27T14:27:05.559Z
 title: Make your CSS Readable and Maintainable with the CSS Enabling Pattern
 categories: CSS
 description: It’s 2021, stop disabling CSS and learn the how and why of the
-  “Enabling” CSS Pattern.
+  "Enabling" CSS Pattern.
 ---
 ![Cover image by Atikh Bana from Unsplash. Decorative](/assets/csspattern-bg.jpg)
 *Photo by [Atikh Bana](https://unsplash.com/@tikh) on [Unsplash](https://unsplash.com/s/photos/yellow-woman)*
