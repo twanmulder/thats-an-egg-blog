@@ -19,6 +19,7 @@ exports.createPages = ({ graphql, actions }) => {
               }
               frontmatter {
                 title
+                path
               }
             }
           }
@@ -38,10 +39,10 @@ exports.createPages = ({ graphql, actions }) => {
       const next = index === 0 ? null : posts[index - 1].node
 
       createPage({
-        path: `blog${post.node.fields.slug}`,
+        path: `blog${post.node.frontmatter.path}`,
         component: blogPost,
         context: {
-          slug: post.node.fields.slug,
+          slug: post.node.frontmatter.path,
           previous,
           next,
         },
@@ -58,7 +59,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   if (node.internal.type === `Mdx`) {
     const value = createFilePath({ node, getNode })
     createNodeField({
-      name: `slug`,
+      name: `path`,
       node,
       value,
     })
