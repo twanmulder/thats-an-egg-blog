@@ -1,5 +1,5 @@
 ---
-path: the--best-javascript-features-of-the-last-four-years
+path: the-best-javascript-features-of-the-last-four-years
 date: 2021-03-03T14:25:38.515Z
 title: The 8 Best JavaScript Features of the Last Four Years
 categories: JavaScript
