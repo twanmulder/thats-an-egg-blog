@@ -41,13 +41,13 @@ const StyledHeader = styled.h1`
 function About() {
   const daysInAYear = 365
   const oneDay = 24 * 60 * 60 * 1000 // hours*minutes*seconds*milliseconds
-  const firstDate = new Date(2019, 3, 1)
+  const firstDate = new Date(2021, 3, 5)
   const secondDate = new Date()
   const totalDiffDays = Math.round(Math.abs((firstDate - secondDate) / oneDay))
 
   const diffYears = Math.floor(totalDiffDays / daysInAYear)
   const diffDays = Math.floor(totalDiffDays % daysInAYear)
-  const formattedDifference = `${diffYears} year${diffYears > 1 ? "s" : ""} and ${diffDays} day${diffDays > 1 ? "s" : ""}`
+  const formattedDifference = diffYears > 1 ? `${diffYears} year${diffYears > 1 ? "s" : ""} and ${diffDays} day${diffDays > 1 ? "s" : ""}` : `${diffDays} days`
 
   return (
     <Layout wrapperFormat="full" navStyle="hero">
@@ -61,13 +61,20 @@ function About() {
           </span>
         </StyledHeader>
         <p>
-          <strong>I'm a Developer and CRO Specialist from the Netherlands.</strong>
+          <strong>I'm a Developer and Product Specialist from the Netherlands.</strong>
           <br />
-          Currently, I've been employed at{" "}
+          Currently, I've been employed at&nbsp;
+          <a href="https://framer.com" target="_blank" rel="noopener noreferrer">
+            Framer
+          </a>
+          &nbsp;as a Product Specialist for {formattedDifference}.
+        </p>
+        <p>
+          Before that, I worked as a Developer & CRO Consultant at{" "}
           <a href="https://stormdigital.nl" target="_blank" rel="noopener noreferrer">
-            Storm Digital
-          </a>{" "}
-          for {formattedDifference}.
+            Storm Digital, part of Accenture Interactive for 2 years
+          </a>
+          .
         </p>
         <p>These days, web-development can be a very daunting task to learn for the developer who's just starting out. With things like JavaScript frameworks, server-side rendering, and REST/CRUD API's, it doesn't get a lot simpler either.</p>
         <p>However, it doesn't have to be this way!</p>
