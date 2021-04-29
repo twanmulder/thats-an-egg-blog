@@ -3,8 +3,9 @@
 }
 
 .formkit-form[data-uid="812b8a9345"] {
-  background-color: var(--bg);
-  border-color: var(--navBackground);
+  background-color: var(--navBackground);
+  box-shadow: 0 20px 15px -15px rgba(40, 45, 51, 0.1);
+  border: none;
 }
 
 .formkit-background {
