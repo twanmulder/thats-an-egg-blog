@@ -23,7 +23,7 @@ Let me show you by example.
 
 Let's say you've created a navigation using HTML:
 
-![HTML code block showing a navigation built using the "nav" and "a" tags.](/assets/csspattern-1.png)
+![HTML code block showing a navigation built using the nav and a tags.](/assets/csspattern-1.png)
 *Navigation using the `nav` and `a` tags*
 
 ```html
