@@ -5,7 +5,7 @@ import styled from "styled-components"
 import { rhythm } from "../utils/typography"
 
 import Send from "../../static/assets/icons/send.js"
-import ThumbsUp from "../../static/assets/icons/thumbs-up.js"
+// import ThumbsUp from "../../static/assets/icons/thumbs-up.js"
 import ArrowRight from "../../static/assets/icons/arrow-right.js"
 
 import Layout from "../components/layout"
@@ -265,11 +265,11 @@ function IndexPage(props) {
               </Link>
             </StyledPostWrapper>
             <IndexLinks>
-              <Link to="/your-website-sucks" className="your-website-sucks">
+              {/* <Link to="/your-website-sucks" className="your-website-sucks">
                 <h2>Your website sucks</h2>
                 <p>Get feedback on your product, portfolio, etc.</p>
                 <ThumbsUp />
-              </Link>
+              </Link> */}
               <Link to="/newsletter">
                 <h2>Join the Newsletter</h2>
                 <p>Stay up-to-date</p>
